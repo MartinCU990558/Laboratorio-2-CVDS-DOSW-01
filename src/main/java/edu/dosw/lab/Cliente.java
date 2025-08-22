@@ -6,7 +6,7 @@ public abstract class Cliente{
     private String tipo;
     private CarritoDeCompras carrito; 
     
-    public Cliente(String tipo){
+    public Cliente(String tipo,CarritoDeCompras carrito){
         this.tipo = tipo;
         this.carrito = carrito;
     }
@@ -15,7 +15,7 @@ public abstract class Cliente{
         return tipo;
     }
 
-    public String getCarrito(){
+    public CarritoDeCompras getCarrito(){
         return carrito;
     }
 }

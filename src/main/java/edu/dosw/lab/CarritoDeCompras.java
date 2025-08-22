@@ -5,6 +5,6 @@ public class CarritoDeCompras{
     private ArrayList <Producto> productos;
 
     public double total(){
-        return productos.stream().mapToDobule(Double::doubleValue()).sum();
+        return productos.stream().forEach(e -> e.getPrecio()).mapToDouble(Double::doubleValue()).sum();
     }
 }
