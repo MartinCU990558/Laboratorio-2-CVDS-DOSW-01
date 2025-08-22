@@ -1,14 +1,13 @@
-package main.java.edu.dosw.lab.estructurales.reto5;
+package edu.dosw.lab.estructurales.reto5;
 
-public class Caramelo extends ToppingDecorator{
-    
+import edu.dosw.lab.estructurales.reto5.Cafe;
+
+public class Caramelo implements ToppingDecorator{
+    public int precio=1300;
     public Caramelo(Cafe cafe) {
-            super(cafe);
-            //TODO Auto-generated constructor stub
-        }
-    
-        @Override
-    public double obtenerPrecio() {
-        return 1200;
+        cafe.addPrecio(obtenerPrecio());
+    }
+    public int obtenerPrecio() {
+        return precio;
     }
 }

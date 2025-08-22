@@ -1,12 +1,13 @@
-package main.java.edu.dosw.lab.estructurales.reto5;
-public class CremaBatida extends ToppingDecorator{
+package edu.dosw.lab.estructurales.reto5;
+
+import edu.dosw.lab.estructurales.reto5.Cafe;
+
+public class CremaBatida implements ToppingDecorator{
+    public int precio=2000;
     public CremaBatida(Cafe cafe) {
-            super(cafe);
-            //TODO Auto-generated constructor stub
-        }
-    
-        @Override
-    public double obtenerPrecio() {
-        return 2000;
+        cafe.addPrecio(obtenerPrecio());
+    }
+    public int obtenerPrecio() {
+        return precio;
     }
 }
