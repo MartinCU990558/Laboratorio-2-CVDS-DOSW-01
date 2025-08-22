@@ -1,9 +1,10 @@
 # Laboratorio-2-CVDS-DOSW-01
 
 **Integrantes**
-    - Raquel Selma
-    - Nestor David Lopez
-    - Santiago Suarez    
+- Raquel Selma
+- Nestor David Lopez
+- Santiago Suarez
+  
 
 **Nombre de la rama**
 
