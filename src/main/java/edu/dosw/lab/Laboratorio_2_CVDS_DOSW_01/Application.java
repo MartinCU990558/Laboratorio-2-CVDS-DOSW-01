@@ -4,10 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Laboratorio2CvdsDosw01Application {
-
+public class Application {
 	public static void main(String[] args) {
-		SpringApplication.run(Laboratorio2CvdsDosw01Application.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }
