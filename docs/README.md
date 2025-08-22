@@ -38,7 +38,7 @@
 
 ### 6. ¿Qué es y porque usamos el pom.xml?
 
-- En este archivo se encuentra definida toda la estructura del proyecto, de la misma manera podemos agregar,modificar como dependencias permitiendonos tener acceso a nuevas funcionalidades que nos ayudan en el proyecto, también se definen aspectos como la clase que corre como principal y la versión de las aplicaciones.
+- En este archivo se encuentra definida toda la estructura del proyecto, de la misma manera podemos agregar,modificar como dependencias permitiendonos tener acceso a nuevas funcionalidades que nos ayudan en el proyecto, también se definen aspectos como la clase que corre como principal y la versión de las aplicaciones, también define los plugins que permiten compilar y empaquetar el proyecto.
 
 ---
 
