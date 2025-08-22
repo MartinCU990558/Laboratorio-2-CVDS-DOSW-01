@@ -9,7 +9,7 @@ public class imrecibo implements Irecibo {
         System.out.println("Productos:");
 
         carrito.getItems().forEach(item -> {
-            System.out.println("- " + item.getProducto().getNombre() + " - $" + (int) item.getSubtotal());
+            System.out.println("- " + item.getProducto().getNombreProducto() + " - $" + (int) item.getSubtotal());
         });
 
         double subtotal = carrito.calcularSubtotal();

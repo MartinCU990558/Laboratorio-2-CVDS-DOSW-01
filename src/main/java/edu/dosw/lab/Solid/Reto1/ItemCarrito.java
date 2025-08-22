@@ -1,4 +1,5 @@
-package edu.dosw.lab.solid.Reto1;
+package edu.dosw.lab.Solid.Reto1;
+
 public class ItemCarrito {
     private final Producto producto;
     private final int cantidad;
@@ -17,6 +18,6 @@ public class ItemCarrito {
     }
 
     public double getSubtotal() {
-        return producto.getPrecio() * cantidad;
+        return producto.getPrecioProducto() * cantidad;
     }
 }
