@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30cab95b-1f6c-4ce5-900f-552c1d8f981a" name="Changes" comment="Estructura de carpetas">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="30cab95b-1f6c-4ce5-900f-552c1d8f981a" name="Changes" comment="Actualizacion readme">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +15,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="af8a015c-9928-475e-887a-f42ef6e33d2c" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -75,7 +78,8 @@
       <option name="presentableId" value="Default" />
       <updated>1755840224739</updated>
       <workItem from="1755840226702" duration="328000" />
-      <workItem from="1755841112534" duration="347000" />
+      <workItem from="1755841112534" duration="622000" />
+      <workItem from="1755886326778" duration="3812000" />
     </task>
     <task id="LOCAL-00001" summary="Estructura de carpetas">
       <option name="closed" value="true" />
@@ -85,7 +89,23 @@
       <option name="project" value="LOCAL" />
       <updated>1755840395953</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Actualizacion readme">
+      <option name="closed" value="true" />
+      <created>1755841498172</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1755841498172</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Actualizacion readme">
+      <option name="closed" value="true" />
+      <created>1755841564430</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1755841564430</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,6 +113,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Estructura de carpetas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Estructura de carpetas" />
+    <MESSAGE value="Actualizacion readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actualizacion readme" />
   </component>
 </project>
