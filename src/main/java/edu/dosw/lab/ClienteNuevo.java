@@ -1,9 +1,9 @@
 package edu.dosw.lab;
 
-public class ClienteFrecuente extends Cliente{
-    private double descuento = 0.1; 
+public class ClienteNuevo extends Cliente {
+    private double descuento = 0.05; 
 
-    public ClienteFrecuente(String tipo,CarritoDeCompras carrito, double descuento){
+    public ClienteNuevo(String tipo,CarritoDeCompras carrito ,double descuento){
             super(tipo, carrito);
             this.descuento = descuento;
     }
@@ -11,5 +11,4 @@ public class ClienteFrecuente extends Cliente{
     public double getDescuento(){
         return descuento;
     }
-
 }

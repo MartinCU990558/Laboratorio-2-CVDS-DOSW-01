@@ -2,7 +2,7 @@ package edu.dosw.lab;
 
 import java.util.ArrayList;
 
-public abstract class Cliente{
+public class Cliente{
     private String tipo;
     private CarritoDeCompras carrito; 
     
@@ -15,7 +15,6 @@ public abstract class Cliente{
         return tipo;
     }
 
-    public CarritoDeCompras getCarrito(){
-        return carrito;
-    }
+    
+
 }
