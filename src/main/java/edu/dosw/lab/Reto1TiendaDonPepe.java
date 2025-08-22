@@ -21,6 +21,11 @@ public class Reto1TiendaDonPepe{
         Camiseta camisa = new Camiseta();
         Camiseta camisa2 = new Camiseta();
         cliente.carrito.añadiendoProductos(camisa);
+        cliente.carrito.añadiendoProductos(camisa2);
+        Galletas galleta = new Galletas();
+        Galletas galleta1 = new Galletas();
+        Galletas galleta2 = new Galletas();
+
 
     }
 }
