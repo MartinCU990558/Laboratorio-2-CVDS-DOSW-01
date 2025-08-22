@@ -1,7 +1,9 @@
+package edu.dosw.lab;
+
 public abstract class Client {
     private String type;
 
-    public client(String type){
+    public Client(String type){
         this.type = type;
     }
 
@@ -9,6 +11,6 @@ public abstract class Client {
         return type;
     }
 
-    public abstract double CalculateDiscount(double total) {}
+    public abstract double calculateDiscount(double total);
 
 }

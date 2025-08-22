@@ -2,7 +2,7 @@ package edu.dosw.lab;
 import java.util.HashMap;
 import java.util.Map;
 public class Cart{
-    public int quantity;
+    private int quantity;
     private Map<Product,Integer> products = new HashMap<>();
 
     public Map<Product,Integer> getProducts(){
@@ -14,6 +14,11 @@ public class Cart{
     public double getSubTotal(){
         return products.entrySet().stream().
                 mapToDouble(e->e.getKey().getPrice()*e.getValue()).sum();
+    }
+
+    public void putProduct(Product product,int quantity){
+        products.put(product,quantity);
+
     }
 
 }
