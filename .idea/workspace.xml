@@ -4,14 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30cab95b-1f6c-4ce5-900f-552c1d8f981a" name="Changes" comment="Actualizacion readme">
+    <list default="true" id="30cab95b-1f6c-4ce5-900f-552c1d8f981a" name="Changes" comment="Actualizacion">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/Hamburguesa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/Ingrediente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/Ingredientes/Carne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/Ingredientes/Lechuga.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/Ingredientes/Nuevo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/Ingredientes/Pan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/Ingredientes/Queso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/Ingredientes/Salsa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/Ingredientes/Tomate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/Pedido.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/t.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,25 +49,42 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="31d3fEj3n64KBbcUdHda4CwvPkw" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/SuarezSantiago__SelmaRaquel__LopezNestor__2025-2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Pedido.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "feature/SuarezSantiago__SelmaRaquel__LopezNestor__2025-2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
+    <configuration name="Pedido" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.dosw.lab.creacionales.Reto2.Pedido" />
+      <module name="Laboratorio-2-CVDS-DOSW-01v" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.dosw.lab.creacionales.Reto2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Laboratorio-2-CVDS-DOSW-01" />
       <method v="2">
@@ -61,6 +96,11 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Pedido" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -80,6 +120,7 @@
       <workItem from="1755840226702" duration="328000" />
       <workItem from="1755841112534" duration="622000" />
       <workItem from="1755886326778" duration="3812000" />
+      <workItem from="1755890832940" duration="5344000" />
     </task>
     <task id="LOCAL-00001" summary="Estructura de carpetas">
       <option name="closed" value="true" />
@@ -105,7 +146,23 @@
       <option name="project" value="LOCAL" />
       <updated>1755841564430</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Actualizacion readme">
+      <option name="closed" value="true" />
+      <created>1755890888994</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1755890888994</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Actualizacion">
+      <option name="closed" value="true" />
+      <created>1755891135885</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1755891135885</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +171,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Estructura de carpetas" />
     <MESSAGE value="Actualizacion readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Actualizacion readme" />
+    <MESSAGE value="Actualizacion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actualizacion" />
   </component>
 </project>
