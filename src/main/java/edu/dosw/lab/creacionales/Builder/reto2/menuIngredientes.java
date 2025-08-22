@@ -2,13 +2,14 @@ package edu.dosw.lab.creacionales.Builder.reto2;
 
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class menuIngredientes {
     private static final Map<String, Double> INGREDIENTES;
 
     static {
-        Map<String, Double> ingredientesTemp = new HashMap<>();
+        Map<String, Double> ingredientesTemp = new LinkedHashMap<>();
         ingredientesTemp.put("Pan",3.0);
         ingredientesTemp.put("Carne",1.0000);
         ingredientesTemp.put("Queso",5.000);
