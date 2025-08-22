@@ -1,0 +1,10 @@
+package edu.dosw.lab;
+
+import java.util.ArrayList;
+public class CarritoDeCompras{
+    private ArrayList <Producto> productos;
+
+    public double total(){
+        return productos.stream().mapToDobule(Double::doubleValue()).sum();
+    }
+}
