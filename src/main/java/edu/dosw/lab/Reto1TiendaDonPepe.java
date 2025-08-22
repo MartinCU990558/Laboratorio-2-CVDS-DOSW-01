@@ -25,7 +25,16 @@ public class Reto1TiendaDonPepe{
         Galletas galleta = new Galletas();
         Galletas galleta1 = new Galletas();
         Galletas galleta2 = new Galletas();
-
+        cliente.carrito.añadiendoProductos(galleta);
+        cliente.carrito.añadiendoProductos(galleta1);
+        cliente.carrito.añadiendoProductos(galleta2);
+        JugoNatural jugo = new JugoNatural();
+        JugoNatural jugo1 = new JugoNatural();
+        JugoNatural jugo2 = new JugoNatural();
+        cliente.carrito.añadiendoProductos(jugo);
+        cliente.carrito.añadiendoProductos(jugo1);
+        cliente.carrito.añadiendoProductos(jugo2);
+        
 
     }
 }

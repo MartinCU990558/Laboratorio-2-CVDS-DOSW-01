@@ -6,7 +6,7 @@ public class CarritoDeCompras{
 
 
     public double total(){
-        return productos.stream().mapToDobule(Double::doubleValue()).sum();
+        return productos.stream().mapToDouble(Producto::getPrecio).sum();
     }
 
     public void añadiendoProductos(Producto producto){

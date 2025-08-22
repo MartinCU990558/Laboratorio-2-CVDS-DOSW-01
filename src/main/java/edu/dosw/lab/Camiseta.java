@@ -4,5 +4,8 @@ public class Camiseta extends Ropa{
     public double getPrecio(){
         return 20.000;
     }
+    public String getNombre(){
+        return "Camiseta";
+    }
 
 }

@@ -1,10 +1,10 @@
 package edu.dosw.lab;
 
-public class Galletas extends Comida{
+public class JugoNatural extends Comida {
     public double getPrecio(){
-        return 500;
+        return 3.000;
     }
     public String getNombre(){
-        return "Galletas";
+        return "Jugo Natural";
     }
 }
