@@ -15,7 +15,6 @@ public abstract class Cliente{
         return tipo;
     }
 
-    public String getCarrito(){
-        return carrito;
-    }
+    
+
 }
