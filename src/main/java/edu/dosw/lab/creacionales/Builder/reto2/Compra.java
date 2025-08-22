@@ -6,10 +6,11 @@ public class Compra {
     public static void main(String[] args) {
         menu = menuIngredientes.obtenerIngredientes();
         System.out.println("Los ingredientes disponibles son los siguientes:");
+        int contador = 1;
         for (String i : menu.keySet()) {
             Ingrediente ingrediente = new Ingrediente(i, menu.get(i));
-            System.out.println(ingrediente);
+            System.out.println(contador+". " + ingrediente);
+            contador++;
         }
     }
-
 }
