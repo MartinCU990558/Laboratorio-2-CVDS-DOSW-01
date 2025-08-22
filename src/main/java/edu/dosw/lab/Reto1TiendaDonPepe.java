@@ -1,7 +1,9 @@
 package edu.dosw.lab;
 import edu.dosw.lab.CarritoDeCompras;
 import edu.dosw.lab.Cliente;
+import edu.dosw.lab.ClienteFrecuente;
 import java.util.ArrayList;
+import edu.dosw.lab.ClienteNuevo;
 
 public class Reto1TiendaDonPepe{
     private static ArrayList<Producto> productos;
@@ -12,6 +14,7 @@ public class Reto1TiendaDonPepe{
     public static void imprimiendoProductos(){
         productos.stream().forEach(e -> e.getPrecio());
     }
+
     public static void main(String args[]){
         System.out.println("Bienvenido a la tienda de Don Pepe!");
         CarritoDeCompras carrito = new CarritoDeCompras();

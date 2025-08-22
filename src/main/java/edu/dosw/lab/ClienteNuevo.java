@@ -12,4 +12,8 @@ public class ClienteNuevo extends Cliente {
         return descuento;
     }
 
+    @Override
+    public double calcularDescuento(){
+        return carrito.total()*descuento;
+    }
 }
