@@ -5,7 +5,7 @@ public class DescuentoNu implements Descuentos{
     @Override
 
     public  double aplicarDescuento(double subtotal) {
-        return subtotal * 0.10;
+        return subtotal * 0.05;
     }
 }
 

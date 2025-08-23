@@ -10,6 +10,7 @@ public class ClienteNuevo implements Cliente {
 
     @Override
     public String getNombre() {
+
         return nombre;
     }
 

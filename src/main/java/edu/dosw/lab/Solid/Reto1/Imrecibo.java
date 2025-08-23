@@ -1,9 +1,9 @@
 
 package edu.dosw.lab.Solid.Reto1;
 
-public class imrecibo implements Irecibo {
+public class Imrecibo implements Irecibo {
     @Override
-    public void generar(Cliente cliente, CarritoDeCompras carrito) {
+    public void generar(Cliente cliente, CarritodeCompras carrito) {
         System.out.println("\n--- RECIBO DE COMPRA ---");
         System.out.println("Cliente: " + cliente.getNombre());
         System.out.println("Productos:");

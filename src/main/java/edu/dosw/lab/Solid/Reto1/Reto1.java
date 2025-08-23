@@ -1,7 +1,7 @@
 package edu.dosw.lab.Solid.Reto1;
 
-public class Reto {
-    public static void main(String[] args) {
+public class Reto1 {
+    public static void ejecutar() {
         Producto camiseta = new Producto("Camiseta", 20000);
         Producto galletas = new Producto("Galletas", 500);
         Producto jugo = new Producto("Jugo Natural", 3000);
@@ -13,7 +13,7 @@ public class Reto {
         carrito.agregarProducto(galletas, 3);
         carrito.agregarProducto(jugo, 5);
 
-        Irecibo generador = Imrecibo();
+        Irecibo generador = new Imrecibo();
         generador.generar(cliente, carrito);
     }
 }
