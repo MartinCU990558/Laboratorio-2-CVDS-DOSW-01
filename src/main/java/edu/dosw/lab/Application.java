@@ -1,4 +1,5 @@
 package edu.dosw.lab;
+import edu.dosw.lab.creacionales.ChefDeCincoEstrellasReto2.ChefDeCincoEstrellas;
 import edu.dosw.lab.solid.Reto1TiendaDonPepe.*;
 
 public class Application {
@@ -18,7 +19,12 @@ public class Application {
         TiendaDonPepe tienda = new TiendaDonPepe();
         tienda.ejecutar(camiseta, pantalon, galletas, jugo, cliente, carrito);
 
+
         // Ejecución del reto 2
+        ChefDeCincoEstrellas hamburguesas = new ChefDeCincoEstrellas();
+        hamburguesas.ejecutar();
+
+
 
     }
 
