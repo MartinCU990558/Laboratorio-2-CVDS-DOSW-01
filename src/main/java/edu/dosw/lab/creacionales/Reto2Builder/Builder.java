@@ -9,6 +9,12 @@ public interface Builder {
 
     void ponerQueso(Queso queso);
 
+    void ponerLechuga(Lechuga lechuga);
+
+    void ponerTomate(Tomate tomate);
+
+    void ponerSalsaEspecial(SalsaEspecial salsaEspecial);
+
     void ponerNuevoIngrediente(NuevoIngrediente nuevoIngrediente);
 
 }
