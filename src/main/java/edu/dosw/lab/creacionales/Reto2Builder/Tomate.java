@@ -1,12 +1,12 @@
-package edu.dosw.lab;
+package edu.dosw.lab.creacionales.Reto2Builder;
 
-public class NuevoIngrediente extends Ingredientes {
+public class Tomate extends Ingredientes {
     private double precio;
     private String nombre;
 
-    public NuevoIngrediente() {
-        precio = 4.000;
-        nombre = "Tocino";
+    public Tomate() {
+        precio = 2.000;
+        nombre = "Tomate";
     }
 
     public double getPrecio() {

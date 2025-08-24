@@ -1,4 +1,4 @@
-package edu.dosw.lab;
+package edu.dosw.lab.creacionales.Reto2Builder;
 
 public class SalsaEspecial extends Ingredientes {
     private double precio;
