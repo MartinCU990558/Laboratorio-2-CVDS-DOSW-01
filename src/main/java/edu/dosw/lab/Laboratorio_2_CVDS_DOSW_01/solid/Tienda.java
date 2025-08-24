@@ -1,12 +1,22 @@
+package edu.dosw.lab.Laboratorio_2_CVDS_DOSW_01.solid;
+
 import java.util.*;
 
 public class Tienda{
-    private List<Producto> productosDisponibles;
+    private List<Producto> productosDisponibles = new ArrayList<>();
 
-    public void crearProducto(String nombre, int precio){
-        new Producto(precio,nombre);
+    public Producto crearProducto(String nombre, int precio){
+
+        Producto p = new Producto(precio, nombre);
+        productosDisponibles.add(p);
+        return p;
     }
 
-    public static void main(String[] args) {
+    public Optional<Producto> buscarPorNombre(String nombre){
+        return productosDisponibles.stream()
+                .filter(p -> p.getNombre().equalsIgnoreCase(nombre))
+                .findFirst();
     }
+
+
 }

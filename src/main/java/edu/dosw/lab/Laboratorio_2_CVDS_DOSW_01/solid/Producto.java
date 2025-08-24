@@ -1,3 +1,5 @@
+package edu.dosw.lab.Laboratorio_2_CVDS_DOSW_01.solid;
+
 public class Producto{
     private String nombreProducto;
     private final int precio;

@@ -52,3 +52,4 @@ Es el archivo de configuración de Maven que define las dependencias, configurac
 ## 8. ¿Qué diferencia existe entre una interfaz y una clase abstracta?
 - Una interfaz define solo métodos abstractos (y constantes), no tiene estado. Se pueden usar muchas de ellas por una sola clase.
 - **Clase abstracta:** Puede tener métodos abstractos y concretos, además de atributos. Sirve para compartir comportamiento común entre clases relacionadas.
+
