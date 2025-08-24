@@ -1,5 +1,4 @@
 package edu.dosw.lab.creacionales.ReinoDeLosVehiculos;
-package Reto3;
 import java.util.List;
 
 public class ComprarVehiculo {

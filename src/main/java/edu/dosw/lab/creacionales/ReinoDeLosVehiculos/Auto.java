@@ -1,5 +1,4 @@
 package edu.dosw.lab.creacionales.ReinoDeLosVehiculos;
-package Reto3;
 
 public class Auto extends Vehiculo {
 
