@@ -17,6 +17,8 @@ public class ChefDeCincoEstrellas {
     );
 
     public static void ejecutar() {
+        System.out.println("-------------------------------------------");
+        System.out.println("Ejecutando Reto 2 - CheftDeCincoEstrellas");
         Scanner scanner = new Scanner(System.in);
         List<Ingrediente> opciones = new ArrayList<>(INGREDIENTES_BASE);
 
