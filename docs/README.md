@@ -14,6 +14,7 @@
 ### RETO #1: El problema de la tienda de Don Pepe
 
 Evidencia:
+
 ![Captura](docs/imagenes/reto1_final.png)
 
 
