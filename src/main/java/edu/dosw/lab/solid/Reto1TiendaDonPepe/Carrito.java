@@ -1,4 +1,4 @@
-package edu.dosw.lab.solid.Reto_1_TIENDA_DON_PEPE;
+package edu.dosw.lab.solid.Reto1TiendaDonPepe;
 
 import java.util.*;
 public class Carrito {
