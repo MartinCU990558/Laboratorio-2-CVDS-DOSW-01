@@ -13,6 +13,9 @@
 
 ## ✅ Retos Completados
 
+**RETO 1 COMPLETADO**
+    ![alt text](docs/Imagenes/image.png)
+
 ---
 
 # PREGUNTAS INICIALES:
