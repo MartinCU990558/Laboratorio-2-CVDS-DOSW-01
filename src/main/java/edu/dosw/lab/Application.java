@@ -1,7 +1,7 @@
 package edu.dosw.lab;
 import edu.dosw.lab.creacionales.ChefDeCincoEstrellasReto2.ChefDeCincoEstrellas;
 import edu.dosw.lab.solid.Reto1TiendaDonPepe.*;
-import edu.dosw.lab.comportamiento.CafePersonalizado.CasaDeCambio;
+import edu.dosw.lab.comportamiento.CasaDeCambioReto4.CasaDeCambio;
 
 public class Application {
     public static void main(String[] args) {

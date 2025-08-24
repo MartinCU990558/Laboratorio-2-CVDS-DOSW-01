@@ -1,4 +1,4 @@
-package edu.dosw.lab.comportamiento.CafePersonalizado;
+package edu.dosw.lab.comportamiento.CasaDeCambioReto4;
 
 import java.util.*;
 
@@ -7,6 +7,8 @@ public class CasaDeCambio {
     public void ejecutar() {
         Scanner sc = new Scanner(System.in);
         TransaccionService service = new TransaccionService();
+
+        System.out.println("------------BIENVENIDO A LA CASA DE CAMBIO-----------");
 
         System.out.print("Ingrese número de transacciones: ");
         int n = sc.nextInt();

@@ -1,4 +1,4 @@
-package edu.dosw.lab.comportamiento.CafePersonalizado;
+package edu.dosw.lab.comportamiento.CasaDeCambioReto4;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -7,7 +7,6 @@ public class TransaccionService {
     private final List<Transaccion> transacciones = new ArrayList<>();
     private final Map<String, Double> totales = new HashMap<>();
 
-    // Tasas base (1 USD = X en otra moneda)
     private static final Map<String, Double> tasasUSD = Map.of(
             "USD", 1.0,
             "EUR", 0.91,
