@@ -25,9 +25,7 @@ public class Application {
         hamburguesas.ejecutar();
 
 
-
     }
-
 
 
 }
