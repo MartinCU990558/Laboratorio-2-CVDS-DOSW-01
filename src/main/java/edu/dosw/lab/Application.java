@@ -1,6 +1,7 @@
 package edu.dosw.lab;
 import edu.dosw.lab.creacionales.ChefDeCincoEstrellasReto2.ChefDeCincoEstrellas;
 import edu.dosw.lab.solid.Reto1TiendaDonPepe.*;
+import edu.dosw.lab.comportamiento.CafePersonalizado.CasaDeCambio;
 
 public class Application {
     public static void main(String[] args) {
@@ -23,6 +24,10 @@ public class Application {
         // Ejecución del reto 2
         ChefDeCincoEstrellas hamburguesas = new ChefDeCincoEstrellas();
         hamburguesas.ejecutar();
+
+        // EJECUCION RETO3
+        CasaDeCambio cambio = new CasaDeCambio();
+        cambio.ejecutar();
 
 
     }
