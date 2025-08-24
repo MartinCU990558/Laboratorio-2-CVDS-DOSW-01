@@ -1,4 +1,5 @@
-package edu.dosw.lab;
+package edu.dosw.lab.solid.Reto1;
+
 public class OldClient extends Client{
     public OldClient(){
         super("Frecuente");
