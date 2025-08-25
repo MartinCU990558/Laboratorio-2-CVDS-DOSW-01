@@ -1,16 +1,16 @@
-package edu.dosw.lab;
+package edu.dosw.lab.creacionales.Reto2;
 
 public class Ingredients {
-  private final int price;
+  private final Double price;
   private final String name;
-  public Ingredients(String name, int price){
+  public Ingredients(String name, Double price){
     this.price = price;
     this.name = name;
   }
   public String getName(){
     return name;
   }
-  public int getPrice(){
+  public Double getPrice(){
     return price;
   }
 

@@ -1,4 +1,4 @@
-package edu.dosw.lab;
+package edu.dosw.lab.solid.Reto1;
 
 public abstract class Client {
     private String type;

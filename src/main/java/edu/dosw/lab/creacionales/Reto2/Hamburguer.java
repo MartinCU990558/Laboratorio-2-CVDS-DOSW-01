@@ -1,4 +1,4 @@
-package edu.dosw.lab;
+package edu.dosw.lab.creacionales.Reto2;
 import java.util.*;
 
 public class Hamburguer {
@@ -7,8 +7,11 @@ public class Hamburguer {
         this.ingredients = ingredients;
     } 
 
-    public int totalPrice(){
+    public double totalPrice(){
         return ingredients.stream().
-                mapToInt(ingredients -> ingredients.getPrice()).sum();  
+                mapToDouble(ingredients -> ingredients.getPrice()).sum();  
+    }
+    public List<Ingredients> getIngredients() {
+        return ingredients;
     }
 }
