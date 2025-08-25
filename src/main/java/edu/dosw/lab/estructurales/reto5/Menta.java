@@ -1,13 +1,19 @@
 package edu.dosw.lab.estructurales.reto5;
 
-import edu.dosw.lab.estructurales.reto5.Cafe;
+public class Menta extends ToppingDecorator{
+    private int precio = 1200;
 
-public class Menta implements ToppingDecorator{
-    public int precio=1300;
-    public Menta(Cafe cafe) {
-            cafe.addPrecio(obtenerPrecio());
+    public Menta(Topping topping) {
+            super(topping);
         }
-    public int obtenerPrecio() {
-        return precio;
+
+    @Override
+    public int getPrecio(){
+        return topping.getPrecio() + precio;
+    }
+
+    @Override
+    public String getDescripcion(){
+        return topping.getDescripcion() + " + Menta";
     }
 }

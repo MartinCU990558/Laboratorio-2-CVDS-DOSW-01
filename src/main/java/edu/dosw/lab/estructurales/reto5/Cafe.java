@@ -1,21 +1,12 @@
 package edu.dosw.lab.estructurales.reto5;
 
-public class Cafe {
-    private int precio;
+public class Cafe implements Topping{
 
-    public Cafe() {
-        this.precio = 1000;
+    public String getDescripcion(){
+        return "Cafe";
     }
 
-    public int getPrecio() {
-        return precio;
-    }
-
-    public void setPrecio(int precio) {
-        this.precio = precio;
-    }
-
-    public void addPrecio(int precio) {
-        this.precio += precio;
+    public int getPrecio(){
+        return 1000;
     }
 }

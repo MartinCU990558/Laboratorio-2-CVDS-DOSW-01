@@ -1,9 +1,8 @@
 package edu.dosw.lab.estructurales.reto5;
 
-public class Caramelo extends ToppingDecorator{
-    private int precio=1300;
-
-    public Caramelo(Topping topping) {
+public class Chocolate extends ToppingDecorator {
+    private int precio = 1500;
+    public Chocolate(Topping topping){
         super(topping);
     }
 
@@ -11,9 +10,9 @@ public class Caramelo extends ToppingDecorator{
     public int getPrecio(){
         return topping.getPrecio() + precio;
     }
-
+    
     @Override
     public String getDescripcion(){
-        return topping.getDescripcion() + "+ Caramelo";
+        return topping.getDescripcion() + "+ Chocolate";
     }
 }
