@@ -10,4 +10,31 @@
 
 ---
 ## ✅ Retos Completados
+## Reto 1 ✅
+**Codigo Implementado y Descripcion:**
+Mediante los principios SOLID se implementaron diferentes clases como Cart , Client que sera una clase abstracta donde dos nuevas clases cliente nuevo y cliente viejo extienden de estas para asi aplicar el descuento dependiendo el tipo se cliente que sea, producto , cliente y recibo iguamente se implementaron para aplicar el principio de single responsability para acumular los productos decidimos manejar un HashMap para asi con lambda este fuera mas facil de recorrer y para las operaciones de los costos con ayuda de los streams() se pudo realizas mas facil.
+![alt text](docs/imagenes/Reto1/image.png) 
+---
+![alt text](docs/imagenes/Reto1/image-1.png)
+---
+![alt text](docs/imagenes/Reto1/image-4.png)
+---
+![alt text](docs/imagenes/Reto1/image-3.png)
+---
+![alt text](docs/imagenes/Reto1/image-5.png)
+---
+![alt text](docs/imagenes/Reto1/image-6.png)
+---
+![alt text](docs/imagenes/Reto1/image-7.png)
+
+**Pruebas De Compilación y Ejecucion:**
+
+![alt text](docs/imagenes/Reto1/image-8.png)
+---
+![alt text](docs/imagenes/Reto1/image-9.png)
+
+
+
+
+
 ---
