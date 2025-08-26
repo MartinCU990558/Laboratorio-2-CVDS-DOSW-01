@@ -7,7 +7,7 @@ import java.util.Scanner;
 import java.util.stream.IntStream;
 
 public class Reto2 {
-    public void run(){
+    public static void run(){
         Constructor constructor = new Constructor();
         constructor.presentacion();
     }
