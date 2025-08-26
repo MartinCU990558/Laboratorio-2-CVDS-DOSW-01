@@ -8,8 +8,8 @@ public class Application{
     private static reto5 reto5 = new reto5();
     public static void main (String [] args){
         System.out.println("Proyecto Maven configurado y corriendo correctamente");
-        //reto5.ejecutar();
-        reto2.ejecutar();
+        reto5.ejecutar();
+        //reto2.ejecutar();
     }
 }
 
