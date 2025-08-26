@@ -1,9 +1,6 @@
 package edu.dosw.lab.comportamiento;
-
-
-
 public class Intermediatetechnician extends Technical {
-    public intermediatetechnician(String name) {
+    public Intermediatetechnician(String name) {
         super(name);
     }
     @Override
@@ -14,7 +11,7 @@ public class Intermediatetechnician extends Technical {
         } else if (nextTechnical != null) {
             return nextTechnical.isResolve(ticket);
         }
-        return false;
-    }
+        return false;
+    }
 }
 
