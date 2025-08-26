@@ -1,0 +1,101 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"30cab95b-1f6c-4ce5-900f-552c1d8f981a\" name=\"Changes\" comment=\"Actualizacion readme\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/Cocina.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/HamburguesaBuilder.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/Reto2Chef.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/Application.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/Application.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/Hamburguesa.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/Hamburguesa.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/Pedido.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/Pedido.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"feature/SuarezSantiago_SelmaRaquel_LopezNestor_2025-2\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GithubDefaultAccount\">\r\n    <option name=\"defaultAccountId\" value=\"af8a015c-9928-475e-887a-f42ef6e33d2c\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"generalSettings\">\r\n      <MavenGeneralSettings>\r\n        <option name=\"mavenHomeTypeForPersistence\" value=\"WRAPPER\" />\r\n      </MavenGeneralSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;customColor&quot;: &quot;&quot;,\r\n  &quot;associatedIndex&quot;: 8\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"31d3fEj3n64KBbcUdHda4CwvPkw\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Application.Application.executor\": \"Run\",\r\n    \"Application.Pedido.executor\": \"Run\",\r\n    \"Application.Reto2Chef.executor\": \"Run\",\r\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"git-widget-placeholder\": \"feature/SuarezSantiago__SelmaRaquel__LopezNestor__reto2\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RunManager\" selected=\"Application.Application\">\r\n    <configuration name=\"Application\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"edu.dosw.lab.Application\" />\r\n      <module name=\"Laboratorio-2-CVDS-DOSW-01v\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"edu.dosw.lab.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Pedido\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"edu.dosw.lab.creacionales.Reto2.Pedido\" />\r\n      <module name=\"Laboratorio-2-CVDS-DOSW-01v\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"edu.dosw.lab.creacionales.Reto2.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Reto2Chef\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"edu.dosw.lab.creacionales.Reto2.Reto2Chef\" />\r\n      <module name=\"Laboratorio-2-CVDS-DOSW-01v\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"edu.dosw.lab.creacionales.Reto2.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"JetRunConfigurationType\">\r\n      <module name=\"Laboratorio-2-CVDS-DOSW-01\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"KotlinStandaloneScriptRunConfigurationType\">\r\n      <module name=\"Laboratorio-2-CVDS-DOSW-01\" />\r\n      <option name=\"filePath\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.Application\" />\r\n        <item itemvalue=\"Application.Reto2Chef\" />\r\n        <item itemvalue=\"Application.Pedido\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435\" />\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"30cab95b-1f6c-4ce5-900f-552c1d8f981a\" name=\"Changes\" comment=\"\" />\r\n      <created>1755840224739</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1755840224739</updated>\r\n      <workItem from=\"1755840226702\" duration=\"328000\" />\r\n      <workItem from=\"1755841112534\" duration=\"622000\" />\r\n      <workItem from=\"1755886326778\" duration=\"3812000\" />\r\n      <workItem from=\"1756145671620\" duration=\"7139000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Estructura de carpetas\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1755840395953</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1755840395953</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Actualizacion readme\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1755841498172</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1755841498172</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Actualizacion readme\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1755841564430</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1755841564430</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"4\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Estructura de carpetas\" />\r\n    <MESSAGE value=\"Actualizacion readme\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Actualizacion readme\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 54b88fbb47d84cb96fc070b1198f33eac875407c)
++++ b/.idea/workspace.xml	(date 1756223283278)
+@@ -4,14 +4,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="30cab95b-1f6c-4ce5-900f-552c1d8f981a" name="Changes" comment="Actualizacion readme">
+-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/Cocina.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/HamburguesaBuilder.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/Reto2Chef.java" afterDir="false" />
++    <list default="true" id="30cab95b-1f6c-4ce5-900f-552c1d8f981a" name="Changes" comment="Actualizacion Reto 2">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/Application.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/Hamburguesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/Hamburguesa.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/Pedido.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -55,23 +49,23 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "Application.Application.executor": "Run",
+-    "Application.Pedido.executor": "Run",
+-    "Application.Reto2Chef.executor": "Run",
+-    "ModuleVcsDetector.initialDetectionPerformed": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.git.unshallow": "true",
+-    "git-widget-placeholder": "feature/SuarezSantiago__SelmaRaquel__LopezNestor__reto2",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
++    &quot;Application.Pedido.executor&quot;: &quot;Run&quot;,
++    &quot;Application.Reto2Chef.executor&quot;: &quot;Run&quot;,
++    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;feature/SuarezSantiago__SelmaRaquel__LopezNestor__reto2&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RunManager" selected="Application.Application">
+     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+       <option name="MAIN_CLASS_NAME" value="edu.dosw.lab.Application" />
+@@ -150,6 +144,7 @@
+       <workItem from="1755841112534" duration="622000" />
+       <workItem from="1755886326778" duration="3812000" />
+       <workItem from="1756145671620" duration="7139000" />
++      <workItem from="1756218601006" duration="2132000" />
+     </task>
+     <task id="LOCAL-00001" summary="Estructura de carpetas">
+       <option name="closed" value="true" />
+@@ -175,7 +170,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1755841564430</updated>
+     </task>
+-    <option name="localTasksCounter" value="4" />
++    <task id="LOCAL-00004" summary="Actualizacion Reto 2">
++      <option name="closed" value="true" />
++      <created>1756218974145</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1756218974145</updated>
++    </task>
++    <option name="localTasksCounter" value="5" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -184,6 +187,7 @@
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Estructura de carpetas" />
+     <MESSAGE value="Actualizacion readme" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Actualizacion readme" />
++    <MESSAGE value="Actualizacion Reto 2" />
++    <option name="LAST_COMMIT_MESSAGE" value="Actualizacion Reto 2" />
+   </component>
+ </project>
+\ No newline at end of file
