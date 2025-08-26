@@ -8,6 +8,7 @@ public class HamburguesaBuilder implements Builder{
     private Carne carne;
     private Pan pan;
     private SalsaEspecial salsaEspecial;
+    private NuevoIngrediente nuevoIngrediente;
     
     @Override
     public void setPan(Pan pan){
@@ -46,8 +47,9 @@ public class HamburguesaBuilder implements Builder{
     }
 
     @Override
-    public void setNuevoIngrediente(){
-        // Implementación para agregar un nuevo ingrediente
+    public void setNuevoIngrediente(NuevoIngrediente nuevoIngrediente){
+        this.nuevoIngrediente = nuevoIngrediente;
+        hamburguesa.agregarIngrediente(nuevoIngrediente);
     }
 
     @Override

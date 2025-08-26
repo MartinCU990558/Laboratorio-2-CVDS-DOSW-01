@@ -45,7 +45,12 @@ public class reto2{
                     builder.setSalsaEspecial(new SalsaEspecial());
                     break;
                 case 7:
-                    builder.setNuevoIngrediente();
+                    System.err.println("Ingrese el nombre del nuevo Ingrediente:");
+                    String nombreTopping = scanner.nextLine();
+                    System.out.println("Ingrese el precio del Ingrediente:");
+                    int precioTopping = scanner.nextInt();
+                    scanner.nextLine();
+                    builder.setNuevoIngrediente(new NuevoIngrediente(nombreTopping, precioTopping));
                     break;
                 default:
                     System.out.println("Opción inválida");

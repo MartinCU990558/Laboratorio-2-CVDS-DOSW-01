@@ -7,6 +7,6 @@ public interface Builder {
     void setSalsaEspecial(SalsaEspecial salsaEspecial);
     void setLechuga(Lechuga lechuga);
     void setTomate(Tomate tomate);
-    void setNuevoIngrediente();
+    void setNuevoIngrediente(NuevoIngrediente nuevoIngrediente);
     Hamburguesa build();
 }
