@@ -91,4 +91,29 @@ Luego, creamos una Factory para los vehiculos, economicos, de lujo y usados que 
 
 ---
 
+### Reto 7 - Patrón **Command**
+
+##### Evidencia #1:
+![alt text](<Captura de pantalla de 2025-08-27 17-31-09.png>)
+![alt text](<Captura de pantalla de 2025-08-27 17-31-40.png>)
+
+
+#### Explicación
+
+- **Patrón de Diseño:**Comportamiento.
+
+- **Patrón Utilizado:** **Command**.
+
+- **Jusificación:** La usamos porque este patron nos permite encapsular las solicitudes como objetos, y era lo que necesitamos aca por las acciones del contro remoto como encender luz,subir volumen, etc.
+
+- **Aplicacion:**
+- Se creo una interfaz comand para que cada accion implemente las acciones necesarias.
+- Creamos cada accion(Encender luz,subir volumen, ...) que implementan la interfaz para realizar sus acciones.
+- Por ultimo, creamos una clase control hacemos el historial y  resumen, de cada una de las acciones que elije el usuario que elije el usuario.
+
+#### Evidencia #2
+![alt text](<Captura de pantalla de 2025-08-27 17-32-21.png>)
+![alt text](<Captura de pantalla de 2025-08-27 17-33-30.png>)
+![alt text](<Captura de pantalla de 2025-08-27 17-34-16.png>)
+
  
