@@ -1,9 +1,9 @@
-package Application;
+package edu.dosw.lab.comportamiento.CafePersonalizado;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class InMemoryExchangeRateProvider implements ExchangeRateProvider {
+/**public class InMemoryExchangeRateProvider implements ExchangeRateProvider {
     private final Map<String, Double> exchangeRates = new HashMap<>();
 
     public InMemoryExchangeRateProvider() {
@@ -29,3 +29,4 @@ public class InMemoryExchangeRateProvider implements ExchangeRateProvider {
         return exchangeRates.getOrDefault(fromCurrency + "->" + toCurrency, 1.0);
     }
 }
+**/

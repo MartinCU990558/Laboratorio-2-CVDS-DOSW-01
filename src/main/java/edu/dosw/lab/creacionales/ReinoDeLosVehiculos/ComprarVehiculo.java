@@ -3,8 +3,7 @@ import java.util.List;
 
 public class ComprarVehiculo {
 
-    public static void imprimirResumen(List<Vehiculo> vehiculos) {
-
+    public void imprimirResumen(List<Vehiculo> vehiculos) {
         System.out.println("---- RESUMEN DE COMPRA ---");
 
         for (int i = 0; i < vehiculos.size(); i++) {
