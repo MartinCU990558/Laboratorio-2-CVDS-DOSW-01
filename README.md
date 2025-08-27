@@ -19,6 +19,19 @@
 Se implementó un sistema sencillo de compras para la tienda de Don Pepe aplicando principios de SOLID. Creamos clases para representar productos (Producto), ítems en el carrito (ItemCarrito) y el carrito de compras (CarritodeCompras). Se definieron tipos de clientes (ClienteNuevo, ClienteFrecuente) que aplican distintos tipos de descuentos mediante el tipo de cliente (DescuentoNu, DescuentoFe). Además, se creó la interfaz Irecibo y su implementación Imrecibo para generar un recibo con detalle de productos, subtotal, descuento aplicado y total a pagar.
 
 ---
+### Reto 3: El Reino de los Vehículos
+**Evidencia:**
+![Captura](docs/imagenes/Reto3 Entrada.png)
+![Captura](docs/imagenes/Reto3 Salida.png)
+<h4>Descripción breve de lo que hicieron:  
+</h4>
+
+Nuestro grupo desarrolló un sistema en Java aplicando el patrón Factory Method para la creación de vehículos de tierra, acuáticos y aéreos.
+
+Se implementó una clase abstracta Vehiculo y subclases como Auto, Moto, Bicicleta, Lancha, Velero, Avion, Avioneta, entre otras. La clase VehiculoFactory centraliza la creación de los objetos según las elecciones del usuario.
+
+El sistema cuenta con un menú interactivo en consola donde el usuario selecciona el tipo, categoría y modelo de vehículo, y finalmente se genera un resumen de compra en pesos colombianos, mostrando precios, características y el total a pagar.
+
 ### Reto 4: La Estafa de la Casa de cambio
 **Evidencia:**
 ![Captura](docs/imagenes/reto4R.png)
