@@ -101,6 +101,7 @@ public class reto3 {
         double total = vehiculosComprados.stream().mapToDouble(Vehiculo::getPrecio).sum();
 
         System.out.println("Total: $" + total);
+        System.out.println(); 
 
     }
 }
