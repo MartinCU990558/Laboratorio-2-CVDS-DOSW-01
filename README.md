@@ -18,6 +18,22 @@
 
 ![alt text](image.png)
 
+### Explicación
+
+- Para la solución de este ejercicio se aplicaron los principios SOLID, especificamente la S, ya que una clase debería tener una unica responsabilidad esto se evidencia en la clase carrito de compras que dependiendo el tipo de cliente calcula el descuento, por otra parte la O en caso de que hayan más productos se puede seguir extendiendo con el fin de que sea escalable y por último la L ya que cada subclase puede ser sustituible por su respectiva superclase.
+
+**Evidencia**
+
+![alt text](image-12.png)
+
+![alt text](image-13.png)
+
+![alt text](image-14.png)
+
+![alt text](image-15.png)
+
+![alt text](image-16.png)
+
 ---
 
 ## Reto 2 Culminado:
