@@ -1,5 +1,6 @@
 package edu.dosw.lab.Laboratorio_2_CVDS_DOSW_01;
 
+import edu.dosw.lab.Laboratorio_2_CVDS_DOSW_01.comportamiento.Reto6Support;
 import edu.dosw.lab.Laboratorio_2_CVDS_DOSW_01.solid.Reto1TiendaDonPepe;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,6 +10,7 @@ public class Application {
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 		Reto1TiendaDonPepe.ejecutar();
+		Reto6Support.ejecutar();
 	}
 
 }
