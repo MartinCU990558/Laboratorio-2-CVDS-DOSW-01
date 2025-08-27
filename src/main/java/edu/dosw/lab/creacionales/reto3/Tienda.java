@@ -1,6 +1,7 @@
-package edu.dosw.lab.creacionales;
+package edu.dosw.lab.creacionales.reto3;
 
-import edu.dosw.lab.creacionales.Fabricas.*;
+import edu.dosw.lab.creacionales.reto3.Fabricas.*;
+
 
 import java.util.ArrayList;
 import java.util.Scanner;

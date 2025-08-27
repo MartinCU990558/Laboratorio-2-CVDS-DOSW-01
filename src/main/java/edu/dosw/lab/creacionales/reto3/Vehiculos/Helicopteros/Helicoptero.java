@@ -1,10 +1,10 @@
-package edu.dosw.lab.creacionales.reto3.Vehiculos.Aviones;
+package edu.dosw.lab.creacionales.reto3.Vehiculos.Helicopteros;
 
 import edu.dosw.lab.creacionales.reto3.MedioTransporte;
 import edu.dosw.lab.creacionales.reto3.Vehiculo;
 
-public abstract class Avion extends Vehiculo {
-    public Avion() {
+public class Helicoptero extends Vehiculo {
+    public Helicoptero() {
         super();
         this.precio = 150000.0;
         this.velocidadMax = "1000Km";

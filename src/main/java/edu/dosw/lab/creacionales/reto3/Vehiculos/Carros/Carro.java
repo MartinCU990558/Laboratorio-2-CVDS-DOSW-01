@@ -1,8 +1,6 @@
 package edu.dosw.lab.creacionales.reto3.Vehiculos.Carros;
-import edu.dosw.lab.creacionales.MedioTransporte;
-import edu.dosw.lab.creacionales.Vehiculo;
-
-import static edu.dosw.lab.creacionales.MedioTransporte.TIERRA;
+import edu.dosw.lab.creacionales.reto3.MedioTransporte;
+import edu.dosw.lab.creacionales.reto3.Vehiculo;
 
 public abstract class Carro extends Vehiculo {
     public Carro() {

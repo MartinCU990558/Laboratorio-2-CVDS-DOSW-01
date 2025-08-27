@@ -1,12 +1,9 @@
-package edu.dosw.lab.creacionales.Fabricas;
+package edu.dosw.lab.creacionales.reto3.Fabricas;
 
-import edu.dosw.lab.creacionales.Vehiculo;
+import edu.dosw.lab.creacionales.reto3.Vehiculo;
 import edu.dosw.lab.creacionales.reto3.Vehiculos.Bicicletas.BicicletaLujo;
-import edu.dosw.lab.creacionales.reto3.Vehiculos.Bicicletas.BicicletaUsada;
 import edu.dosw.lab.creacionales.reto3.Vehiculos.Carros.CarroLujo;
-import edu.dosw.lab.creacionales.reto3.Vehiculos.Carros.CarroUsado;
 import edu.dosw.lab.creacionales.reto3.Vehiculos.Motos.MotoLujo;
-import edu.dosw.lab.creacionales.reto3.Vehiculos.Motos.MotoUsada;
 
 public class LujoFactory implements VehiculoFactory{
     private double descuento = 0.5;

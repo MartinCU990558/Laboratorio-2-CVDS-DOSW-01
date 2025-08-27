@@ -1,4 +1,4 @@
-package edu.dosw.lab.creacionales;
+package edu.dosw.lab.creacionales.reto3;
 
 public abstract class Vehiculo {
      protected String velocidadMax;

@@ -1,7 +1,5 @@
 package edu.dosw.lab.creacionales.reto3.Vehiculos.Motos;
 
-import edu.dosw.lab.creacionales.Vehiculo;
-
 public class MotoLujo extends Moto {
     public MotoLujo(Double Descuento, String Descripcion, String VelocidadMax) {
         super();

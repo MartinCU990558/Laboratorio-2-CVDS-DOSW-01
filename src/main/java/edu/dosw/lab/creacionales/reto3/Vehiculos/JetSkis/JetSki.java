@@ -1,18 +1,18 @@
-package edu.dosw.lab.creacionales.reto3.Vehiculos.Motos;
+package edu.dosw.lab.creacionales.reto3.Vehiculos.JetSkis;
 
 import edu.dosw.lab.creacionales.reto3.MedioTransporte;
 import edu.dosw.lab.creacionales.reto3.Vehiculo;
 
-public abstract class Moto extends Vehiculo {
-    public Moto() {
+public class JetSki extends Vehiculo {
+    public JetSki() {
         super();
-        this.precio = 1500.0;
-        this.velocidadMax = "200Km";
+        this.precio = 15000.0;
+        this.velocidadMax = "1000Km";
         this.Descripcion = "";
     }
 
     @Override
     public MedioTransporte getMedioTransporte() {
-        return MedioTransporte.TIERRA;
+        return MedioTransporte.AGUA;
     }
 }

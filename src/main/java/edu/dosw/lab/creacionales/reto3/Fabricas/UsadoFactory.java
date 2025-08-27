@@ -1,6 +1,6 @@
-package edu.dosw.lab.creacionales.Fabricas;
+package edu.dosw.lab.creacionales.reto3.Fabricas;
 
-import edu.dosw.lab.creacionales.*;
+import edu.dosw.lab.creacionales.reto3.Vehiculo;
 import edu.dosw.lab.creacionales.reto3.Vehiculos.Bicicletas.BicicletaUsada;
 import edu.dosw.lab.creacionales.reto3.Vehiculos.Carros.CarroUsado;
 import edu.dosw.lab.creacionales.reto3.Vehiculos.Motos.MotoUsada;

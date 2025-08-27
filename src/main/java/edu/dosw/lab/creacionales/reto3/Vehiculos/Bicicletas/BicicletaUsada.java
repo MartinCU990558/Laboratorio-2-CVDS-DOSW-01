@@ -1,7 +1,5 @@
 package edu.dosw.lab.creacionales.reto3.Vehiculos.Bicicletas;
 
-import edu.dosw.lab.creacionales.Vehiculo;
-
 public class BicicletaUsada extends Bicicleta {
 
     public BicicletaUsada(Double Descuento, String Descripcion, String VelocidadMax) {
