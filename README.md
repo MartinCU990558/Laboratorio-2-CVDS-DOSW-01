@@ -20,8 +20,8 @@ Se implementó un sistema sencillo de compras para la tienda de Don Pepe aplican
 
 ### Reto 3: El Reino de los Vehículos
 **Evidencia:**
-![Captura](docs/imagenes/Reto3 Entrada.png)
-![Captura](docs/imagenes/Reto3 Salida.png)
+![Captura](docs/imagenes/Reto3%20Entrada.png)
+![Captura](docs/imagenes/Reto3%20Salida.png)
 <h4>Descripción breve de lo que hicieron:  
 </h4>
 
