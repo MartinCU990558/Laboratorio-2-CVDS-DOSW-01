@@ -46,6 +46,30 @@
 
 ---
 
+###  Reto 3 - Patrón Abstract Factory
+
+#### Evidencia de la ejecución:
+
+![alt text](image-8.png)
+
+#### Explicación
+**Patrón de Diseño:** Creacional.
+**Patrón Utilizado:** Abstract Factory.
+**Justificación:** Este patron nos permite crear familias de objetos relacionados, en este ejercicio, debemos crear diferentes variantes de vehiculos, por lo que este patron es ideal. 
+**Aplicación:** Creamos la clase abstracta VehiculoAbstractFactory, con el metodo crearVehiculo
+Luego, creamos una Factory para los vehiculos, economicos, de lujo y usados que extiende a VehiculoAbstractFactory y contiene los llamados a los constructores. De esta forma, ya sabiendo el vehiculo que quiera el usuario, solo debemos crear la factory apropiada y pasarle los parametros requeridos al constructor de Vehiculo. 
+
+#### Evidencia #2
+![alt text](image-9.png)
+
+![alt text](image-10.png)
+
+![alt text](image-11.png)
+
+![alt text](image-12.png)
+
+---
+
 ###  Reto 5 – Patrón **Decorator**
 
 #### Evidencia #1
