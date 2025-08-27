@@ -17,6 +17,9 @@ public class Laboratorio2CvdsDosw01Application {
 		Reto1.ejecutar();
 		System.out.println("\n===== INICIO RETO 4 =====\n");
 		Reto4.ejecutar();
+
+		System.out.println("\n===== INICIO RETO 7 =====\n");
+		edu.dosw.lab.Comportamiento.Reto7.Reto7.ejecutar();
 	}
 
 }
