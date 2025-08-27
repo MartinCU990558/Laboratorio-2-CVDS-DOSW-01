@@ -34,11 +34,9 @@
 
 - Justificación: El patrón builder permite construir objetos complejos paso a paso, evitando tener constructores telescopicos, es decir, que tengan muchos parámetros.
 
-- Como lo aplico: El patrón builder esta implementando mediante una interfaz (builder) todos los métodos para construir un objeto, una clase director que es quien orquesta que tipo de objetos crear y una clase respectiva que implementa la interfaz para obtener el objeto esperado en este caso HamburguesaNuevoIngrediente.
+- Como lo aplico: El patrón builder esta implementando mediante una interfaz (builder) todos los métodos para construir un objeto, una clase hamburguesaBuilder que implementa la interfaz para obtener el objeto esperado en este caso HamburguesaNuevoIngrediente.
 
 **Evidencia**
-
-![alt text](image-2.png)
 
 ![alt text](image-5.png)
 
