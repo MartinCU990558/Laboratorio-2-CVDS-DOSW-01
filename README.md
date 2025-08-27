@@ -30,9 +30,11 @@ Evidencia:
 ![Captura](imagenes/reto6_3.png)
 
 📝 Entrada:
+
 ![Captura](imagenes/reto6_entrada.png)
 
 📢 Salida:
+
 ![Captura](imagenes/reto6_salida.png)
 
 Descripción:
