@@ -28,15 +28,30 @@
 ---
 ![alt text](docs/imagenes/Reto1/image-7.png)
 
-### Pruebas De Compilación y Ejecucion:
+### 💻Pruebas De Compilación y Ejecucion:
 
 ![alt text](docs/imagenes/Reto1/image-8.png)
 ---
 ![alt text](docs/imagenes/Reto1/image-9.png)
 ---
 ![alt text](docs/imagenes/Reto1/image-10.png)
-
-
-
-
 ---
+## Reto 2 ✅
+### Descripción :
+- Se realizo mediante el Patron creacional de Builder que se va a encargar de crear la hamburguesa añadiendo los diferentes ingredientes seleccionados en el menu dado o como lo dice la definicion exacta de este nos permitio crear la hamburgesa paso a paso empleando en mismo codigo 
+
+![alt text](docs/imagenes/Reto2/image.png)
+---
+![alt text](docs/imagenes/Reto2/image-1.png)
+---
+![alt text](docs/imagenes/Reto2/image-2.png)
+---
+![alt text](docs/imagenes/Reto2/image-3.png)
+---
+![alt text](docs/imagenes/Reto2/image-4.png)
+---
+![alt text](docs/imagenes/Reto2/image-5.png)
+### 💻Pruebas De Compilación y Ejecucion:
+![alt text](docs/imagenes/Reto2/image.png)
+---
+![alt text](docs/imagenes/Reto2/image.png)
