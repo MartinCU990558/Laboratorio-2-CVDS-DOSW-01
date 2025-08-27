@@ -108,8 +108,8 @@ Luego, creamos una Factory para los vehiculos, economicos, de lujo y usados que 
 
 - **Aplicacion:**
 - Se creo una interfaz comand para que cada accion implemente las acciones necesarias.
-- Creamos cada accion(Encender luz,subir volumen, ...) que implementan la interfaz para realizar sus acciones.
-- Por ultimo, creamos una clase control hacemos el historial y  resumen, de cada una de las acciones que elije el usuario que elije el usuario.
+- Creamos cada accion(Encender luz,subir volumen, ...) para que implementan la interfaz para realizar sus acciones.
+- Por ultimo, creamos una clase control donde hacemos el historial y  resumen, de cada una de las acciones que elije el usuario.
 
 #### Evidencia #2
 ![alt text](<Captura de pantalla de 2025-08-27 17-32-21.png>)
