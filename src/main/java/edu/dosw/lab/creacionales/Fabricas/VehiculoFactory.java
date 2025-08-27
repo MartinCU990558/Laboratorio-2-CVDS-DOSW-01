@@ -4,4 +4,6 @@ import edu.dosw.lab.creacionales.*;
 
 public interface VehiculoFactory {
     Vehiculo crearCarro();
+    Vehiculo crearMoto();
+    Vehiculo crearBicicleta();
 }
