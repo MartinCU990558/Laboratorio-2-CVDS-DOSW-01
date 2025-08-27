@@ -1,76 +1,79 @@
 package edu.dosw.lab.estructurales.reto5;
-import edu.dosw.lab.estructurales.reto5.Cafe;
-import edu.dosw.lab.estructurales.reto5.Leche;
-import edu.dosw.lab.estructurales.reto5.Caramelo;
-import edu.dosw.lab.estructurales.reto5.Menta;
-import edu.dosw.lab.estructurales.reto5.CremaBatida;
-import java.util.*;
 
-public class reto5{
-    private factura factura;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
 
+public class reto5 {
     public void ejecutar() {
-        
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingrese La Cantidad de Cafes A Personalizar");
 
         int cantidadCafes = scanner.nextInt();
+        scanner.nextLine();
         int contador = 0;
+        int totalGeneral = 0;
+        ArrayList<Topping> cafes = new ArrayList<>();
 
-        while (contador < cantidadCafes){
+        while (contador < cantidadCafes) {
+            Topping cafe = new Cafe();
 
-            boolean masToppings = true;
-            Cafe cafe = new Cafe();
-            if (contador==0){
-                factura=new factura(cafe);
-            }
-            
+            System.out.println("---- Cafe #" + (contador + 1) + " ---");
+            System.out.println("Ingrese los números de toppings separados por comas:");
+            System.out.println("1. Leche");
+            System.out.println("2. Caramelo");
+            System.out.println("3. Chocolate");
+            System.out.println("4. Menta");
+            System.out.println("5. Crema Batida");
+            System.err.println("6. Agregar Nuevo Topping");
 
-            System.out.println("Ingrese un numero para añadir su topping:" );
-            System.out.println("1.Leche");
-            System.out.println("2.Caramelo");
-            System.out.println("3.Chocolate");
-            System.out.println("4.Menta");
-            System.out.println("5.CremaBatida");
-            System.out.println("6.Total De Su Compra");
+            String entrada = scanner.nextLine();
 
-            while(masToppings){
-                int opcion = scanner.nextInt();
+            List<Integer> opciones = Arrays.stream(entrada.split(","))
+                                           .map(String::trim)
+                                           .map(Integer::parseInt)
+                                           .toList();
+
+            for (Integer opcion : opciones) {
                 switch (opcion) {
                     case 1:
-                        System.out.println("Leche");
-                        Leche leche = new Leche(cafe);
-
+                        cafe = new Leche(cafe);
                         break;
-                    
                     case 2:
-                        System.out.println("Caramelo");
-                        Caramelo caramelo = new Caramelo(cafe);
+                        cafe = new Caramelo(cafe);
                         break;
-
                     case 3:
-                        Menta menta = new Menta(cafe);
+                        cafe = new Chocolate(cafe);
                         break;
-                    
                     case 4:
-                        CremaBatida crema = new CremaBatida(cafe);
+                        cafe = new Menta(cafe);
                         break;
-                    
                     case 5:
-                        masToppings = false;
-                        factura.addCafe(cafe);
-                        
+                        cafe = new CremaBatida(cafe);
+                        break;
+                    case 6:
+                        System.err.println("Ingrese el nombre del Topping:");
+                        String nombreTopping = scanner.nextLine();
+                        System.out.println("Ingrese el precio del Topping:");
+                        int precioTopping = scanner.nextInt();
+                        scanner.nextLine();
+                        cafe = new NuevoTopping(cafe, nombreTopping, precioTopping);
+                        break;
+                    default:
+                        System.out.println("Opción inválida");
                 }
-                
-
             }
-        contador ++;
+
+            cafes.add(cafe);
+
+            System.out.println("Precio final del café #" + (contador + 1) + ": " + cafe.getPrecio());
+            System.out.println("Ingredientes: " + cafe.getDescripcion());
+            contador++;
         }
-        System.out.print("Total Actual A Pagar:" + " " + factura.getTotal());
+        totalGeneral = cafes.stream().mapToInt(Topping::getPrecio).sum();
+        System.out.println("El total de su compra es: " + totalGeneral);
+
         scanner.close();
     }
-
 }
-
-
-

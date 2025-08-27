@@ -1,13 +1,20 @@
 package edu.dosw.lab.estructurales.reto5;
 
-import edu.dosw.lab.estructurales.reto5.Cafe;
+public class CremaBatida extends ToppingDecorator{
+    private int precio=2000;
 
-public class CremaBatida implements ToppingDecorator{
-    public int precio=2000;
-    public CremaBatida(Cafe cafe) {
-        cafe.addPrecio(obtenerPrecio());
+    public CremaBatida(Topping topping) {
+        super(topping);
     }
-    public int obtenerPrecio() {
-        return precio;
+
+    @Override
+    public int getPrecio(){
+        return topping.getPrecio() + precio;
+    }
+
+    @Override
+    public String getDescripcion(){
+        return topping.getDescripcion() + "+ Crema Batida";
+
     }
 }
