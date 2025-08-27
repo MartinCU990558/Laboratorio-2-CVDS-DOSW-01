@@ -55,3 +55,22 @@
 ![alt text](docs/imagenes/Reto2/image.png)
 ---
 ![alt text](docs/imagenes/Reto2/image.png)
+---
+## Reto 5 ✅
+### Descripción :
+- Se realizo mediante el patron de decorator que lo que nos permitia que teniendo nuestro objeto base que era el cafe mediante este se le podian agregar los toppings que vendrian siendo como las "funcionalidades" nuevas que este iba a tener poniendolos dentro del cafe(Cabe resaltar que tomamos como precio base del cafe 3.000 Pesos Colombianos).
+
+![alt text](docs/imagenes/Reto5/image.png)
+---
+![alt text](docs/imagenes/Reto5/image-1.png)
+---
+![alt text](docs/imagenes/Reto5/image-2.png)
+---
+![alt text](docs/imagenes/Reto5/image-3.png)
+---
+![alt text](docs/imagenes/Reto5/image-4.png)
+### 💻Pruebas De Compilación y Ejecucion:
+![alt text](docs/imagenes/Reto5/image-5.png)
+---
+![alt text](docs/imagenes/Reto5/image-6.png)
+---
