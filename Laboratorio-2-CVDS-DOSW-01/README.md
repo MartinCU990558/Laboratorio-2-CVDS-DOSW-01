@@ -19,7 +19,7 @@
 ###Reto 2:
 - **Tipo de patron:** Creacional
 - **Patron:** Builder
-- **Imagen:** ![Caso de prueba](/docs/imagenes/image.png)
+- **Imagen:** ![Caso de prueba](/docs/imagenes/reto2.png)
 
 ###Reto 3:
 - **Tipo de patron:** 
