@@ -11,3 +11,42 @@
 
 ##Retos Completados
 
+###Reto 1:
+- **Tipo de patron:** 
+- **Patron:** 
+- **Imagen:** ![Caso de prueba]()
+
+###Reto 2:
+- **Tipo de patron:** Creacional
+- **Patron:** Builder
+- **Imagen:** ![Caso de prueba](/docs/imagenes/image.png)
+
+###Reto 3:
+- **Tipo de patron:** 
+- **Patron:** 
+- **Imagen:** ![Caso de prueba]()
+
+###Reto 4:
+- **Tipo de patron:** 
+- **Patron:** 
+- **Imagen:** ![Caso de prueba]()
+
+###Reto 5:
+- **Tipo de patron:** 
+- **Patron:** 
+- **Imagen:** ![Caso de prueba]()
+
+###Reto 6:
+- **Tipo de patron:** 
+- **Patron:** 
+- **Imagen:** ![Caso de prueba]()
+
+###Reto 7:
+- **Tipo de patron:** 
+- **Patron:** 
+- **Imagen:** ![Caso de prueba]()
+
+###Reto 8:
+- **Tipo de patron:** 
+- **Patron:** 
+- **Imagen:** ![Caso de prueba]()
