@@ -2,6 +2,7 @@ package edu.dosw.lab;
 import edu.dosw.lab.creacionales.ChefDeCincoEstrellasReto2.ChefDeCincoEstrellas;
 import edu.dosw.lab.creacionales.ReinoDeLosVehiculos.ReinoDeLosVehiculos;
 import edu.dosw.lab.solid.Reto1TiendaDonPepe.*;
+import edu.dosw.lab.comportamiento.CasaDeCambioReto4.CasaDeCambio;
 
 public class Application {
     public static void main(String[] args) {
@@ -28,6 +29,13 @@ public class Application {
         // Ejecución del reto 3 Reino de los Vehículos
         ReinoDeLosVehiculos reinoVehiculos = new ReinoDeLosVehiculos();
         reinoVehiculos.ejecutar();
+
+        /**
+         * // EJECUCION RETO4 casa de cambio
+        CasaDeCambio cambio = new CasaDeCambio();
+        cambio.ejecutar();**/
+
+
 
     }
 
