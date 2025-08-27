@@ -49,3 +49,15 @@ lo que permite invocar el mismo método con diferentes comportamientos.
 Además, se aplica el patrón Strategy, ya que la lógica de la conversión de monedas se encapsula en clases que se implementan en la Conversorcion (como ConversorTasas), 
 y Transacciones delega en ellas el algoritmo de conversión, permitiendo cambiar fácilmente la estrategia sin modificar la clase principal.
 ---
+### Reto 4: El control remoto
+**Evidencia:**
+![RETO7 ENTRADA.png](docs/imagenes/RETO7%20ENTRADA.png)
+![RETO7SALIDA.png](docs/imagenes/RETO7SALIDA.png)
+<h4>Descripción breve de lo que hicieron:  
+</h4>
+En este reto implementamos un control remoto mágico que permite ejecutar y deshacer acciones sobre diferentes dispositivos del hogar como luces, puertas, música y volumen. 
+Para la solución utilizamos el patrón de diseño Command, ya que nos permitió encapsular cada acción en una clase independiente y mantener un historial de lo que se ejecutó y quién lo hizo.
+
+Durante el desarrollo, cada integrante del grupo aportó en diferentes partes: 
+algunos trabajaron en la definición de los comandos y receptores, otros en la lógica del historial y el análisis de los usuarios, y finalmente se integró todo en el programa principal.
+Al final, el sistema permite registrar acciones con parámetros, deshacerlas cuando sea necesario y mostrar un resumen completo con los responsables de cada cambio.
