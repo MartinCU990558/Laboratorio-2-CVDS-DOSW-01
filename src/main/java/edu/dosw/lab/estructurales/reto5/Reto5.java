@@ -1,21 +1,20 @@
 package edu.dosw.lab.estructurales.reto5;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Reto5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Número de cafés a personalizar: ");
-        int cantidadCafes = Integer.parseInt(sc.nextLine());
+        int cantidadCafes = leerEntero(sc, "Número de cafés a personalizar: ", 1, 100);
 
-        double totalGeneral = 0;
+        List<Topping> pedidos = new ArrayList<>();
 
         for (int i = 1; i <= cantidadCafes; i++) {
             System.out.println("\n--- Café " + i + " ---");
-
-            // Comenzamos siempre con el café base
-            Topping cafe = new Cafe();
+            Topping cafe = new Cafe(); 
 
             boolean seguir = true;
             while (seguir) {
@@ -28,7 +27,7 @@ public class Reto5 {
                 System.out.println("6. Añadir ingrediente personalizado");
                 System.out.println("0. Terminar selección");
 
-                int opcion = Integer.parseInt(sc.nextLine());
+                int opcion = leerEntero(sc, "Opción: ", 0, 6);
 
                 switch (opcion) {
                     case 1 -> cafe = new Leche(cafe);
@@ -37,25 +36,51 @@ public class Reto5 {
                     case 4 -> cafe = new Menta(cafe);
                     case 5 -> cafe = new Caramelo(cafe);
                     case 6 -> {
-                        System.out.print("Ingrese nombre del nuevo ingrediente: ");
-                        String nombreNuevo = sc.nextLine();
-                        System.out.print("Ingrese precio extra: ");
-                        int precioNuevo = Integer.parseInt(sc.nextLine());
+                        String nombreNuevo = leerTextoNoVacio(sc, "Nombre del nuevo ingrediente: ");
+                        int precioNuevo = leerEntero(sc, "Precio extra (entero): ", 0, 1000000);
                         cafe = new IngredientePersonalizado(cafe, nombreNuevo, precioNuevo);
                     }
                     case 0 -> seguir = false;
-                    default -> System.out.println("Opción no válida");
+                }
+
+                if (seguir) {
+                    System.out.println("Subtotal actual: " + cafe.getPrecio());
                 }
             }
 
             System.out.println("\nPedido Café " + i + ": " + cafe.getDescrip());
             System.out.println("Precio: " + cafe.getPrecio());
-            totalGeneral += cafe.getPrecio();
+            pedidos.add(cafe);
         }
 
+        int totalGeneral = pedidos.stream().mapToInt(Topping::getPrecio).sum();
         System.out.println("\n==== RESUMEN PEDIDO ====");
         System.out.println("Total a pagar: " + totalGeneral);
 
         sc.close();
+    }
+    private static int leerEntero(Scanner sc, String prompt, int min, int max) {
+        while (true) {
+            System.out.print(prompt);
+            String in = sc.nextLine().trim();
+            try {
+                int v = Integer.parseInt(in);
+                if (v < min || v > max) {
+                    System.out.println("Ingrese un número entre " + min + " y " + max + ".");
+                } else {
+                    return v;
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Entrada inválida. Intente de nuevo.");
+            }
+        }
+    }
+    private static String leerTextoNoVacio(Scanner sc, String prompt) {
+        while (true) {
+            System.out.print(prompt);
+            String s = sc.nextLine().trim();
+            if (!s.isEmpty()) return s;
+            System.out.println("No puede estar vacío.");
+        }
     }
 }
