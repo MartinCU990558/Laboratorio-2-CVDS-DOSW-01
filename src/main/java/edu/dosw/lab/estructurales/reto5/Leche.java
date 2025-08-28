@@ -2,17 +2,16 @@ package edu.dosw.lab.estructurales.reto5;
 
 public class Leche extends ListToppings {
     public Leche(Topping topping) {
-        super(Topping);
+        super(topping);
     }
 
     @Override
     public String getDescrip() {
-        return Topping.getDescrip() + ", Leche";
+        return topping.getDescrip() + ", Leche";
     }
 
     @Override
     public int getPrecio() {
-        return Topping.getPrecio() + 1000;
+        return topping.getPrecio() + 1000;
     }
 }
-

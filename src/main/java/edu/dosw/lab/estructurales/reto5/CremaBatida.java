@@ -2,19 +2,16 @@ package edu.dosw.lab.estructurales.reto5;
 
 public class CremaBatida extends ListToppings {
     public CremaBatida(Topping topping) {
-        super(Topping);
+        super(topping);
     }
 
     @Override
     public String getDescrip() {
-        return Topping.getDescrip() + ", Crema batida";
+        return topping.getDescrip() + ", Crema Batida";
     }
 
     @Override
     public int getPrecio() {
-        return Topping.getPrecio() + 2000;
+        return topping.getPrecio() + 2000;
     }
 }
- 
-    
-

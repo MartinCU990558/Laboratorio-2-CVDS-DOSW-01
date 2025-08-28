@@ -7,14 +7,11 @@ public class Chocolate extends ListToppings {
 
     @Override
     public String getDescrip() {
-        return Topping.getDescrip() + ", Chocolate";
+        return topping.getDescrip() + ", Chocolate";
     }
 
     @Override
     public int getPrecio() {
-        return Topping.getPrecio() + 1500;
+        return topping.getPrecio() + 1500;
     }
-}
- {
-    
 }

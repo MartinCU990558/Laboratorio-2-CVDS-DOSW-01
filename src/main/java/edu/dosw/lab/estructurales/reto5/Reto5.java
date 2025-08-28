@@ -14,7 +14,8 @@ public class Reto5 {
         for (int i = 1; i <= cantidadCafes; i++) {
             System.out.println("\n--- Café " + i + " ---");
 
-            Cafe cafe = new Cafe();
+            // Comenzamos siempre con el café base
+            Topping cafe = new Cafe();
 
             boolean seguir = true;
             while (seguir) {
@@ -25,32 +26,33 @@ public class Reto5 {
                 System.out.println("4. Menta (+1300)");
                 System.out.println("5. Caramelo (+1200)");
                 System.out.println("6. Añadir ingrediente personalizado");
-
                 System.out.println("0. Terminar selección");
 
                 int opcion = Integer.parseInt(sc.nextLine());
 
                 switch (opcion) {
-                    case 1 -> Cafe = new Leche(Cafe);
-                    case 2 -> Cafe = new Chocolate(Cafe);
-                    case 3 -> Cafe = new CremaBatida(Cafe);
-                    case 4 -> Cafe = new Menta(Cafe);
-                    case 5 -> Cafe = new Caramelo(Cafe);
+                    case 1 -> cafe = new Leche(cafe);
+                    case 2 -> cafe = new Chocolate(cafe);
+                    case 3 -> cafe = new CremaBatida(cafe);
+                    case 4 -> cafe = new Menta(cafe);
+                    case 5 -> cafe = new Caramelo(cafe);
                     case 6 -> {
                         System.out.print("Ingrese nombre del nuevo ingrediente: ");
                         String nombreNuevo = sc.nextLine();
                         System.out.print("Ingrese precio extra: ");
-                       int precioNuevo = Integer.parseInt(sc.nextLine());
+                        int precioNuevo = Integer.parseInt(sc.nextLine());
                         cafe = new IngredientePersonalizado(cafe, nombreNuevo, precioNuevo);
                     }
                     case 0 -> seguir = false;
                     default -> System.out.println("Opción no válida");
                 }
             }
+
             System.out.println("\nPedido Café " + i + ": " + cafe.getDescrip());
             System.out.println("Precio: " + cafe.getPrecio());
             totalGeneral += cafe.getPrecio();
         }
+
         System.out.println("\n==== RESUMEN PEDIDO ====");
         System.out.println("Total a pagar: " + totalGeneral);
 
