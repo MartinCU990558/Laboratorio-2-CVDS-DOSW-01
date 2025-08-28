@@ -1,4 +1,4 @@
-package edu.dosw.lab.estructurales;
+package edu.dosw.lab.estructurales.reto5;
 
 import java.util.Scanner;
 
@@ -14,16 +14,18 @@ public class Reto5 {
         for (int i = 1; i <= cantidadCafes; i++) {
             System.out.println("\n--- Café " + i + " ---");
 
-            // café base
-            Topping cafe = new CafeSimple();
+            topping cafe = new cafe();
 
             boolean seguir = true;
             while (seguir) {
                 System.out.println("\nSeleccione topping:");
-                System.out.println("1. Leche (+0.5)");
-                System.out.println("2. Chocolate (+0.7)");
-                System.out.println("3. Crema Batida (+0.8)");
-                System.out.println("4. Añadir ingrediente personalizado");
+                System.out.println("1. Leche (+1000)");
+                System.out.println("2. Chocolate (+1500)");
+                System.out.println("3. Crema Batida (+2000)");
+                System.out.println("4. Menta (+1300)");
+                System.out.println("5. Caramelo (+1200)");
+                System.out.println("6. Añadir ingrediente personalizado");
+
                 System.out.println("0. Terminar selección");
 
                 int opcion = Integer.parseInt(sc.nextLine());
@@ -33,11 +35,12 @@ public class Reto5 {
                     case 2 -> cafe = new Chocolate(cafe);
                     case 3 -> cafe = new CremaBatida(cafe);
                     case 4 -> cafe = new Menta(cafe);
-                    case 5 -> {
+                    case 5 -> cafe = new Caramelo(cafe);
+                    case 6 -> {
                         System.out.print("Ingrese nombre del nuevo ingrediente: ");
                         String nombreNuevo = sc.nextLine();
                         System.out.print("Ingrese precio extra: ");
-                        double precioNuevo = Double.parseDouble(sc.nextLine());
+                       int precioNuevo = Integer.parseInt(sc.nextLine());
                         cafe = new IngredientePersonalizado(cafe, nombreNuevo, precioNuevo);
                     }
                     case 0 -> seguir = false;
