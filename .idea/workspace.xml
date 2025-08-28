@@ -5,36 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30cab95b-1f6c-4ce5-900f-552c1d8f981a" name="Changes" comment="Actualizacion Reto 3">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Helicopteros/Helicoptero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Helicopteros/HelicopteroEconomico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Helicopteros/HelicopteroLujo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Helicopteros/HelicopteroUsado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/JetSkis/JetSki.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Lancha/Lancha.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Lancha/LanchaEconomica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Lancha/LanchaLujo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Lancha/LanchaUsada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Velero/Velero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Velero/VeleroEconomico.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Velero/VeleroLujo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Velero/VeleroUsado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Fabricas/EconomicaFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Fabricas/EconomicaFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Fabricas/LujoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Fabricas/LujoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Fabricas/UsadoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Fabricas/UsadoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Fabricas/VehiculoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Fabricas/VehiculoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/MedioTransporte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/MedioTransporte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Tienda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Tienda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Aviones/Avion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Aviones/Avion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Avionetas/Avioneta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Avionetas/Avioneta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Bicicletas/Bicicleta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Bicicletas/Bicicleta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Bicicletas/BicicletaEconimica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Bicicletas/BicicletaEconimica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Bicicletas/BicicletaLujo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Bicicletas/BicicletaLujo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Bicicletas/BicicletaUsada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Bicicletas/BicicletaUsada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Carros/Carro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Carros/Carro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Carros/CarroLujo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Carros/CarroLujo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/Moto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/Moto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoEconimica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoEconimica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Fabricas/EconomicaFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Fabricas/EconomicaFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Fabricas/LujoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Fabricas/LujoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Fabricas/UsadoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Fabricas/UsadoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Fabricas/VehiculoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Fabricas/VehiculoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Tienda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Tienda.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoLujo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoLujo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoUsada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoUsada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/Reto5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/Reto5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/Toppings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/Toppings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/cafe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/cafe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/listToppings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/listToppings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/topping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/topping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/Reto5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/Toppings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/cafe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/listToppings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/topping.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,24 +70,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Application.executor": "Run",
-    "Application.Pedido.executor": "Run",
-    "Application.Reto2Chef.executor": "Run",
-    "Application.Tienda.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/SuarezSantiago__SelmaRaquel__LopezNestor__reto3",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Pedido.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Reto2Chef.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Tienda.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/SuarezSantiago__SelmaRaquel__LopezNestor__reto3&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Tienda">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.dosw.lab.Application" />
@@ -193,6 +183,7 @@
       <workItem from="1756145671620" duration="7139000" />
       <workItem from="1756239214519" duration="3025000" />
       <workItem from="1756318451448" duration="14425000" />
+      <workItem from="1756418024032" duration="2491000" />
     </task>
     <task id="LOCAL-00001" summary="Estructura de carpetas">
       <option name="closed" value="true" />
@@ -234,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756334300456</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Actualizacion Reto 5">
+      <option name="closed" value="true" />
+      <created>1756353326224</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1756353326224</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +244,7 @@
     <MESSAGE value="Actualizacion readme" />
     <MESSAGE value="Actualizacion Reto 2" />
     <MESSAGE value="Actualizacion Reto 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Actualizacion Reto 3" />
+    <MESSAGE value="Actualizacion Reto 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actualizacion Reto 5" />
   </component>
 </project>

@@ -135,12 +135,19 @@ public class Tienda {
                 case "Auto" -> factory.crearCarro();
                 case "Moto" -> factory.crearMoto();
                 case "Bicicleta" -> factory.crearBicicleta();
+                case "Avion" -> factory.crearAvion();
+                case "Avioneta" -> factory.crearAvioneta();
+                case "Helicoptero" -> factory.crearHelicoptero();
+                case "JetSki" -> factory.crearJetSki();
+                case "Lancha" -> factory.crearLancha();
+                case "Velero" -> factory.crearVelero();
                 default -> null;
             };
 
+
             if (vehiculo != null) {
                 vehiculosComprad.add(vehiculo);
-                System.out.println("Vehiculo añadido exitosamente.");
+                System.out.println("Vehiculo añadido ");
             } else {
                 System.out.println("Vehiculo inválido.");
             }
