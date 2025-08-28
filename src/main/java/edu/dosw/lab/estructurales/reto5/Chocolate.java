@@ -1,7 +1,7 @@
 package edu.dosw.lab.estructurales.reto5;
 
-public class Chocolate extends ToppingDecorador {
-    public Chocolate(Topping topping) {
+public class Chocolate extends listToppings {
+    public Chocolate(topping topping) {
         super(topping);
     }
 
@@ -11,7 +11,7 @@ public class Chocolate extends ToppingDecorador {
     }
 
     @Override
-    public double getPrecio() {
+    public int getPrecio() {
         return topping.getPrecio() + 1500;
     }
 }

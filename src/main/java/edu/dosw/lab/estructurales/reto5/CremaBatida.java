@@ -1,7 +1,7 @@
 package edu.dosw.lab.estructurales.reto5;
 
-public class CremaBatida extends ToppingDecorador {
-    public CremaBatida(Topping topping) {
+public class CremaBatida extends listToppings {
+    public CremaBatida(topping topping) {
         super(topping);
     }
 
@@ -11,7 +11,7 @@ public class CremaBatida extends ToppingDecorador {
     }
 
     @Override
-    public double getPrecio() {
+    public int getPrecio() {
         return topping.getPrecio() + 2000;
     }
 }

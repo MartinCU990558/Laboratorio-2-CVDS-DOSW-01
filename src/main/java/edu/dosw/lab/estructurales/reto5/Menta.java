@@ -1,7 +1,7 @@
 package edu.dosw.lab.estructurales.reto5;
 
-public class Menta extends ToppingDecorador {
-    public Menta(Topping topping) {
+public class Menta extends listToppings {
+    public Menta(topping topping) {
         super(topping);
     }
 
@@ -11,7 +11,7 @@ public class Menta extends ToppingDecorador {
     }
 
     @Override
-    public double getPrecio() {
+    public int getPrecio() {
         return topping.getPrecio() + 1300;
     }
 }

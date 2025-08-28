@@ -1,21 +1,20 @@
 package edu.dosw.lab.estructurales.reto5;
 
-public class listToppings implements topping {
-    private  final String nombre;
-    private final int precio;
+public abstract class listToppings implements topping {
+    protected topping topping;
 
-    public listToppings(String nombre, int precio) {
-        this.nombre = nombre;
-        this.precio = precio;
+    public listToppings(topping Topping) {
+        this.topping = topping;
     }
 
     @Override
     public int getPrecio() {
-        return precio;
+        return topping.getPrecio();
     }
 
     @Override
-    public String getNombre() {
-        return nombre;
+    public String getDescrip() {
+        return topping.getDescrip();
     }
+
 }

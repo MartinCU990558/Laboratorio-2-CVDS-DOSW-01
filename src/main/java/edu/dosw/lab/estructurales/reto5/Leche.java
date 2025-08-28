@@ -1,7 +1,7 @@
 package edu.dosw.lab.estructurales.reto5;
 
-public class Leche extends ToppingDecorador {
-    public Leche(Topping topping) {
+public class Leche extends listToppings {
+    public Leche(topping topping) {
         super(topping);
     }
 
@@ -11,7 +11,7 @@ public class Leche extends ToppingDecorador {
     }
 
     @Override
-    public double getPrecio() {
+    public int getPrecio() {
         return topping.getPrecio() + 1000;
     }
 }
