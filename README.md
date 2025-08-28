@@ -55,6 +55,37 @@
 ---
 ![alt text](docs/imagenes/Reto2/image.png)
 ---
+
+## Reto 4 ✅
+### Descripción :
+- Se uso el patron estructural adapter para el momento de realizar las debidas conversiones de la moneda , como este patron nos permite colaborar entre objetos con interfaces compatibles , en base a la interfaz de conversion conectamos estos adaptadores para luego usar en la transaccion realizada el adaptador principal que viene siendo el de la conversion.
+
+![alt text](image.png)
+---
+![alt text](image-1.png)
+---
+![alt text](image-2.png)
+---
+![alt text](image-3.png)
+---
+![alt text](image-4.png)
+---
+![alt text](image-5.png)
+---
+![alt text](image-6.png)
+---
+![alt text](image-7.png)
+--- 
+![alt text](image-8.png)
+--- 
+![alt text](image-9.png)
+---
+![alt text](image-10.png)
+### 💻Pruebas De Compilación y Ejecucion:
+![alt text](image-11.png)
+---
+![alt text](image-12.png)
+
 ## Reto 5 ✅
 ### Descripción :
 - Se realizo mediante el patron de decorator que lo que nos permitia que teniendo nuestro objeto base que era el cafe mediante este se le podian agregar los toppings que vendrian siendo como las "funcionalidades" nuevas que este iba a tener poniendolos dentro del cafe(Cabe resaltar que tomamos como precio base del cafe 3.000 Pesos Colombianos).
