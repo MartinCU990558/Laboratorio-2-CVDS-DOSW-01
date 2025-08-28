@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30cab95b-1f6c-4ce5-900f-552c1d8f981a" name="Changes" comment="Actualizacion readme">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Fabricas/UsadoFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Fabricas/VehiculoFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Vehiculo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Carros/CarroEconomico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Carros/CarroLujo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Carros/CarroUsado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoEconimica.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoLujo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoUsada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/Cocina.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/HamburguesaBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/Reto2Chef.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/Hamburguesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/Hamburguesa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Reto2/Pedido.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +21,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -32,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/SuarezSantiago_SelmaRaquel_LopezNestor_reto2" />
+        <entry key="$PROJECT_DIR$" value="feature/SuarezSantiago_SelmaRaquel_LopezNestor_2025-2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,7 +63,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/SuarezSantiago__SelmaRaquel__LopezNestor__2025-2",
+    "git-widget-placeholder": "feature/SuarezSantiago__SelmaRaquel__LopezNestor__reto2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,7 +72,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Pedido">
+  <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.dosw.lab.Application" />
       <module name="Laboratorio-2-CVDS-DOSW-01v" />
@@ -129,7 +125,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Pedido" />
         <item itemvalue="Application.Application" />
         <item itemvalue="Application.Reto2Chef" />
         <item itemvalue="Application.Pedido" />
