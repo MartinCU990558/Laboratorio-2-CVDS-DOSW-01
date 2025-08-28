@@ -20,11 +20,11 @@
 
 #### Evidencia del código de la solución implementada:
 
-![alt text](image-16.png)
-![alt text](image-17.png)
-![alt text](image-18.png)
-![alt text](image-19.png)
-![alt text](image-15.png)
+![alt text](docs/imagenes/image-16.png)
+![alt text](docs/imagenes/image-17.png)
+![alt text](docs/imagenes/image-18.png)
+![alt text](docs/imagenes/image-19.png)
+![alt text](docs/imagenes/image-15.png)
 
 #### Explicación
 •	Mencionen como está aplicando en su solución cada uno de los principios SOLID.
@@ -65,15 +65,15 @@ La mayoria de atributos son private y se accede a ellos por medio de getters cua
 
 
 #### Evidencia de la ejecución:
-![alt text](image-13.png)
-![alt text](image-14.png)
+![alt text](docs/imagenes/image-13.png)
+![alt text](docs/imagenes/image-14.png)
 
 ---
 
 ###  Reto 2 – Patrón **Builder**
 
 #### Evidencia #1
-![alt text](image.png)
+![alt text](docs/imagenes/image.png)
 
 #### Explicación
 - **Patrón de Diseño:** Creacional.  
@@ -84,9 +84,9 @@ La mayoria de atributos son private y se accede a ellos por medio de getters cua
   - Se creó una clase concreta `HamburguesaBuilder` que implementa los métodos de la interfaz para realizar la construcción.  
 
 #### Evidencia #2
-![alt text](image-1.png)  
-![alt text](image-2.png)  
-![alt text](image-3.png)  
+![alt text](docs/imagenes/image-1.png)  
+![alt text](docs/imagenes/image-2.png)  
+![alt text](docs/imagenes/image-3.png)  
 
 ---
 
@@ -94,7 +94,7 @@ La mayoria de atributos son private y se accede a ellos por medio de getters cua
 
 #### Evidencia de la ejecución:
 
-![alt text](image-8.png)
+![alt text](docs/imagenes/image-8.png)
 
 #### Explicación
 **Patrón de Diseño:** Creacional.
@@ -104,19 +104,19 @@ La mayoria de atributos son private y se accede a ellos por medio de getters cua
 Luego, creamos una Factory para los vehiculos, economicos, de lujo y usados que extiende a VehiculoAbstractFactory y contiene los llamados a los constructores. De esta forma, ya sabiendo el vehiculo que quiera el usuario, solo debemos crear la factory apropiada y pasarle los parametros requeridos al constructor de Vehiculo. 
 
 #### Evidencia #2
-![alt text](image-9.png)
+![alt text](docs/imagenes/image-9.png)
 
-![alt text](image-10.png)
+![alt text](docs/imagenes/image-10.png)
 
-![alt text](image-11.png)
+![alt text](docs/imagenes/image-11.png)
 
-![alt text](image-12.png)
+![alt text](docs/imagenes/image-12.png)
 
 ---
 ### Reto 4 - Patron Strategy
 
 ##### Evidencia #1:
-![alt text](<Captura de pantalla de 2025-08-27 21-33-37.png>)
+![alt text](<docs/imagenes/Captura de pantalla de 2025-08-27 21-33-37.png>)
 
 #### Explicación
 
@@ -134,13 +134,13 @@ En este caso, la operación principal es convertir dinero de una moneda a otra, 
 
 
 #### Evidencia #2
-![alt text](<Captura de pantalla de 2025-08-27 21-42-16.png>)
-![alt text](<Captura de pantalla de 2025-08-27 21-42-28.png>)
+![alt text](<docs/imagenes/Captura de pantalla de 2025-08-27 21-42-16.png>)
+![alt text](<docs/imagenes/Captura de pantalla de 2025-08-27 21-42-28.png>)
 
 ###  Reto 5 – Patrón **Decorator**
 
 #### Evidencia #1
-![alt text](image-4.png)
+![alt text](docs/imagenes/image-4.png)
 
 #### Explicación
 - **Patrón de Diseño:** Estructural.  
@@ -152,16 +152,16 @@ En este caso, la operación principal es convertir dinero de una moneda a otra, 
   - Finalmente, cada **topping concreto** hereda de la clase decoradora, agregando su propia lógica (sumar costo y añadir descripción).  
 
 #### Evidencia #2
-![alt text](image-5.png)  
-![alt text](image-6.png)  
-![alt text](image-7.png)  
+![alt text](docs/imagenes/image-5.png)  
+![alt text](docs/imagenes/image-6.png)  
+![alt text](docs/imagenes/image-7.png)  
 
 ---
 ### Reto 6 - Patrón **Chain of responsability**
 
 ##### Evidencia #1:
-![alt text](<Captura de pantalla de 2025-08-27 19-57-18.png>)
-![alt text](<Captura de pantalla de 2025-08-27 19-57-29.png>)
+![alt text](<docs/imagenes/Captura de pantalla de 2025-08-27 19-57-18.png>)
+![alt text](<docs/imagenes/Captura de pantalla de 2025-08-27 19-57-29.png>)
 
 #### Explicación
 
@@ -178,16 +178,16 @@ En este caso, la operación principal es convertir dinero de una moneda a otra, 
 
 
 #### Evidencia #2
-![alt text](<Captura de pantalla de 2025-08-27 20-06-31.png>)
-![alt text](<Captura de pantalla de 2025-08-27 20-06-40.png>)
-![alt text](<Captura de pantalla de 2025-08-27 20-07-00.png>)
+![alt text](<docs/imagenes/Captura de pantalla de 2025-08-27 20-06-31.png>)
+![alt text](<docs/imagenes/Captura de pantalla de 2025-08-27 20-06-40.png>)
+![alt text](<docs/imagenes/Captura de pantalla de 2025-08-27 20-07-00.png>)
 
 ---
 ### Reto 7 - Patrón **Command**
 
 ##### Evidencia #1:
-![alt text](<Captura de pantalla de 2025-08-27 17-31-09.png>)
-![alt text](<Captura de pantalla de 2025-08-27 17-31-40.png>)
+![alt text](<docs/imagenes/Captura de pantalla de 2025-08-27 17-31-09.png>)
+![alt text](<docs/imagenes/Captura de pantalla de 2025-08-27 17-31-40.png>)
 
 
 #### Explicación
@@ -204,8 +204,8 @@ En este caso, la operación principal es convertir dinero de una moneda a otra, 
 - Por ultimo, creamos una clase control donde hacemos el historial y  resumen, de cada una de las acciones que elije el usuario.
 
 #### Evidencia #2
-![alt text](<Captura de pantalla de 2025-08-27 17-32-21.png>)
-![alt text](<Captura de pantalla de 2025-08-27 17-33-30.png>)
-![alt text](<Captura de pantalla de 2025-08-27 17-34-16.png>)
+![alt text](<docs/imagenes/Captura de pantalla de 2025-08-27 17-32-21.png>)
+![alt text](<docs/imagenes/Captura de pantalla de 2025-08-27 17-33-30.png>)
+![alt text](<docs/imagenes/Captura de pantalla de 2025-08-27 17-34-16.png>)
 
  
