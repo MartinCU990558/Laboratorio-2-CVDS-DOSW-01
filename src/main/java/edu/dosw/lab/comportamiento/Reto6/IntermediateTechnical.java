@@ -9,7 +9,7 @@ public class IntermediateTechnical extends Technical {
     public String toString(){
         return "Técnico Intermedio";
     }
-
+    
     @Override
     public boolean isResolve(Ticket ticket){
         return ticket.getLevel() == Difficult.INTERMEDIO &&
