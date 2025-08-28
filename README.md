@@ -69,6 +69,29 @@ Luego, creamos una Factory para los vehiculos, economicos, de lujo y usados que 
 ![alt text](image-12.png)
 
 ---
+### Reto 4 - Patron Strategy
+
+##### Evidencia #1:
+![alt text](<Captura de pantalla de 2025-08-27 21-33-37.png>)
+
+#### Explicación
+
+- **Patrón de Diseño:**Comportamiento.
+
+- **Patrón Utilizado:** **Strategy**.
+
+- **Jusificación:**La usamos ya que el patrón Strategy se utiliza cuando se tienen múltiples algoritmos o formas de realizar una misma operación, y se desea elegir la estrategia adecuada en tiempo de ejecución sin cambiar el código principal.
+
+En este caso, la operación principal es convertir dinero de una moneda a otra, y la estrategia de conversión depende de la tasa que se use (antes era una sola tasa fija para todas las monedas, ahora se usan tasas reales por cada combinación de monedas).
+- **Aplicacion:**
+-Definimos una interfaz de estrategia con un método convertir.
+
+-La clase Transaccion recibe una estrategia en su constructor en este caso es ConversorMonedas conversor y la utiliza para hacer la conversión.
+
+
+#### Evidencia #2
+![alt text](<Captura de pantalla de 2025-08-27 21-42-16.png>)
+![alt text](<Captura de pantalla de 2025-08-27 21-42-28.png>)
 
 ###  Reto 5 – Patrón **Decorator**
 
@@ -115,6 +138,7 @@ Luego, creamos una Factory para los vehiculos, economicos, de lujo y usados que 
 ![alt text](<Captura de pantalla de 2025-08-27 20-06-40.png>)
 ![alt text](<Captura de pantalla de 2025-08-27 20-07-00.png>)
 
+---
 ### Reto 7 - Patrón **Command**
 
 ##### Evidencia #1:
