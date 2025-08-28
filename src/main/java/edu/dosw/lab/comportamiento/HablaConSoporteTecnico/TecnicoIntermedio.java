@@ -1,4 +1,7 @@
 package edu.dosw.lab.comportamiento.HablaConSoporteTecnico;
 
-public class TecnicoIntermedio {
+public class TecnicoIntermedio extends Tecnico {
+
+
+
 }

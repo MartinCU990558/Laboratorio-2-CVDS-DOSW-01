@@ -11,5 +11,5 @@ public abstract class Tecnico {
 
     public void setSiguienteTecnico(Tecnico siguienteTecnico) {this.siguienteTecnico = siguienteTecnico;}
 
-    public abstract void manejarTicket(Ticket ticket);
+    public abstract boolean manejarTicket(Ticket ticket);
 }
