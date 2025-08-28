@@ -52,7 +52,5 @@ public class Reto1TiendaDonPepe {
         }
         Receipt receipt = new Receipt(frequentClient, shoppingCart);
         receipt.printReceipt();
-
-        sc.close();
     }
 }

@@ -63,7 +63,5 @@ public class ElCafePerzonalizado {
         System.out.println("\n--------------------------------");
         System.out.println("Total a pagar por todos los cafés: $" + String.format("%,.0f", precioTotal));
         System.out.println("¡Disfrute su café!");
-        
-        scanner.close();
     }
 }

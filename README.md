@@ -79,5 +79,24 @@
 - Se logro realizar atravez del patrón de diseño Chains of Responsability (Patrón de comportamiento) que nos permitio manejar el ticket a través de una cadena de diferentes técnicos hasta que alguno de ellos pueda resolverlo, evitando asi "acoplar" la logica a un técnico en específico.
 
 ![alt text](docs/imagenes/Reto6/image-1.jpg)
-![alt text](docs/imagenes/Reto5/image.png)
-![alt text](docs/imagenes/Reto5/image.png)
+---
+![alt text](docs/imagenes/Reto6/image-2.jpg)
+---
+![alt text](docs/imagenes/Reto6/image-3.jpg)
+---
+![alt text](docs/imagenes/Reto6/image-4.jpg)
+---
+![alt text](docs/imagenes/Reto6/image-5.jpg)
+---
+![alt text](docs/imagenes/Reto6/image-6.jpg)
+---
+![alt text](docs/imagenes/Reto6/image-7.jpg)
+---
+![alt text](docs/imagenes/Reto6/image-8.jpg)
+---
+![alt text](docs/imagenes/Reto6/image-9.jpg)
+### 💻Pruebas De Compilación y Ejecucion:
+![alt text](docs/imagenes/Reto6/image-10.jpg)
+---
+![alt text](docs/imagenes/Reto6/image-11.jpg)
+
