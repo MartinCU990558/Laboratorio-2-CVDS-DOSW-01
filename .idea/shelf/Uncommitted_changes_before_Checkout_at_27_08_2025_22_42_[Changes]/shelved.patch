@@ -1,0 +1,34 @@
+Index: src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/JetSkis/JetSkiUsada.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package edu.dosw.lab.creacionales.reto3.Vehiculos.JetSkis;\r\n\r\npublic class JetSkiUsada extends JetSki {\r\n    public JetSkiUsada(Double Descuento, String Descripcion, String VelocidadMax) {\r\n        super();\r\n        this.precio = this.precio+(this.precio*Descuento);\r\n        this.Descripcion = Descripcion;\r\n        this.velocidadMax = velocidadMax;\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/JetSkis/JetSkiUsada.java b/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/JetSkis/JetSkiUsada.java
+--- a/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/JetSkis/JetSkiUsada.java	(revision 16a530a40d3c2bb38c060e1dfac21d97ab9dec44)
++++ b/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/JetSkis/JetSkiUsada.java	(date 1756349057840)
+@@ -3,7 +3,7 @@
+ public class JetSkiUsada extends JetSki {
+     public JetSkiUsada(Double Descuento, String Descripcion, String VelocidadMax) {
+         super();
+-        this.precio = this.precio+(this.precio*Descuento);
++        this.precio = this.precio-(this.precio*Descuento);
+         this.Descripcion = Descripcion;
+         this.velocidadMax = velocidadMax;
+     }
+Index: src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/JetSkis/JetSkiEconomica.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package edu.dosw.lab.creacionales.reto3.Vehiculos.JetSkis;\r\n\r\npublic class JetSkiEconomica extends JetSki {\r\n    public JetSkiEconomica(Double Descuento, String Descripcion, String VelocidadMax) {\r\n        super();\r\n        this.precio = this.precio+(this.precio*Descuento);\r\n        this.Descripcion = Descripcion;\r\n        this.velocidadMax = velocidadMax;\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/JetSkis/JetSkiEconomica.java b/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/JetSkis/JetSkiEconomica.java
+--- a/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/JetSkis/JetSkiEconomica.java	(revision 16a530a40d3c2bb38c060e1dfac21d97ab9dec44)
++++ b/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/JetSkis/JetSkiEconomica.java	(date 1756349057849)
+@@ -3,7 +3,7 @@
+ public class JetSkiEconomica extends JetSki {
+     public JetSkiEconomica(Double Descuento, String Descripcion, String VelocidadMax) {
+         super();
+-        this.precio = this.precio+(this.precio*Descuento);
++        this.precio = this.precio-(this.precio*Descuento);
+         this.Descripcion = Descripcion;
+         this.velocidadMax = velocidadMax;
+     }

@@ -1,0 +1,505 @@
+Index: src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Lanchas/Lancha.java
+===================================================================
+diff --git a/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Lanchas/Lancha.java b/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Lanchas/Lancha.java
+new file mode 100644
+--- /dev/null	(date 1756349057846)
++++ b/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Lanchas/Lancha.java	(date 1756349057846)
+@@ -0,0 +1,18 @@
++package edu.dosw.lab.creacionales.reto3.Vehiculos.Lanchas;
++
++import edu.dosw.lab.creacionales.reto3.MedioTransporte;
++import edu.dosw.lab.creacionales.reto3.Vehiculo;
++
++public abstract class Lancha  extends Vehiculo {
++    public Lancha() {
++        super();
++        this.precio = 12000.0;
++        this.velocidadMax = "1000Km";
++        this.Descripcion = "";
++    }
++
++    @Override
++    public MedioTransporte getMedioTransporte() {
++        return MedioTransporte.AGUA;
++    }
++}
+Index: src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Lanchas/LanchaEconomica.java
+===================================================================
+diff --git a/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Lanchas/LanchaEconomica.java b/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Lanchas/LanchaEconomica.java
+new file mode 100644
+--- /dev/null	(date 1756349057837)
++++ b/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Lanchas/LanchaEconomica.java	(date 1756349057837)
+@@ -0,0 +1,10 @@
++package edu.dosw.lab.creacionales.reto3.Vehiculos.Lanchas;
++
++public class LanchaEconomica extends Lancha {
++    public LanchaEconomica(Double Descuento, String Descripcion, String VelocidadMax) {
++        super();
++        this.precio = this.precio-(this.precio*Descuento);
++        this.Descripcion = Descripcion;
++        this.velocidadMax = velocidadMax;
++    }
++}
+Index: src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Veleros/VeleroUsado.java
+===================================================================
+diff --git a/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Veleros/VeleroUsado.java b/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Veleros/VeleroUsado.java
+new file mode 100644
+--- /dev/null	(date 1756349057825)
++++ b/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Veleros/VeleroUsado.java	(date 1756349057825)
+@@ -0,0 +1,13 @@
++package edu.dosw.lab.creacionales.reto3.Vehiculos.Veleros;
++
++import edu.dosw.lab.creacionales.reto3.Vehiculo;
++
++public class VeleroUsado extends Velero {
++    public VeleroUsado(Double Descuento, String Descripcion, String VelocidadMax) {
++        super();
++        this.precio = this.precio-(this.precio*Descuento);
++        this.Descripcion = Descripcion;
++        this.velocidadMax = velocidadMax;
++    }
++
++}
+Index: src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Veleros/VeleroLujo.java
+===================================================================
+diff --git a/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Veleros/VeleroLujo.java b/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Veleros/VeleroLujo.java
+new file mode 100644
+--- /dev/null	(date 1756349057811)
++++ b/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Veleros/VeleroLujo.java	(date 1756349057811)
+@@ -0,0 +1,12 @@
++package edu.dosw.lab.creacionales.reto3.Vehiculos.Veleros;
++
++import edu.dosw.lab.creacionales.reto3.Vehiculo;
++
++public class VeleroLujo extends Velero {
++    public VeleroLujo(Double Descuento, String Descripcion, String VelocidadMax) {
++        super();
++        this.precio = this.precio-(this.precio*Descuento);
++        this.Descripcion = Descripcion;
++        this.velocidadMax = velocidadMax;
++    }
++}
+Index: src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Lanchas/LanchaUsada.java
+===================================================================
+diff --git a/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Lanchas/LanchaUsada.java b/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Lanchas/LanchaUsada.java
+new file mode 100644
+--- /dev/null	(date 1756349057833)
++++ b/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Lanchas/LanchaUsada.java	(date 1756349057833)
+@@ -0,0 +1,10 @@
++package edu.dosw.lab.creacionales.reto3.Vehiculos.Lanchas;
++
++public class LanchaUsada extends Lancha {
++    public LanchaUsada(Double Descuento, String Descripcion, String VelocidadMax) {
++        super();
++        this.precio = this.precio-(this.precio*Descuento);
++        this.Descripcion = Descripcion;
++        this.velocidadMax = velocidadMax;
++    }
++}
+Index: src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Lanchas/LanchaLujo.java
+===================================================================
+diff --git a/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Lanchas/LanchaLujo.java b/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Lanchas/LanchaLujo.java
+new file mode 100644
+--- /dev/null	(date 1756349057829)
++++ b/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Lanchas/LanchaLujo.java	(date 1756349057829)
+@@ -0,0 +1,10 @@
++package edu.dosw.lab.creacionales.reto3.Vehiculos.Lanchas;
++
++public class LanchaLujo extends Lancha {
++    public LanchaLujo(Double Descuento, String Descripcion, String VelocidadMax) {
++        super();
++        this.precio = this.precio+(this.precio*Descuento);
++        this.Descripcion = Descripcion;
++        this.velocidadMax = velocidadMax;
++    }
++}
+Index: src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Veleros/Velero.java
+===================================================================
+diff --git a/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Veleros/Velero.java b/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Veleros/Velero.java
+new file mode 100644
+--- /dev/null	(date 1756349057816)
++++ b/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Veleros/Velero.java	(date 1756349057816)
+@@ -0,0 +1,18 @@
++package edu.dosw.lab.creacionales.reto3.Vehiculos.Veleros;
++
++import edu.dosw.lab.creacionales.reto3.MedioTransporte;
++import edu.dosw.lab.creacionales.reto3.Vehiculo;
++
++public abstract class Velero extends Vehiculo {
++    public Velero() {
++        super();
++        this.precio = 120000.0;
++        this.velocidadMax = "1000Km";
++        this.Descripcion = "";
++    }
++
++    @Override
++    public MedioTransporte getMedioTransporte() {
++        return MedioTransporte.AGUA;
++    }
++}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"30cab95b-1f6c-4ce5-900f-552c1d8f981a\" name=\"Changes\" comment=\"Actualizacion Reto 3\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Helicopteros/Helicoptero.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Helicopteros/HelicopteroEconomico.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Helicopteros/HelicopteroLujo.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Helicopteros/HelicopteroUsado.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/JetSkis/JetSki.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Fabricas/EconomicaFactory.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Fabricas/EconomicaFactory.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Fabricas/LujoFactory.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Fabricas/LujoFactory.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Fabricas/UsadoFactory.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Fabricas/UsadoFactory.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Fabricas/VehiculoFactory.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Fabricas/VehiculoFactory.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/MedioTransporte.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/MedioTransporte.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Tienda.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Tienda.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Vehiculo.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculo.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Aviones/Avion.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Aviones/Avion.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Avionetas/Avioneta.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Avionetas/Avioneta.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Bicicletas/Bicicleta.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Bicicletas/Bicicleta.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Bicicletas/BicicletaEconimica.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Bicicletas/BicicletaEconimica.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Bicicletas/BicicletaLujo.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Bicicletas/BicicletaLujo.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Bicicletas/BicicletaUsada.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Bicicletas/BicicletaUsada.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Carros/Carro.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Carros/Carro.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Carros/CarroLujo.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Carros/CarroLujo.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/Moto.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/Moto.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoEconimica.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoEconimica.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoLujo.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoLujo.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoUsada.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoUsada.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/Reto5.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/Reto5.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/Toppings.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/Toppings.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/cafe.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/cafe.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/listToppings.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/listToppings.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/topping.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/topping.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Interface\" />\r\n        <option value=\"Enum\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"feature/SuarezSantiago_SelmaRaquel_LopezNestor_2025-2\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GithubDefaultAccount\">\r\n    <option name=\"defaultAccountId\" value=\"af8a015c-9928-475e-887a-f42ef6e33d2c\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"generalSettings\">\r\n      <MavenGeneralSettings>\r\n        <option name=\"mavenHomeTypeForPersistence\" value=\"WRAPPER\" />\r\n      </MavenGeneralSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;customColor&quot;: &quot;&quot;,\r\n  &quot;associatedIndex&quot;: 8\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"31d3fEj3n64KBbcUdHda4CwvPkw\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Application.Application.executor\": \"Run\",\r\n    \"Application.Pedido.executor\": \"Run\",\r\n    \"Application.Reto2Chef.executor\": \"Run\",\r\n    \"Application.Tienda.executor\": \"Run\",\r\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"git-widget-placeholder\": \"feature/SuarezSantiago__SelmaRaquel__LopezNestor__reto3\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RunManager\" selected=\"Application.Tienda\">\r\n    <configuration name=\"Application\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"edu.dosw.lab.Application\" />\r\n      <module name=\"Laboratorio-2-CVDS-DOSW-01v\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"edu.dosw.lab.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Pedido\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"edu.dosw.lab.creacionales.Reto2.Pedido\" />\r\n      <module name=\"Laboratorio-2-CVDS-DOSW-01v\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"edu.dosw.lab.creacionales.Reto2.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Reto2Chef\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"edu.dosw.lab.creacionales.Reto2.Reto2Chef\" />\r\n      <module name=\"Laboratorio-2-CVDS-DOSW-01v\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"edu.dosw.lab.creacionales.Reto2.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Tienda\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"edu.dosw.lab.creacionales.reto3.Tienda\" />\r\n      <module name=\"Laboratorio-2-CVDS-DOSW-01v\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"edu.dosw.lab.creacionales.reto3.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"JetRunConfigurationType\">\r\n      <module name=\"Laboratorio-2-CVDS-DOSW-01\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"KotlinStandaloneScriptRunConfigurationType\">\r\n      <module name=\"Laboratorio-2-CVDS-DOSW-01\" />\r\n      <option name=\"filePath\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.Tienda\" />\r\n        <item itemvalue=\"Application.Pedido\" />\r\n        <item itemvalue=\"Application.Application\" />\r\n        <item itemvalue=\"Application.Reto2Chef\" />\r\n        <item itemvalue=\"Application.Pedido\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435\" />\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"30cab95b-1f6c-4ce5-900f-552c1d8f981a\" name=\"Changes\" comment=\"\" />\r\n      <created>1755840224739</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1755840224739</updated>\r\n      <workItem from=\"1755840226702\" duration=\"328000\" />\r\n      <workItem from=\"1755841112534\" duration=\"622000\" />\r\n      <workItem from=\"1755886326778\" duration=\"3812000\" />\r\n      <workItem from=\"1756145671620\" duration=\"7139000\" />\r\n      <workItem from=\"1756239214519\" duration=\"3025000\" />\r\n      <workItem from=\"1756318451448\" duration=\"14425000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Estructura de carpetas\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1755840395953</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1755840395953</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Actualizacion readme\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1755841498172</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1755841498172</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Actualizacion readme\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1755841564430</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1755841564430</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Actualizacion Reto 3\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1756225929597</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1756225929597</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Actualizacion Reto 3\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1756334300456</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1756334300456</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"6\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Estructura de carpetas\" />\r\n    <MESSAGE value=\"Actualizacion readme\" />\r\n    <MESSAGE value=\"Actualizacion Reto 2\" />\r\n    <MESSAGE value=\"Actualizacion Reto 3\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Actualizacion Reto 3\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 16a530a40d3c2bb38c060e1dfac21d97ab9dec44)
++++ b/.idea/workspace.xml	(date 1756351546699)
+@@ -5,31 +5,17 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="30cab95b-1f6c-4ce5-900f-552c1d8f981a" name="Changes" comment="Actualizacion Reto 3">
+-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Helicopteros/Helicoptero.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Helicopteros/HelicopteroEconomico.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Helicopteros/HelicopteroLujo.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Helicopteros/HelicopteroUsado.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/JetSkis/JetSki.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Lanchas/Lancha.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Lanchas/LanchaEconomica.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Lanchas/LanchaLujo.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Lanchas/LanchaUsada.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Veleros/Velero.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Veleros/VeleroEconomico.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Veleros/VeleroLujo.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Veleros/VeleroUsado.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Fabricas/EconomicaFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Fabricas/EconomicaFactory.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Fabricas/LujoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Fabricas/LujoFactory.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Fabricas/UsadoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Fabricas/UsadoFactory.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Fabricas/VehiculoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Fabricas/VehiculoFactory.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/MedioTransporte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/MedioTransporte.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Tienda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Tienda.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculo.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Aviones/Avion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Aviones/Avion.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Avionetas/Avioneta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Avionetas/Avioneta.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Bicicletas/Bicicleta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Bicicletas/Bicicleta.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Bicicletas/BicicletaEconimica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Bicicletas/BicicletaEconimica.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Bicicletas/BicicletaLujo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Bicicletas/BicicletaLujo.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Bicicletas/BicicletaUsada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Bicicletas/BicicletaUsada.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Carros/Carro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Carros/Carro.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Carros/CarroLujo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Carros/CarroLujo.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/Moto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/Moto.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoEconimica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoEconimica.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoLujo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoLujo.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoUsada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoUsada.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/JetSkis/JetSkiEconomica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/JetSkis/JetSkiEconomica.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/JetSkis/JetSkiUsada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/JetSkis/JetSkiUsada.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/Reto5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/Reto5.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/Toppings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/Toppings.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/cafe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/cafe.java" afterDir="false" />
+@@ -192,7 +178,7 @@
+       <workItem from="1755886326778" duration="3812000" />
+       <workItem from="1756145671620" duration="7139000" />
+       <workItem from="1756239214519" duration="3025000" />
+-      <workItem from="1756318451448" duration="14425000" />
++      <workItem from="1756318451448" duration="18138000" />
+     </task>
+     <task id="LOCAL-00001" summary="Estructura de carpetas">
+       <option name="closed" value="true" />
+@@ -234,7 +220,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1756334300456</updated>
+     </task>
+-    <option name="localTasksCounter" value="6" />
++    <task id="LOCAL-00006" summary="Actualizacion Reto 3">
++      <option name="closed" value="true" />
++      <created>1756337183660</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1756337183660</updated>
++    </task>
++    <option name="localTasksCounter" value="7" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+Index: src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Veleros/VeleroEconomico.java
+===================================================================
+diff --git a/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Veleros/VeleroEconomico.java b/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Veleros/VeleroEconomico.java
+new file mode 100644
+--- /dev/null	(date 1756349057820)
++++ b/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Veleros/VeleroEconomico.java	(date 1756349057820)
+@@ -0,0 +1,10 @@
++package edu.dosw.lab.creacionales.reto3.Vehiculos.Veleros;
++
++public class VeleroEconomico extends Velero {
++    public VeleroEconomico(Double Descuento, String Descripcion, String VelocidadMax) {
++        super();
++        this.precio = this.precio-(this.precio*Descuento);
++        this.Descripcion = Descripcion;
++        this.velocidadMax = velocidadMax;
++    }
++}
+Index: src/main/java/edu/dosw/lab/estructurales/listToppings.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package edu.dosw.lab.estructurales;\r\n\r\npublic class listToppings implements topping {\r\n    private  final String nombre;\r\n    private final int precio;\r\n\r\n    public listToppings(String nombre, int precio) {\r\n        this.nombre = nombre;\r\n        this.precio = precio;\r\n    }\r\n\r\n    @Override\r\n    public int getPrecio() {\r\n        return precio;\r\n    }\r\n\r\n    @Override\r\n    public String getNombre() {\r\n        return nombre;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/edu/dosw/lab/estructurales/listToppings.java b/src/main/java/edu/dosw/lab/estructurales/listToppings.java
+--- a/src/main/java/edu/dosw/lab/estructurales/listToppings.java	(revision 16a530a40d3c2bb38c060e1dfac21d97ab9dec44)
++++ b/src/main/java/edu/dosw/lab/estructurales/listToppings.java	(date 1756330963638)
+@@ -1,21 +1,21 @@
+-package edu.dosw.lab.estructurales;
+-
+-public class listToppings implements topping {
+-    private  final String nombre;
+-    private final int precio;
+-
+-    public listToppings(String nombre, int precio) {
+-        this.nombre = nombre;
+-        this.precio = precio;
+-    }
+-
+-    @Override
+-    public int getPrecio() {
+-        return precio;
+-    }
+-
+-    @Override
+-    public String getNombre() {
+-        return nombre;
+-    }
+-}
++//package edu.dosw.lab.estructurales;
++//
++//public class listToppings implements topping {
++//    private  final String nombre;
++//    private final int precio;
++//
++//    public listToppings(String nombre, int precio) {
++//        this.nombre = nombre;
++//        this.precio = precio;
++//    }
++//
++//    @Override
++//    public int getPrecio() {
++//        return precio;
++//    }
++//
++//    @Override
++//    public String getNombre() {
++//        return nombre;
++//    }
++//}
+Index: src/main/java/edu/dosw/lab/estructurales/topping.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package edu.dosw.lab.estructurales;\r\n\r\npublic interface topping {\r\n    int getPrecio();\r\n    String getNombre();\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/edu/dosw/lab/estructurales/topping.java b/src/main/java/edu/dosw/lab/estructurales/topping.java
+--- a/src/main/java/edu/dosw/lab/estructurales/topping.java	(revision 16a530a40d3c2bb38c060e1dfac21d97ab9dec44)
++++ b/src/main/java/edu/dosw/lab/estructurales/topping.java	(date 1756330963643)
+@@ -1,6 +1,6 @@
+-package edu.dosw.lab.estructurales;
+-
+-public interface topping {
+-    int getPrecio();
+-    String getNombre();
+-}
++//package edu.dosw.lab.estructurales;
++//
++//public interface topping {
++//    int getPrecio();
++//    String getNombre();
++//}
+Index: src/main/java/edu/dosw/lab/estructurales/Toppings.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package edu.dosw.lab.estructurales;\r\n\r\nimport java.util.ArrayList;\r\nimport java.util.List;\r\npublic class Toppings {\r\n    public static final topping LECHE = new listToppings(\"Leche\", 1000);\r\n    public static final topping CARAMELO = new listToppings(\"Caramelo\", 1200);\r\n    public static final topping CHOCOLATE = new listToppings(\"Chocolate\", 1500);\r\n    public static final topping CREMA_BATIDA = new listToppings(\"Crema batida\", 1500);\r\n    public static final topping MENTA = new listToppings(\"Menta\", 1500);\r\n\r\n\r\n    public static List<topping> obtenerTodos() {\r\n        List<topping> lista = new ArrayList<>();\r\n        lista.add(LECHE);\r\n        lista.add(CARAMELO);\r\n        lista.add(CHOCOLATE);\r\n        lista.add(CREMA_BATIDA);\r\n        lista.add(MENTA);\r\n        return lista;\r\n    }\r\n    public static ArrayList<newtopping> toppingsExtras(){\r\n        ArrayList<topping> lista2 = new ArrayList<>();\r\n        lista2.add();\r\n    }\r\n}\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/edu/dosw/lab/estructurales/Toppings.java b/src/main/java/edu/dosw/lab/estructurales/Toppings.java
+--- a/src/main/java/edu/dosw/lab/estructurales/Toppings.java	(revision 16a530a40d3c2bb38c060e1dfac21d97ab9dec44)
++++ b/src/main/java/edu/dosw/lab/estructurales/Toppings.java	(date 1756330963647)
+@@ -1,28 +1,25 @@
+-package edu.dosw.lab.estructurales;
+-
+-import java.util.ArrayList;
+-import java.util.List;
+-public class Toppings {
+-    public static final topping LECHE = new listToppings("Leche", 1000);
+-    public static final topping CARAMELO = new listToppings("Caramelo", 1200);
+-    public static final topping CHOCOLATE = new listToppings("Chocolate", 1500);
+-    public static final topping CREMA_BATIDA = new listToppings("Crema batida", 1500);
+-    public static final topping MENTA = new listToppings("Menta", 1500);
+-
+-
+-    public static List<topping> obtenerTodos() {
+-        List<topping> lista = new ArrayList<>();
+-        lista.add(LECHE);
+-        lista.add(CARAMELO);
+-        lista.add(CHOCOLATE);
+-        lista.add(CREMA_BATIDA);
+-        lista.add(MENTA);
+-        return lista;
+-    }
+-    public static ArrayList<newtopping> toppingsExtras(){
+-        ArrayList<topping> lista2 = new ArrayList<>();
+-        lista2.add();
+-    }
+-}
+-
+-
++//package edu.dosw.lab.estructurales;
++//
++//import java.util.ArrayList;
++//import java.util.List;
++//public class Toppings {
++//    public static final topping LECHE = new listToppings("Leche", 1000);
++//    public static final topping CARAMELO = new listToppings("Caramelo", 1200);
++//    public static final topping CHOCOLATE = new listToppings("Chocolate", 1500);
++//    public static final topping CREMA_BATIDA = new listToppings("Crema batida", 1500);
++//    public static final topping MENTA = new listToppings("Menta", 1500);
++//
++//
++//    public static List<topping> obtenerTodos() {
++//        List<topping> lista = new ArrayList<>();
++//        lista.add(LECHE);
++//        lista.add(CARAMELO);
++//        lista.add(CHOCOLATE);
++//        lista.add(CREMA_BATIDA);
++//        lista.add(MENTA);
++//        return lista;
++//    }
++//
++//}
++//
++//
+Index: src/main/java/edu/dosw/lab/estructurales/cafe.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package edu.dosw.lab.estructurales;\r\n\r\npublic class cafe {\r\n    public String Descrip;\r\n    \r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/edu/dosw/lab/estructurales/cafe.java b/src/main/java/edu/dosw/lab/estructurales/cafe.java
+--- a/src/main/java/edu/dosw/lab/estructurales/cafe.java	(revision 16a530a40d3c2bb38c060e1dfac21d97ab9dec44)
++++ b/src/main/java/edu/dosw/lab/estructurales/cafe.java	(date 1756330963633)
+@@ -1,6 +1,6 @@
+-package edu.dosw.lab.estructurales;
+-
+-public class cafe {
+-    public String Descrip;
+-    
+-}
++//package edu.dosw.lab.estructurales;
++//
++//public class cafe {
++//    public String Descrip;
++//
++//}
+Index: src/main/java/edu/dosw/lab/estructurales/Reto5.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package edu.dosw.lab.estructurales;\r\n\r\nimport java.util.ArrayList;\r\nimport java.util.List;\r\nimport java.util.Scanner;\r\n\r\npublic class Reto5 {\r\n    public static void main(String[] args) {\r\n        Scanner sc = new Scanner(System.in);\r\n        System.out.print(\"Número de cafés a personalizar: \");\r\n        int cantidadCafes = Integer.parseInt(sc.nextLine());\r\n\r\n        for (int i = 1; i <= cantidadCafes; i++) {\r\n            System.out.println(\"\\n--- Café \" + i + \" ---\");\r\n            System.out.println(\"Toppings disponibles:\");\r\n            for (int j = 0; j < Toppings.obtenerTodos().size(); j++) {\r\n                System.out.println((j + 1) + \". \" + Toppings.obtenerTodos().get(j));\r\n            }\r\n\r\n            System.out.print(\"Seleccione toppings (números separados por coma): \");\r\n            String[] seleccion = sc.nextLine().split(\",\");\r\n            List<Toppings> seleccionados = new ArrayList<>();\r\n\r\n            for (String s : seleccion) {\r\n                int index = Integer.parseInt(s.trim()) - 1;\r\n                if (index >= 0 && index < Toppings.obtenerTodos().size()) {\r\n                    seleccionados.add(Toppings.obtenerTodos().get(index));\r\n                }\r\n            }\r\n            if (i == 1) {\r\n                System.out.print(\"Ingrese nombre del nuevo topping: \");\r\n                String nombreNuevo = sc.nextLine();\r\n                System.out.print(\"Ingrese precio del topping: \");\r\n                double precioNuevo = Double.parseDouble(sc.nextLine().replace(\".\", \"\").replace(\",\", \".\"));\r\n                Topping nuevoTopping = new Topping(nombreNuevo, precioNuevo);\r\n                toppingsDisponibles.add(nuevoTopping);\r\n            }\r\n\r\n            System.out.println(\"Toppings seleccionados para Café \" + i + \":\");\r\n            for (Topping t : seleccionados) {\r\n                System.out.println(\"- \" + t);\r\n            }\r\n        }\r\n\r\n        sc.close();\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/edu/dosw/lab/estructurales/Reto5.java b/src/main/java/edu/dosw/lab/estructurales/Reto5.java
+--- a/src/main/java/edu/dosw/lab/estructurales/Reto5.java	(revision 16a530a40d3c2bb38c060e1dfac21d97ab9dec44)
++++ b/src/main/java/edu/dosw/lab/estructurales/Reto5.java	(date 1756330963628)
+@@ -1,47 +1,47 @@
+-package edu.dosw.lab.estructurales;
+-
+-import java.util.ArrayList;
+-import java.util.List;
+-import java.util.Scanner;
+-
+-public class Reto5 {
+-    public static void main(String[] args) {
+-        Scanner sc = new Scanner(System.in);
+-        System.out.print("Número de cafés a personalizar: ");
+-        int cantidadCafes = Integer.parseInt(sc.nextLine());
+-
+-        for (int i = 1; i <= cantidadCafes; i++) {
+-            System.out.println("\n--- Café " + i + " ---");
+-            System.out.println("Toppings disponibles:");
+-            for (int j = 0; j < Toppings.obtenerTodos().size(); j++) {
+-                System.out.println((j + 1) + ". " + Toppings.obtenerTodos().get(j));
+-            }
+-
+-            System.out.print("Seleccione toppings (números separados por coma): ");
+-            String[] seleccion = sc.nextLine().split(",");
+-            List<Toppings> seleccionados = new ArrayList<>();
+-
+-            for (String s : seleccion) {
+-                int index = Integer.parseInt(s.trim()) - 1;
+-                if (index >= 0 && index < Toppings.obtenerTodos().size()) {
+-                    seleccionados.add(Toppings.obtenerTodos().get(index));
+-                }
+-            }
+-            if (i == 1) {
+-                System.out.print("Ingrese nombre del nuevo topping: ");
+-                String nombreNuevo = sc.nextLine();
+-                System.out.print("Ingrese precio del topping: ");
+-                double precioNuevo = Double.parseDouble(sc.nextLine().replace(".", "").replace(",", "."));
+-                Topping nuevoTopping = new Topping(nombreNuevo, precioNuevo);
+-                toppingsDisponibles.add(nuevoTopping);
+-            }
+-
+-            System.out.println("Toppings seleccionados para Café " + i + ":");
+-            for (Topping t : seleccionados) {
+-                System.out.println("- " + t);
+-            }
+-        }
+-
+-        sc.close();
+-    }
+-}
+\ No newline at end of file
++//package edu.dosw.lab.estructurales;
++//
++//import java.util.ArrayList;
++//import java.util.List;
++//import java.util.Scanner;
++//
++//public class Reto5 {
++//    public static void main(String[] args) {
++//        Scanner sc = new Scanner(System.in);
++//        System.out.print("Número de cafés a personalizar: ");
++//        int cantidadCafes = Integer.parseInt(sc.nextLine());
++//
++//        for (int i = 1; i <= cantidadCafes; i++) {
++//            System.out.println("\n--- Café " + i + " ---");
++//            System.out.println("Toppings disponibles:");
++//            for (int j = 0; j < Toppings.obtenerTodos().size(); j++) {
++//                System.out.println((j + 1) + ". " + Toppings.obtenerTodos().get(j));
++//            }
++//
++//            System.out.print("Seleccione toppings (números separados por coma): ");
++//            String[] seleccion = sc.nextLine().split(",");
++//            List<Toppings> seleccionados = new ArrayList<>();
++//
++//            for (String s : seleccion) {
++//                int index = Integer.parseInt(s.trim()) - 1;
++//                if (index >= 0 && index < Toppings.obtenerTodos().size()) {
++//                    seleccionados.add(Toppings.obtenerTodos().get(index));
++//                }
++//            }
++//            if (i == 1) {
++//                System.out.print("Ingrese nombre del nuevo topping: ");
++//                String nombreNuevo = sc.nextLine();
++//                System.out.print("Ingrese precio del topping: ");
++//                double precioNuevo = Double.parseDouble(sc.nextLine().replace(".", "").replace(",", "."));
++//                Topping nuevoTopping = new Topping(nombreNuevo, precioNuevo);
++//                toppingsDisponibles.add(nuevoTopping);
++//            }
++//
++//            System.out.println("Toppings seleccionados para Café " + i + ":");
++//            for (Topping t : seleccionados) {
++//                System.out.println("- " + t);
++//            }
++//        }
++//
++//        sc.close();
++//    }
++//}
+\ No newline at end of file
