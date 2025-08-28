@@ -31,7 +31,7 @@ public class Application {
         reinoVehiculos.ejecutar();
 
         /**
-         * // EJECUCION RETO4 casa de cambio
+         * // Ejecución RETO4 casa de cambio
         CasaDeCambio cambio = new CasaDeCambio();
         cambio.ejecutar();**/
 
