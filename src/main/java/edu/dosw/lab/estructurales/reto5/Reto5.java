@@ -14,7 +14,7 @@ public class Reto5 {
         for (int i = 1; i <= cantidadCafes; i++) {
             System.out.println("\n--- Café " + i + " ---");
 
-            topping cafe = new cafe();
+            Cafe cafe = new Cafe();
 
             boolean seguir = true;
             while (seguir) {
@@ -31,11 +31,11 @@ public class Reto5 {
                 int opcion = Integer.parseInt(sc.nextLine());
 
                 switch (opcion) {
-                    case 1 -> cafe = new Leche(cafe);
-                    case 2 -> cafe = new Chocolate(cafe);
-                    case 3 -> cafe = new CremaBatida(cafe);
-                    case 4 -> cafe = new Menta(cafe);
-                    case 5 -> cafe = new Caramelo(cafe);
+                    case 1 -> Cafe = new Leche(Cafe);
+                    case 2 -> Cafe = new Chocolate(Cafe);
+                    case 3 -> Cafe = new CremaBatida(Cafe);
+                    case 4 -> Cafe = new Menta(Cafe);
+                    case 5 -> Cafe = new Caramelo(Cafe);
                     case 6 -> {
                         System.out.print("Ingrese nombre del nuevo ingrediente: ");
                         String nombreNuevo = sc.nextLine();

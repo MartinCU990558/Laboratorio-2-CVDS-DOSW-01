@@ -1,18 +1,18 @@
 package edu.dosw.lab.estructurales.reto5;
 
-public class Menta extends listToppings {
-    public Menta(topping topping) {
-        super(topping);
+public class Menta extends ListToppings {
+    public Menta(Topping topping) {
+        super(Topping);
     }
 
     @Override
     public String getDescrip() {
-        return topping.getDescrip() + ", Menta";
+        return Topping.getDescrip() + ", Menta";
     }
 
     @Override
     public int getPrecio() {
-        return topping.getPrecio() + 1300;
+        return Topping.getPrecio() + 1300;
     }
 }
  {

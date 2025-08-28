@@ -1,6 +1,6 @@
 package edu.dosw.lab.estructurales.reto5;
 
-public class cafe implements topping {
+public class Cafe implements topping {
     @Override
     public String getDescrip() {
         return "Café";

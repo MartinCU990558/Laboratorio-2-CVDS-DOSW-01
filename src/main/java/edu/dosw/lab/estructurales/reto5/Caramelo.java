@@ -1,18 +1,18 @@
 package edu.dosw.lab.estructurales.reto5;
 
-public class Caramelo extends listToppings {
-    public Caramelo(topping topping) {
-        super(topping);
+public class Caramelo extends ListToppings {
+    public Caramelo(Topping Topping) {
+        super(Topping);
     }
 
     @Override
     public String getDescrip() {
-        return topping.getDescrip() + ", Caramelo";
+        return Topping.getDescrip() + ", Caramelo";
     }
 
     @Override
     public int getPrecio() {
-        return topping.getPrecio() + 1200;
+        return Topping.getPrecio() + 1200;
     }
 }
  {

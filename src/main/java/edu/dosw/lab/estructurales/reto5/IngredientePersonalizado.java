@@ -1,22 +1,22 @@
 package edu.dosw.lab.estructurales.reto5;
 
-public class IngredientePersonalizado extends listToppings {
+public class IngredientePersonalizado extends ListToppings {
     private final String nombre;
     private final int precioExtra;
 
-    public IngredientePersonalizado(topping topping, String nombre, int precioExtra) {
-        super(topping);
+    public IngredientePersonalizado(Topping topping, String nombre, int precioExtra) {
+        super(Topping);
         this.nombre = nombre;
         this.precioExtra = precioExtra;
     }
 
     @Override
     public String getDescrip() {
-        return topping.getDescrip() + ", " + nombre;
+        return Topping.getDescrip() + ", " + nombre;
     }
 
     @Override
     public int getPrecio() {
-        return topping.getPrecio() + precioExtra;
+        return Topping.getPrecio() + precioExtra;
     }
 }

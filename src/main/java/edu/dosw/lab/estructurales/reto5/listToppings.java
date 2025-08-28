@@ -1,20 +1,20 @@
 package edu.dosw.lab.estructurales.reto5;
 
-public abstract class listToppings implements topping {
-    protected topping topping;
+public abstract class ListToppings implements Topping {
+    protected Topping Topping;
 
-    public listToppings(topping Topping) {
-        this.topping = topping;
+    public ListToppings(Topping Topping) {
+        this.Topping = Topping;
     }
 
     @Override
     public int getPrecio() {
-        return topping.getPrecio();
+        return Topping.getPrecio();
     }
 
     @Override
     public String getDescrip() {
-        return topping.getDescrip();
+        return Topping.getDescrip();
     }
 
 }
