@@ -1,4 +1,4 @@
-package edu.dosw.lab.estructurales;
+package edu.dosw.lab.estructurales.Reto5;
 
 public abstract class Coffee {
     public abstract double getPrice();

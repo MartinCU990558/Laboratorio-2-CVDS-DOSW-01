@@ -1,4 +1,4 @@
-package edu.dosw.lab.estructurales;
+package edu.dosw.lab.estructurales.Reto5;
 
 public class Toppings extends DecoratorCoffee {
     private String name;

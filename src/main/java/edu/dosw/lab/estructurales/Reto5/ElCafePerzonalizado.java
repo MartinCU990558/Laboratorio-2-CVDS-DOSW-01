@@ -1,10 +1,10 @@
-package edu.dosw.lab.estructurales;
+package edu.dosw.lab.estructurales.Reto5;
 
 import java.util.*;
 import java.util.stream.IntStream;
 
 public class ElCafePerzonalizado {
-    public static void ejectutar() {
+    public static void ejectutar5() {
         Scanner scanner = new Scanner(System.in);
     
         Map<Integer, String[]> toppingsDisponibles = new HashMap<>();

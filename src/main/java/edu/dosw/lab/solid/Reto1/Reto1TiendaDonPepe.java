@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Reto1TiendaDonPepe {
 
-    public static void ejecutar() {
+    public static void ejecutar1() {
         Scanner sc = new Scanner(System.in);
         Client frequentClient = new OldClient();
         System.out.println("Bienvenido a la tienda Don Pepe!");

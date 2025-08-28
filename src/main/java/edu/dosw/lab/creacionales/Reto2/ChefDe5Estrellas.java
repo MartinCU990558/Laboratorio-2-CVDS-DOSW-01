@@ -11,7 +11,7 @@ public class ChefDe5Estrellas {
         ingredientsMenu.put(5, new Ingredients("Tomate",2.000));
         ingredientsMenu.put(6, new Ingredients("Salsa Especial",3.000));
     }
-    public static void ejecutar() {
+    public static void ejecutar2() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Seleccione ingredientes para su hamburguesa: ");
         ingredientsMenu.forEach((key, ingredient) -> 

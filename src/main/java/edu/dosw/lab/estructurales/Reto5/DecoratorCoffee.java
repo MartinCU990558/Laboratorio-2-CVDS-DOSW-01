@@ -1,4 +1,4 @@
-package edu.dosw.lab.estructurales;
+package edu.dosw.lab.estructurales.Reto5;
 
 public abstract class DecoratorCoffee extends Coffee {
     protected Coffee coffee;
