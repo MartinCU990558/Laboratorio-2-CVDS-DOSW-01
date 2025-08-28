@@ -1,4 +1,4 @@
-package edu.dosw.lab.Laboratorio_2_CVDS_DOSW_01.comportamiento;
+package edu.dosw.lab.Laboratorio_2_CVDS_DOSW_01.comportamiento.reto6;
 
 import java.util.ArrayList;
 import java.util.List;

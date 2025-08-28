@@ -39,7 +39,7 @@ Evidencia:
 
 Descripción:
 Cada ticket tiene un nivel de complejidad el basico, intermedio o avanzado y una prioridad baja media o alta.
-Los técnicos tambien se clasificn en basico, intermedio o avanzado intentan resolver cada ticket en orden, pero si ninguno puede resolverlo,
+Los técnicos tambien se clasificion en basico, intermedio o avanzado intentan resolver cada ticket en orden, pero si ninguno puede resolverlo,
 el ticket queda pendiente de escalamiento y para eso usamos streams para generar las carateristicas.
 
 **Patrón de diseño:**
@@ -54,5 +54,54 @@ el ticket queda pendiente de escalamiento y para eso usamos streams para generar
   Si es así, se marca el ticket como resuelto y se guarda el nivel del técnico que lo atendió. Si no puede resolverlo,
   el ticket se envía automáticamente al siguiente técnico de la cadena. Finalmente, si ningún técnico logra atenderlo,
   se marca el ticket como pendiente de escalamiento.
+
+
+### RETO #7: El control remoto Mágico
+
+Evidencia:
+
+![Captura](docs/imagenes/reto7_1.png)
+![Captura](docs/imagenes/reto7_2.png)
+![Captura](docs/imagenes/reto7_3.png)
+![Captura](docs/imagenes/reto7_4.png)
+![Captura](docs/imagenes/reto7_5.png)
+![Captura](docs/imagenes/reto7_6.png)
+![Captura](docs/imagenes/reto7_7.png)
+![Captura](docs/imagenes/reto7_8.png)
+![Captura](docs/imagenes/reto7_9.png)
+![Captura](docs/imagenes/reto7_10.png)
+![Captura](docs/imagenes/reto7_11.png)
+![Captura](docs/imagenes/reto7_12.png)
+
+
+
+📝 Entrada:
+
+![Captura](docs/imagenes/reto7_entrada.png)
+
+📢 Salida:
+
+![Captura](docs/imagenes/reto7_salida.png)
+
+
+Descripción: 
+Lo que se hizo fue encapsular las distintas acciones que se hacen con el control 
+entonces se registraron en un historial,
+
+**Patrón de diseño:**
+
+- ***Patrón de diseño:*** De comportamiento
+- ***Patrón utilizado:*** Command
+- ***Justificación:*** Convierte cada acción en un objeto, separando claramente quién pide la acción de quién la ejecuta, asi se facilita
+  que se pueda deshacer ya que cada comando guarda una especie de historial que guarda el estado anterior necesario para revertir la operación,
+  asi facilmente se agregan nuevas funcionalidades, cumpliendo el principio de open/closed.
+
+- ***Como lo aplico:***
+  Por medio de una interfaz Command que actúa como contrato común, las distintas acciones se implementan como objetos que exponen métodos para ejecutar,
+  deshacer y describirse (registro). De este modo las clases concretas quedan contenidas en un archivo y cada una encapsula los parámetros necesarios para realizar su función y,
+  cuando hace falta, guarda el estado previo para poder restaurarlo al deshacer.
+  La clase invocadora crea los comandos, llama a execute() y, si corresponde, a undo(), y además almacena un ActionRecord
+  por cada petición para mantener el historial y poder investigar quién realizó cada cambio.
+
 
 
