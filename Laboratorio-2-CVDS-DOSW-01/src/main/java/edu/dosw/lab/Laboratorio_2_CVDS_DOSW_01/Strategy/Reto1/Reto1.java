@@ -3,6 +3,8 @@ import java.util.*;
 public class Reto1 {
         
 public static void run() {
+
+        System.out.println("Ejecutando Reto1");
     
        Scanner sc = new Scanner(System.in);
 

@@ -5,6 +5,7 @@ import java.util.stream.Collectors;
 public class Reto7 {
 
     public static void run() {
+        System.out.println("Ejecutando Reto7");
         Scanner sc = new Scanner(System.in);
 
         Luz luz = new Luz();
