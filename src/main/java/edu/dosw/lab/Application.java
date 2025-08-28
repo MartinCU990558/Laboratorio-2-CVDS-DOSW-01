@@ -3,6 +3,7 @@ package edu.dosw.lab;
 import edu.dosw.lab.creacionales.reto2.reto2;
 import edu.dosw.lab.creacionales.reto3.reto3;
 import edu.dosw.lab.estructurales.reto5.reto5;
+import edu.dosw.lab.solid.reto1.reto1;
 
 
 public class Application{
@@ -11,8 +12,9 @@ public class Application{
     private static reto3 reto3 = new reto3();
     public static void main (String [] args){
         System.out.println("Proyecto Maven configurado y corriendo correctamente");
-        reto3.ejecutar();
-        reto5.ejecutar();
+        reto1.ejecutar();
+        //reto3.ejecutar();
+        //reto5.ejecutar();
         //reto2.ejecutar();
     }
 }
