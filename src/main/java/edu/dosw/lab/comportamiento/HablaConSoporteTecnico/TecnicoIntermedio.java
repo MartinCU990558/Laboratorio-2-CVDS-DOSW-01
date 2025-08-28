@@ -1,10 +1,15 @@
 package edu.dosw.lab.comportamiento.HablaConSoporteTecnico;
 
 public class TecnicoIntermedio extends Tecnico {
+
+    public TecnicoIntermedio() {
+        super("Intermedio");
+    }
     @Override
     public boolean manejarTicket(Ticket ticket) {
-        if (ticket.getNivelComplejidad().equalsIgnoreCase("Intermedio")) {
+        if (ticket.getNivelComplejidad().equalsIgnoreCase("intermedio")) {
             System.out.println("El técnico de nivel " + nivelSoporte + " está manejando el ticket con prioridad " + ticket.getNivelPrioridad() + ": " + ticket.getDescripcionProblema());
+            ticket.setTecnicoAsignado("intermedio");
             return true;
         } else if (siguienteTecnico != null) {
             System.out.println("El técnico de nivel " + nivelSoporte + " no puede manejar el ticket con complejidad " + ticket.getNivelComplejidad() + ". Pasando al siguiente técnico.");

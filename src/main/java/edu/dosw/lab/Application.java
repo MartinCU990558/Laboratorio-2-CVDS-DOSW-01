@@ -1,4 +1,5 @@
 package edu.dosw.lab;
+import edu.dosw.lab.comportamiento.HablaConSoporteTecnico.SoporteTecnico;
 import edu.dosw.lab.creacionales.ChefDeCincoEstrellasReto2.ChefDeCincoEstrellas;
 import edu.dosw.lab.creacionales.ReinoDeLosVehiculos.ReinoDeLosVehiculos;
 import edu.dosw.lab.solid.Reto1TiendaDonPepe.*;
@@ -8,7 +9,7 @@ public class Application {
     public static void main(String[] args) {
         System.out.println("✅ Proyecto Maven configurado y corriendo");
 
-        /**
+
         // Ejecución del reto 1 Tienda Don Pepe
         Producto camiseta = new Producto("Camiseta", 20000);
         Producto pantalon = new Producto("Pantalón", 50000);
@@ -24,16 +25,20 @@ public class Application {
 
         // Ejecución del reto 2
         ChefDeCincoEstrellas hamburguesas = new ChefDeCincoEstrellas();
-        hamburguesas.ejecutar();***/
+        hamburguesas.ejecutar();
 
         // Ejecución del reto 3 Reino de los Vehículos
         ReinoDeLosVehiculos reinoVehiculos = new ReinoDeLosVehiculos();
         reinoVehiculos.ejecutar();
 
-        /**
-         * // Ejecución RETO4 casa de cambio
+
+        // Ejecución RETO4 casa de cambio
         CasaDeCambio cambio = new CasaDeCambio();
-        cambio.ejecutar();**/
+        cambio.ejecutar();
+
+        // Ejecución del reto 5 Soporte Técnico
+        SoporteTecnico soporteTecnico = new SoporteTecnico();
+        soporteTecnico.ejecutar();
 
 
 

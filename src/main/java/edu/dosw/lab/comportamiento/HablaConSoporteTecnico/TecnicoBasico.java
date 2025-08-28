@@ -8,8 +8,9 @@ public class TecnicoBasico extends Tecnico {
 
     @Override
     public boolean manejarTicket(Ticket ticket) {
-        if (ticket.getNivelComplejidad().equals("Basico")) {
+        if (ticket.getNivelComplejidad().equalsIgnoreCase("basico")) {
             System.out.println("Técnico Básico manejando ticket: " + ticket.getDescripcionProblema() + " con prioridad " + ticket.getNivelPrioridad());
+            ticket.setTecnicoAsignado("basico");
             return true;
         } else if (siguienteTecnico != null) {
             System.out.println("Técnico Básico escalando ticket: " + ticket.getDescripcionProblema() + " a técnico " + siguienteTecnico.nivelSoporte);
@@ -19,5 +20,4 @@ public class TecnicoBasico extends Tecnico {
             return false;
         }
     }
-
 }

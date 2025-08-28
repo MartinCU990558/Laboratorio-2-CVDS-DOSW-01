@@ -4,7 +4,7 @@ package edu.dosw.lab.estructurales.CafePersonalizado;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cafe {
+/**public class Cafe {
     private CafeBase base;
     private List<Topping> toppings;
 
@@ -32,4 +32,4 @@ public class Cafe {
         }
         return total;
     }
-}
+}**/
