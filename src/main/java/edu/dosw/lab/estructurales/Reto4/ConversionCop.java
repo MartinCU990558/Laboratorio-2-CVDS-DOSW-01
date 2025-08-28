@@ -1,4 +1,4 @@
-package edu.dosw.lab.estructurales;
+package edu.dosw.lab.estructurales.Reto4;
 
 public class ConversionCop {
     public double copToDollar(double amount){

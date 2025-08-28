@@ -1,4 +1,4 @@
-package edu.dosw.lab.estructurales;
+package edu.dosw.lab.estructurales.Reto4;
 
 public class AdapterDollar implements ConverterInterface {
     private ConversionDollar conversionDollar;

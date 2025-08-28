@@ -1,4 +1,4 @@
-package edu.dosw.lab.estructurales;
+package edu.dosw.lab.estructurales.Reto4;
 import java.util.*;
 public class AdapterConversion {
     private Map<String,ConverterInterface> adaptersToConvert;
