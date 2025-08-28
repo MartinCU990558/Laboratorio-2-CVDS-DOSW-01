@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30cab95b-1f6c-4ce5-900f-552c1d8f981a" name="Changes" comment="Actualizacion readme">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Fabricas/UsadoFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Fabricas/VehiculoFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/Vehiculo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Carros/CarroEconomico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Carros/CarroLujo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Carros/CarroUsado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoEconimica.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoLujo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoUsada.java" afterDir="false" />
+    <list default="true" id="30cab95b-1f6c-4ce5-900f-552c1d8f981a" name="Changes" comment="Actualizacion Reto 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoEconimica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoEconimica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/Reto5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/cafe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/listToppings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/dosw/lab/estructurales/topping.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -32,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/SuarezSantiago_SelmaRaquel_LopezNestor_reto2" />
+        <entry key="$PROJECT_DIR$" value="feature/SuarezSantiago_SelmaRaquel_LopezNestor_reto3" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -64,10 +61,11 @@
     "Application.Application.executor": "Run",
     "Application.Pedido.executor": "Run",
     "Application.Reto2Chef.executor": "Run",
+    "Application.Tienda.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/SuarezSantiago__SelmaRaquel__LopezNestor__2025-2",
+    "git-widget-placeholder": "feature/reto5/SuarezSantiago__SelmaRaquel__LopezNestor__2025-2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -116,6 +114,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tienda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.dosw.lab.creacionales.reto3.Tienda" />
+      <module name="Laboratorio-2-CVDS-DOSW-01v" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.dosw.lab.creacionales.reto3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Laboratorio-2-CVDS-DOSW-01" />
       <method v="2">
@@ -129,9 +140,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Reto2Chef" />
         <item itemvalue="Application.Pedido" />
         <item itemvalue="Application.Application" />
-        <item itemvalue="Application.Reto2Chef" />
+        <item itemvalue="Application.Tienda" />
         <item itemvalue="Application.Pedido" />
       </list>
     </recent_temporary>
@@ -155,6 +167,8 @@
       <workItem from="1755841112534" duration="622000" />
       <workItem from="1755886326778" duration="3812000" />
       <workItem from="1756145671620" duration="7139000" />
+      <workItem from="1756239214519" duration="3025000" />
+      <workItem from="1756318451448" duration="14425000" />
     </task>
     <task id="LOCAL-00001" summary="Estructura de carpetas">
       <option name="closed" value="true" />
@@ -180,7 +194,23 @@
       <option name="project" value="LOCAL" />
       <updated>1755841564430</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Actualizacion Reto 3">
+      <option name="closed" value="true" />
+      <created>1756225929597</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1756225929597</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Actualizacion Reto 3">
+      <option name="closed" value="true" />
+      <created>1756334300456</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1756334300456</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +219,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Estructura de carpetas" />
     <MESSAGE value="Actualizacion readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Actualizacion readme" />
+    <MESSAGE value="Actualizacion Reto 2" />
+    <MESSAGE value="Actualizacion Reto 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actualizacion Reto 3" />
   </component>
 </project>

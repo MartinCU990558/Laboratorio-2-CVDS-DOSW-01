@@ -1,4 +1,4 @@
-package edu.dosw.lab.estructurales;
+package edu.dosw.lab.estructurales.reto5;
 
 public interface topping {
     int getPrecio();
