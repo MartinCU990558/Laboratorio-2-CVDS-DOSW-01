@@ -20,9 +20,53 @@
 
 #### Evidencia del código de la solución implementada:
 
+![alt text](image-16.png)
+![alt text](image-17.png)
+![alt text](image-18.png)
+![alt text](image-19.png)
+![alt text](image-15.png)
+
+#### Explicación
+•	Mencionen como está aplicando en su solución cada uno de los principios SOLID.
+(Single Responsibility Principle):
+
+Producto: Solo maneja datos del producto
+Carrito: Solo gestiona items del carrito
+Factura: Solo genera recibos
+CatalogoProductos: Solo maneja el inventario
+Cada clase tiene una razón específica para cambiar
+
+
+(Open/Closed Principle):
+
+Se puede agregar nuevos tipos de cliente sin modificar Cliente.java
+Se puede agregar nuevos productos sin cambiar la lógica del carrito o de los productos
+
+
+(Interface Segregation Principle):
+
+Las clases no implementan métodos que no necesitan
+Cada clase expone solo los métodos relevantes a su responsabilidad
+
+
+(Dependency Inversion Principle):
+
+Carrito depende de la abstracción Producto, no de implementaciones concretas
+
+
+•	Como están aplicando polimorfismo en tu solución
+
+Para resolver el problema, no consideramos necesario utilizar el polimorfismo, sin embargo, el codigo esta escrito de tal forma que soporta el polimorfismo si se extiende el codigo. Por ejemplo, al momento de calcular el subtotal de los productos en el carrito, si extendieramos la clase Item, podriamos calcular el subtotal de items que pertenecen a diferentes clases sin problema.
+
+
+•	Apliquen encapsulamiento, asegurando que los atributos de sus clases estén protegidos y se acceda a ellos mediante métodos.
+
+La mayoria de atributos son private y se accede a ellos por medio de getters cuando sea necesario.
+
 
 #### Evidencia de la ejecución:
-
+![alt text](image-13.png)
+![alt text](image-14.png)
 
 ---
 
