@@ -64,11 +64,11 @@ public class Reto5 {
             System.out.print(prompt);
             String in = sc.nextLine().trim();
             try {
-                int v = Integer.parseInt(in);
-                if (v < min || v > max) {
+                int i = Integer.parseInt(in);
+                if (i < min || i > max) {
                     System.out.println("Ingrese un número entre " + min + " y " + max + ".");
                 } else {
-                    return v;
+                    return i;
                 }
             } catch (NumberFormatException e) {
                 System.out.println("Entrada inválida. Intente de nuevo.");
