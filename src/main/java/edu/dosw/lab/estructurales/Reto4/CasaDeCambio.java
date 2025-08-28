@@ -1,4 +1,4 @@
-package edu.dosw.lab.estructurales;
+package edu.dosw.lab.estructurales.Reto4;
 
 import java.util.*;
 
@@ -7,7 +7,7 @@ public class CasaDeCambio {
     public CasaDeCambio() {
         this.conversionService = new AdapterConversion();
     }
-    public static void main(String[] args) {
+    public static void ejecutar4() {
         CasaDeCambio casaDeCambio = new CasaDeCambio();
         Scanner scanner = new Scanner(System.in);
         
@@ -58,7 +58,7 @@ public class CasaDeCambio {
             }
         }
 
-        System.out.println("\n--- Totales por moneda ---");
+        System.out.println("--- Totales por moneda ---");
         Map<String, Double> totals = new HashMap<>();
 
         for (Map<String, Double> conversions : conversionsPerTransaction) {
