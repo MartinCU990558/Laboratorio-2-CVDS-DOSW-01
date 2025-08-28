@@ -1,7 +1,6 @@
 package edu.dosw.lab.solid.Reto1;
 
 import java.util.Scanner;
-
 public class Reto1TiendaDonPepe {
 
     public static void ejecutar1() {

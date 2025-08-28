@@ -73,5 +73,6 @@ public class SoporteTecnico {
                 .average()
                 .orElse(0);
         System.out.println(" Promedio de prioridad de tickets resueltos: " + priorityAverage);
+        
         }
 }
