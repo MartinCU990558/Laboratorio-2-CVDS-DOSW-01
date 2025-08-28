@@ -90,6 +90,30 @@ Luego, creamos una Factory para los vehiculos, economicos, de lujo y usados que 
 ![alt text](image-7.png)  
 
 ---
+### Reto 6 - Patrón **Chain of responsability**
+
+##### Evidencia #1:
+![alt text](<Captura de pantalla de 2025-08-27 19-57-18.png>)
+![alt text](<Captura de pantalla de 2025-08-27 19-57-29.png>)
+
+#### Explicación
+
+- **Patrón de Diseño:**Comportamiento.
+
+- **Patrón Utilizado:** **Chain of responsability**.
+
+- **Jusificación:**La usamos porque en este caso se ve explícitamente una cadena de responsabilidad, ya que, por decirlo así, los técnicos tienen rangos. Si no les corresponde a ellos resolver un ticket, lo pasarán a su superior, si existe. Además, para que se note más claramente, hicimos que cada técnico pueda revisar únicamente los tickets de su nivel, pero con una dificultad más alta. Por ejemplo, el técnico básico puede revisar los tickets de nivel básico con dificultad baja o media.
+
+- **Aplicacion:**
+- Hicimos una interfaz de tecnico donde la accion de passar al siguiente y donde especificamos que tengan un siguiente para lograr asi la cadena de responsabilidad.
+- Asignamos los puestos dela cadena en nuestra clase principal llamada reto6.
+- Hicimos una clase aparte para las estadisticas usando streams.
+
+
+#### Evidencia #2
+![alt text](<Captura de pantalla de 2025-08-27 20-06-31.png>)
+![alt text](<Captura de pantalla de 2025-08-27 20-06-40.png>)
+![alt text](<Captura de pantalla de 2025-08-27 20-07-00.png>)
 
 ### Reto 7 - Patrón **Command**
 
