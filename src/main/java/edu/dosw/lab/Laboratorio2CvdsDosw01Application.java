@@ -3,6 +3,7 @@ package edu.dosw.lab;
 import edu.dosw.lab.Comportamiento.Reto7.Reto7;
 import edu.dosw.lab.Comportamiento.reto6.Reto6;
 import edu.dosw.lab.Creacionales.Reto3.Reto3;
+import edu.dosw.lab.Estructurales.Reto5.Reto5;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -22,6 +23,8 @@ public class Laboratorio2CvdsDosw01Application {
 		Reto3.ejecutar();
 		System.out.println("\n===== INICIO RETO 4 =====\n");
 		Reto4.ejecutar();
+		System.out.println("\n===== INICIO RETO 5 =====\n");
+		Reto5.ejecutar();
 		System.out.println("\n===== INICIO RETO 6 =====\n");
 		Reto6.ejecutar();
 		System.out.println("\n===== INICIO RETO 7 =====\n");
