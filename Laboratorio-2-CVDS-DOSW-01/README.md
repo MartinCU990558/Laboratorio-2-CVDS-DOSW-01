@@ -3,7 +3,7 @@
 ## 👥 Integrantes
 - Daniel Patiño Mejia  
 - Juan Felipe Rangel  
-- Ana Gabrile Fiquitiva  
+- Ana Gabriela Fiquitiva  
 
 📌 Rama de trabajo: **feature/PatiñoDaniel_FiquitivaAna_RangelJuan_2025-2**
 
