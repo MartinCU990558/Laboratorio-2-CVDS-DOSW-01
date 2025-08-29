@@ -1,4 +1,4 @@
-package edu.dosw.lab.Laboratorio_2_CVDS_DOSW_01.Reto5;
+package edu.dosw.lab.Laboratorio_2_CVDS_DOSW_01.Estructural.Reto5;
 
 public class SimpleCoffee implements Coffee {
 
