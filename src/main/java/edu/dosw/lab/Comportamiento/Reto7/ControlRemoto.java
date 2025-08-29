@@ -5,7 +5,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class ControlRemoto {
-    public static void main(String[] args) {
+    public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         List<Accion> historial = new ArrayList<>();
         System.out.println("Introduzca el numero de acciones a registrar: ");
@@ -16,31 +16,34 @@ public class ControlRemoto {
             System.out.println("\nAccion" + i + ":");
             System.out.println("Usuario: ");
             String usuario = sc.nextLine();
-            System.out.println("Seleccione accion: 1.Encender lluz 2.Abrir puerta 3.Reproducir música 4.Ajustar volumen 5.Ajustar persiana");
+            System.out.println(
+                    "Seleccione accion: 1.Encender lluz 2.Abrir puerta 3.Reproducir música 4.Ajustar volumen 5.Ajustar persiana");
             int opcion = sc.nextInt();
             sc.nextLine();
 
             Accion accion = null;
-            if(opcion == 1) accion = new AccionLuz(usuario);
-            else if(opcion == 2 ) accion= new AccionPuerta(usuario);
-            else if (opcion == 3) accion = new AccionPonerMusica(usuario);
-            else if (opcion== 4){
+            if (opcion == 1)
+                accion = new AccionLuz(usuario);
+            else if (opcion == 2)
+                accion = new AccionPuerta(usuario);
+            else if (opcion == 3)
+                accion = new AccionPonerMusica(usuario);
+            else if (opcion == 4) {
                 System.out.println("Ingrese valor (0-100): ");
                 String valor = sc.nextLine();
                 sc.nextLine();
                 accion = new AccionVolumen(usuario, valor);
-            }
-            else if (opcion == 5) {
+            } else if (opcion == 5) {
                 System.out.println("Ingrese valor (0-100): ");
                 String valor = sc.nextLine();
                 sc.nextLine();
                 accion = new AccionPersiana(usuario, valor);
             }
-            if (accion != null){
+            if (accion != null) {
                 accion.ejecutar();
                 System.out.println("¿Deshacer aacion? (si/no): ");
                 String deshacer = sc.nextLine();
-                if (deshacer.equals("si")){
+                if (deshacer.equals("si")) {
                     accion.deshecha();
                 }
                 historial.add(accion);
@@ -49,8 +52,8 @@ public class ControlRemoto {
         System.out.println("\n-----Historial completo-----");
         int indx = 1;
         for (Accion accion : historial) {
-            String deshechos = accion.seDeshizo() ? "(deshecha)":"";
-            System.out.println(indx + ". " + accion.getDescripcion() + "-Usuario: "+ accion.getUsuario() + deshechos);
+            String deshechos = accion.seDeshizo() ? "(deshecha)" : "";
+            System.out.println(indx + ". " + accion.getDescripcion() + "-Usuario: " + accion.getUsuario() + deshechos);
         }
         System.out.println("\n-----Investigando quien desconfiguró los electrodomésticos-----");
 
@@ -72,4 +75,3 @@ public class ControlRemoto {
     }
 
 }
-

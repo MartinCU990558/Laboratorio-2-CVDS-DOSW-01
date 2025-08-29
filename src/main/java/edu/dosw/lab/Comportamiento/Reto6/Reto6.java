@@ -1,23 +1,24 @@
 package edu.dosw.lab.Comportamiento.Reto6;
+
 import java.util.*;
 import java.util.Scanner;
 import java.util.stream.*;
 
 public class Reto6 {
-    public static void main(String[] args) {
+    public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         List<Ticket> tickets = new ArrayList<>();
         System.out.println("Ingrese el ticket que desea: ");
         int n = Integer.parseInt(sc.nextLine());
         for (int i = 0; i < n; i++) {
-            System.out.println("Ticket " + (i+1) + ":");
+            System.out.println("Ticket " + (i + 1) + ":");
             System.out.println("Nivel:");
             String nivel = sc.nextLine();
             System.out.println("Prioridad: ");
             String prioridad = sc.nextLine();
             System.out.println("Descripcion :");
             String descripcion = sc.nextLine();
-            tickets.add(new Ticket(i+1, nivel, prioridad, descripcion, false));
+            tickets.add(new Ticket(i + 1, nivel, prioridad, descripcion, false));
             System.out.println();
         }
 
@@ -30,10 +31,12 @@ public class Reto6 {
 
         tickets.forEach(basico::manejarTicket);
         for (Ticket ticket : tickets) {
-            if(ticket.isResuelto()){
-                System.out.println("Ticket " + ticket.getNumeroTicket() + ": " + ticket.getTecnico() + "resolvió el problema.");
-            } else{
-                System.out.println("Ticket " + ticket.getNumeroTicket() + ": Ningún técnico disponible. Ticket pendiente de escalamiento.");
+            if (ticket.isResuelto()) {
+                System.out.println(
+                        "Ticket " + ticket.getNumeroTicket() + ": " + ticket.getTecnico() + "resolvió el problema.");
+            } else {
+                System.out.println("Ticket " + ticket.getNumeroTicket()
+                        + ": Ningún técnico disponible. Ticket pendiente de escalamiento.");
             }
         }
         System.out.println("--Estadisticas--");
@@ -49,8 +52,7 @@ public class Reto6 {
         Map<String, Integer> prioridadMap = Map.of(
                 "baja", 1,
                 "media", 2,
-                "alta", 3
-        );
+                "alta", 3);
 
         long totalResueltos = tickets.stream()
                 .filter(Ticket::isResuelto)
