@@ -93,6 +93,35 @@ Gracias a este patrón, se pueden agregar nuevos vehículos o categorías sin ne
 Cada vehículo (ej. Car, Bike, Boat, Plane) implementa esa interfaz.
 Mediante la clase GeneralFactory, el sistema crea los objetos de manera dinámica dependiendo de la elección del usuario (tipo y categoría), y al final se generan los recibos usando streams para calcular el total.
 
+### RETO #4: La Estafa de la Casa de Cambio
+Evidencia:
+![Captura](docs/imagenes/reto4_1.png)
+![Captura](docs/imagenes/reto4_2.png)
+![Captura](docs/imagenes/reto4_3.png)
+![Captura](docs/imagenes/reto4_4.png)
+![Captura](docs/imagenes/reto4_5.png)
+![Captura](docs/imagenes/reto4_6.png)
+![Captura](docs/imagenes/reto4_salida.png)
+
+Descripción:
+Una casa de cambio tenía como anterior propietario conocido como “El Gringo”, resulta que para cualquier persona que quisiera cambiar su dinero a dólares (Euros, Yenes, Pesos Colombianos) el utilizaba la misma tasa de cambio para todas por lo que los usuarios eran estafados.
+El nuevo dueño los ha contratado y les ha asignado La tarea de crear un servicio que permita convertir cualquier moneda a cualquier designación de las utilizadas con la tasa real.
+**Patrón de Diseño**
+
+- **Categoría:** Comportamiento  
+- **Patrón Utilizado:** Strategy  
+
+### Justificación
+El patrón Strategy permite definir una familia de algoritmos (en este caso, diferentes tipos de conversión de divisas), encapsularlos y hacerlos intercambiables sin modificar el código del cliente.  
+Esto resuelve el problema de tener que manejar múltiples conversiones en una sola clase con condicionales.
+
+### Cómo lo aplicamos:
+- La interfaz `ConversionStrategy` define el contrato de conversión de cualquier moneda.  
+- Cada clase concreta (ej: `UsdConversion`, `EuroConversion`, `YenConversion`, etc.) implementa la lógica para convertir desde la moneda original hacia la deseada.  
+- La clase `CurrencyConverter` actúa como contexto, recibiendo una estrategia de conversión y aplicándola a la cantidad de dinero ingresada.  
+- La clase `ApplicationReto4` funciona como cliente, donde el usuario ingresa las transacciones y selecciona la conversión.  
+- La clase `ConversionReceipt` muestra los resultados: monto original, monto convertido y totales calculados con el uso de streams.
+
 ### RETO #5: El Café Personalizado
 Evidencia:
 
