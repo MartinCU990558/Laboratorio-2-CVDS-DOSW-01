@@ -1,15 +1,15 @@
-# 🧩 Laboratorio 02 - SOLID, Patrones de Diseño y UML
+# Laboratorio 02 -SOLID, Patrones de diseño y UML
 
-## 👥 Integrantes
-- Daniel Patiño Mejia  
-- Juan Felipe Rangel  
-- Ana Gabriela Fiquitiva  
+**Integrantes**
+- Daniel Patiño Mejia
+- Juan Felipe Rangel
+- Ana Gabrile Fiquitiva
 
 📌 Rama de trabajo: **feature/PatiñoDaniel_FiquitivaAna_RangelJuan_2025-2**
 
 ---
 
-## ✅ Retos Completados
+##Retos Completados
 
 ###Reto 1:
 - **Tipo de patron:** Comportamiento
@@ -58,31 +58,33 @@ El patrón Factory se utiliza para delegar la creación de objetos a una clase e
 
 ---
 
-### 🔹 Reto 5
-- **Tipo de patrón:**  
-- **Patrón:**  
-- **Imagen:**  
-  ![Caso de prueba]()
+
+###Reto 5:
+- **Tipo de patron:** estructural
+- **Patron:** decorador
+- **justificacion**
+- se implemento el patron decorador para poder agregar caracteristicas a un objeto sin tener que modificar su estado base, de esta forma nos permite (en este caso)
+  agregarle caracteristicas al cafe sin la necesidad de cambiar su constructor de alguna forma, en vez de eso se le van agregando las nuevas caracteristicas al objeto ya creado y junto a estas caracteristicas su precio correspondiente, modificando asi el producto final sin tener que crear mas objetos de forma especifica.  
+![img1](/docs/imagenes/reto5.png)
 
 ---
 
-### 🔹 Reto 6
-- **Tipo de patrón:**  
-- **Patrón:**  
-- **Imagen:**  
-  ![Caso de prueba]()
+###Reto 6:
+- **Tipo de patron:**  comportamental
+- **Patron:** chain of responsability
+- **justificacion**
+- se utilizo el patron chain of responsability ya que este patron permite delegar responsabilidades entre los objetos dependiendo de sus caracteristicas definidas, en este caso cada objeto implementa su metodo para resolver la solicitud la cual depende del nivel y prioridad de el ticket, dado que cada tecnico tiene niveles diferentes el patron permitio delegar las solicitud entre los tecnicos hasta que esta se resolviera. unicamente cambiando en cada tecnico su nivel y asignandole un valor apuntador hacia el siguiente tecnico.  
+![img1](/docs/imagenes/reto6.png)  
 
----
-
-### 🔹 Reto 7
-- **Tipo de patrón:** Comportamiento  
-- **Patrón:** command
-- **Explicacion:** El Patrón Command permite encapsular una solicitud como un objeto, lo que nos permite parametrizar los objetos con   solicitudes, hacer cola o registrar solicitudes, y deshacer operaciones. En este reto, las clases como EncenderLuz, AbrirPuerta,  AjustarVolumen, etc., representan comandos concretos que encapsulan una acción sobre objetos como Luz, Puerta, Musica, y Persiana. Esto permite ejecutar las acciones sin tener que conocer los detalles de cómo se llevan a cabo esas operaciones.
+###Reto 7:
+- **Tipo de patron:** Comportamiento 
+- **Patron:** Command
+- **Explicacion:**
+El Patrón Command permite encapsular una solicitud como un objeto, lo que nos permite parametrizar los objetos con solicitudes, hacer cola o registrar solicitudes, y deshacer operaciones. En este reto, las clases como EncenderLuz, AbrirPuerta, AjustarVolumen, etc., representan comandos concretos que encapsulan una acción sobre objetos como Luz, Puerta, Musica, y Persiana. Esto permite ejecutar las acciones sin tener que conocer los detalles de cómo se llevan a cabo esas operaciones.
 
 En este caso, se aplico en las clases como EncenderLuz o AbrirPuerta implementan el patrón Command al ser responsables de ejecutar una acción específica sobre un objeto. El ComandoFactory es utilizado para crear las instancias de los diferentes comandos basados en la opción seleccionada por el usuario. Esto delega la responsabilidad de ejecutar acciones a los objetos comando, separando las solicitudes de las acciones ejecutadas, lo que mejora la flexibilidad y escalabilidad del sistema.
-- **Imagen:**  
-  ![Caso de prueba](docs/imagenes/reto7_1.png)
-  ![Caso de prueba](docs/imagenes/reto7_2.png)
+- **Imagen:** ![Caso de prueba](docs/imagenes/reto7_1.png)
+![Caso de prueba](docs/imagenes/reto7_2.png)
 
 ---
 
