@@ -1,9 +1,10 @@
 package edu.dosw.lab;
 
+import edu.dosw.lab.Comportamiento.reto6.Reto6;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import edu.dosw.lab.Comportamiento.Reto4.Reto4;
+
 import edu.dosw.lab.Solid.Reto1.Reto1;
 
 @SpringBootApplication
@@ -15,8 +16,8 @@ public class Laboratorio2CvdsDosw01Application {
 		System.out.println("\nProyecto Maven configurado y corriendo correctamente");
 		System.out.println("\n===== INICIO RETO 1 =====\n");
 		Reto1.ejecutar();
-		System.out.println("\n===== INICIO RETO 4 =====\n");
-		Reto4.ejecutar();
+		System.out.println("\n===== INICIO RETO 6 =====\n");
+		Reto6.ejecutar();
 	}
 
 }
