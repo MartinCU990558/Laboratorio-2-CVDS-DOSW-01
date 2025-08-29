@@ -45,3 +45,8 @@ Para este reto en un primer momento tratamos de analizar lo que es la prioridad 
 Entonces para eso creamos la clase abstracta tecnico y de ahi salen los tecnicos basicos, intermedios y avanzados. Delegando la resposabilidad dependiendo del nivel del trabajo. Sin embargo tuvimos un problema y es que al ver la salida no entendiamos por que el intermedio no podia resolver su problema y tampoco entendimos por que el basico no podia atender con el ultimo pedido asi que al no entender no pudimos aplicarlo y lo dejamos de tal manera que dependiendo del nivel que tenga los tecnicos van a ver si lo pueden resolver o no.
 Asi que nos dio como resultado:
 ![alt text](image-1.png)
+## 🔎 Reto 7
+### Patron utilizado: Command
+Para este ejercicio decidimos utilizar el patron Command ya que este patron nos permite encapsular las acciones que vamos a realizar ya sea encender las luces o subir el volumen como objetos independientes, esto facilita el registro del historial y los registros de quien ejecuto que. Tambien es util para ver quien deshace que accion.
+
+![alt text](image-3.png)
