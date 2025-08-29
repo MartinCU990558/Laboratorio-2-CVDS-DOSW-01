@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 
 public class Reto2ChefCincoEstrellas {
     public static void ejecutar() {
+        HamburguesaNuevoIngredienteBuilder builder = new HamburguesaNuevoIngredienteBuilder();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Seleccione ingredientes para su hamburguesa: ");
         options();
@@ -18,13 +19,36 @@ public class Reto2ChefCincoEstrellas {
                 .map(String::trim)
                 .map(Integer::parseInt)
                 .collect(Collectors.toList());
-        if (ingreso.contains(7)) {
-            System.out.println("Ingrese el nombre del nuevo ingrediente: ");
-            String nuevoIngrediente = scanner.nextLine();
-            System.out.println("Ingrese el precio del ingrediente: ");
-            double precio = scanner.nextDouble();
+
+        for (Integer opcion : ingreso) {
+            switch (opcion) {
+                case 1:
+                    builder.ponerPan(new Pan());
+                    break;
+                case 2:
+                    builder.ponerCarne(new Carne());
+                    break;
+                case 3:
+                    builder.ponerQueso(new Queso());
+                    break;
+                case 4:
+                    builder.ponerLechuga(new Lechuga());
+                    break;
+                case 5:
+                    builder.ponerTomate(new Tomate());
+                    break;
+                case 6:
+                    builder.ponerSalsaEspecial(new SalsaEspecial());
+                    break;
+                default:
+                    System.out.println("Ingrese el nombre del nuevo ingrediente: ");
+                    String nuevoIngrediente = scanner.nextLine();
+                    System.out.println("Ingrese el precio del ingrediente: ");
+                    double precio = scanner.nextDouble();
+                    builder.ponerNuevoIngrediente(new NuevoIngrediente(nuevoIngrediente, precio));
+            }
         }
-        output();
+        output(builder);
 
     }
 
@@ -38,13 +62,8 @@ public class Reto2ChefCincoEstrellas {
         System.out.println("7. Agregar un nuevo ingrediente");
     }
 
-    public static void output() {
+    public static void output(HamburguesaNuevoIngredienteBuilder builder) {
         System.out.println("--- HAMBURGUESA PERSONALIZADA ---");
-        Director director = new Director();
-
-        HamburguesaNuevoIngredienteBuilder builder = new HamburguesaNuevoIngredienteBuilder();
-        director.construirHamburguesa(builder);
-
         HamburguesaNuevoIngrediente resultadoHamburguesa = builder.getHamburguesaNuevoIngrediente();
         System.out.println("Ingredientes seleccionados: ");
         resultadoHamburguesa.printIngredientes();

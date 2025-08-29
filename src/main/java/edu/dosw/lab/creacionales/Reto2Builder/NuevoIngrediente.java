@@ -4,7 +4,7 @@ public class NuevoIngrediente extends Ingredientes {
     private double precio;
     private String nombre;
 
-    public NuevoIngrediente() {
+    public NuevoIngrediente(String nombre, double precio) {
         precio = 4.000;
         nombre = "Tocino";
     }
