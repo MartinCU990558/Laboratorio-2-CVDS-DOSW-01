@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class TiendaDonPepe {
     private static List<Producto> menu = crearMenu();
-    public static void main(String[] args) {
+    public static void ejecutar() {
         System.out.println("Bienvenido a la tienda Don Pepe!");
         Scanner scanner = new Scanner(System.in);
         System.out.print("Cliente: ");
