@@ -2,7 +2,7 @@ package edu.dosw.lab.estructurales.CafePersonalizado;
 
 import java.util.*;
 
-/**public class CafePersonalizadoClase {
+public class CafePersonalizadoClase {
 
     private Map<Integer, Topping> listaToppings;
 
@@ -61,4 +61,4 @@ import java.util.*;
             System.out.println("Opcion invalida: " + opcion);
         }
     }
-}**/
+}

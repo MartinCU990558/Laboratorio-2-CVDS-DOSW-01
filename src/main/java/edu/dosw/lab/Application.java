@@ -4,6 +4,8 @@ import edu.dosw.lab.creacionales.ChefDeCincoEstrellasReto2.ChefDeCincoEstrellas;
 import edu.dosw.lab.creacionales.ReinoDeLosVehiculos.ReinoDeLosVehiculos;
 import edu.dosw.lab.solid.Reto1TiendaDonPepe.*;
 import edu.dosw.lab.comportamiento.CasaDeCambioReto4.CasaDeCambio;
+import edu.dosw.lab.estructurales.CafePersonalizado.CafePersonalizadoClase;
+
 
 public class Application {
     public static void main(String[] args) {
@@ -11,6 +13,7 @@ public class Application {
 
 
         // Ejecución del reto 1 Tienda Don Pepe
+
         Producto camiseta = new Producto("Camiseta", 20000);
         Producto pantalon = new Producto("Pantalón", 50000);
         Producto galletas = new Producto("Galletas", 500);
@@ -40,9 +43,10 @@ public class Application {
         SoporteTecnico soporteTecnico = new SoporteTecnico();
         soporteTecnico.ejecutar();
 
-
+        // Ejecución del reto 5 Soporte Técnico
+        CafePersonalizadoClase cafe = new CafePersonalizadoClase();
+        cafe.ejecutar();
 
     }
-
 
 }
