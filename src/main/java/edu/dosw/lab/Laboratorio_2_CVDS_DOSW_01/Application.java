@@ -12,6 +12,7 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 		//Reto1TiendaDonPepe.ejecutar();
 		//Reto6Support.ejecutar();
+		//ApplicationReto3.ejecutar();
 		Reto7MagicRemote.ejecutar();
 	}
 
