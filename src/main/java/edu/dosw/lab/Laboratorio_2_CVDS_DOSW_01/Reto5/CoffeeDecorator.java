@@ -1,4 +1,4 @@
-package Estructural.Reto5;
+package edu.dosw.lab.Laboratorio_2_CVDS_DOSW_01.Reto5;
 
 public abstract class CoffeeDecorator implements Coffee {
     protected final Coffee decoratedCoffee;
