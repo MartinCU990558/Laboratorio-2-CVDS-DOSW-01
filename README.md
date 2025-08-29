@@ -14,7 +14,52 @@
 ## ✅ Retos Completados
 
 **RETO 1 COMPLETADO**
-    ![alt text](docs/Imagenes/image.png)
+
+**SOLID**
+- S: Cada clase tiene una unica responsabilidad (producto maneja datos, carrito gestino productos, cliente aplica descuentos, recibo imprime, tiendoDonPepe ejecuta la compra).
+- O: Se pueden agregar nuevos tipos de clientes con descuentos distintos sin modificar las clases existentes.
+- L: Cualquier subclase de Cliente puede usarse sin afectar el programa.
+- I: Cliente define solo lo esencial (el calculo de desecuento), sin obligar a implementar metodos innecesarios.
+- D: El sistema depende de la abstraccion Cliente y no de sus implementaciones concretas.
+
+**POLIMORFISMO**
+Se aplica en la jerarquia de Cliente. El metodo calcularDescuento es invocado desde una referencia generica Cliente, pero en tiempo de ejecucion se ejecuta la version especifica segun el tipo de cliente (Nuevo,Frecuente,etc)
+    ![img_1.png](docs/Imagenes/img_1.png)
+    ![img_2.png](docs/Imagenes/img_2.png)
+    ![img_3.png](docs/Imagenes/img_3.png)
+    ![img_4.png](docs/Imagenes/img_4.png)
+    ![img_5.png](docs/Imagenes/img_5.png)
+    ![img_6.png](docs/Imagenes/img_6.png)
+    ![img_7.png](docs/Imagenes/img_7.png)
+    ![img.png](docs/Imagenes/image.png)
+
+**RETO 2 COMPLETADO**
+
+
+
+**RETO 3 COMPLETADO**
+
+
+
+**RETO 4 COMPLETADO**
+
+
+
+**RETO 5 COMPLETADO**
+
+
+
+**RETO 6 COMPLETADO**
+
+
+
+**RETO 7 COMPLETADO**
+
+
+
+**RETO 8 COMPLETADO**
+
+
 
 ---
 
