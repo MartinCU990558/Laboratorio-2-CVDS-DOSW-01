@@ -45,7 +45,7 @@ Para este caso:
 ![Captura](docs/imagenes/Reto3_1.png)
 ![Captura](docs/imagenes/Reto3_2.png)
 ![Captura](docs/imagenes/Reto3_3.png)
-![Captura](docs/imagenes/Reto3_4.png)
+![Captura](docs/imagenes/reto3_4.png)
 
 ## 🔎 Reto 4
 
@@ -62,7 +62,7 @@ Este patron nos ayuda a poder poner mas monedas en el futuro.
 ## 📊 Resultados
 ![Captura](docs/imagenes/Reto4_1.png)
 ![Captura](docs/imagenes/Reto4_2.png)
-![Captura](docs/imagenes/Reto4_3.png)
+![Captura](docs/imagenes/reto4_3.png)
 ![Captura](docs/imagenes/Reto4_4.png)
 ![Captura](docs/imagenes/Reto4_5.png)
 
