@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ReinoVehiculos {
-    public static void main(String[] args) {
+    public static void ejecutar() {
         ArrayList<Vehiculo> vehiculos = new ArrayList<>();
         boolean opcion = true;
         Scanner scanner = new Scanner(System.in);
