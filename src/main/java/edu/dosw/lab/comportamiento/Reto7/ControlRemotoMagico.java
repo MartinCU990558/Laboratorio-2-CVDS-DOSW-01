@@ -2,20 +2,20 @@ package edu.dosw.lab.comportamiento.Reto7;
 import java.util.*;
 
 public class ControlRemotoMagico {
-    private List<Command> historialComandos;
-    private List<Integer> comandosDeshechos;
+    private static List<Command> historialComandos = new ArrayList<>();
+    private static List<Integer> comandosDeshechos =  new ArrayList<>();
     
     public ControlRemotoMagico() {
         historialComandos = new ArrayList<>();
         comandosDeshechos = new ArrayList<>();
     }
     
-    public void ejecutarComando(Command comando) {
+    public static void ejecutarComando(Command comando) {
         comando.execute();
         historialComandos.add(comando);
     }
     
-    public void deshacerComando(int indice) {
+    public static void deshacerComando(int indice) {
         if (indice >= 0 && indice < historialComandos.size()) {
             Command comando = historialComandos.get(indice);
             comando.undo();
@@ -25,7 +25,7 @@ public class ControlRemotoMagico {
         }
     }
     
-    public void mostrarHistorial() {
+    public static void mostrarHistorial() {
         System.out.println("\n--- Historial completo ---");
         for (int i = 0; i < historialComandos.size(); i++) {
             Command comando = historialComandos.get(i);
@@ -36,7 +36,7 @@ public class ControlRemotoMagico {
         }
     }
     
-    public void mostrarResumen() {
+    public static void mostrarResumen() {
     System.out.println("\n--- Investigando quién desconfiguró los electrodomésticos ---");
     Map<String, Integer> accionesTotalesPorUsuario = new HashMap<>();
     
@@ -66,7 +66,7 @@ public class ControlRemotoMagico {
     }
 }
   
-    public void ejecutar() {
+    public static void ejecutar7() {
         Lights lights = new Lights();
         Doors doors = new Doors();
         Music music = new Music();
@@ -122,7 +122,7 @@ public class ControlRemotoMagico {
             if (comando != null) {
                 ejecutarComando(comando);
                 System.out.println("\nAcción " + i + " ejecutada por " + usuario + ": " + descripcionAccion);
-                System.out.print("Deshacer acción? (s/no): ");
+                System.out.print("Deshacer acción? (si/no): ");
                 String respuesta = scanner.nextLine().toLowerCase();
                 if (respuesta.equals("si")) {
                     deshacerComando(historialComandos.size() - 1);
