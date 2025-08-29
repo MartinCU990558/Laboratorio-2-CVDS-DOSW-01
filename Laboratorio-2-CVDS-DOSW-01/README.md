@@ -19,7 +19,7 @@
 ###Reto 2:
 - **Tipo de patron:** Creacional
 - **Patron:** Builder
-- **Justificacion**: 
+- **Justificacion**: Elegimos este patron ya que este nos permite construir distintos tipos y representaciones del objeto, en este caso como todas las hamburguesas no tienen los mismos ingredientes, por lo tanto se implemento una clase builder donde se pueden elegir los ingredientes para construir el objeto hamburguesa.
 - **Imagen:** 
 ![Caso de prueba](docs/imagenes/reto2.png)
 
@@ -29,9 +29,10 @@
 - **Imagen:** ![Caso de prueba]()
 
 ###Reto 4:
-- **Tipo de patron:** 
-- **Patron:** 
-- **Imagen:** ![Caso de prueba]()
+- **Tipo de patron:** Comportamiento
+- **Patron:** Strategy
+- **Justificacion:** La razon por la cual utilizamos strategy fue porque teniamos que implementar una logica distinta para cada tipo de conversion, lo que se hizo fue implementar una interfaz donde se tiene un metodo convertir y se crearon multiples clases, una por cada divisa donde se implementa la interfaz acorde a al tipo de conversion y los valores de conversion por moneda.
+- **Imagen:** ![Caso de prueba](docs/imagenes/reto4.png)
 
 ###Reto 5:
 - **Tipo de patron:** 

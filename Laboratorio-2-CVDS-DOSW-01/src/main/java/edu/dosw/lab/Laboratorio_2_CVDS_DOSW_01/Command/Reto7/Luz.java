@@ -1,4 +1,4 @@
-
+package edu.dosw.lab.Laboratorio_2_CVDS_DOSW_01.Command.Reto7;
 public class Luz {
     private boolean encendida = false;
     public void encender(){ encendida = true; }

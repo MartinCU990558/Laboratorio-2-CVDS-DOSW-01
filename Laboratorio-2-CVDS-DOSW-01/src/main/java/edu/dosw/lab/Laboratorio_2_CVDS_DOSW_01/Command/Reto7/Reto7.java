@@ -1,5 +1,10 @@
-import java.util.*;
+package edu.dosw.lab.Laboratorio_2_CVDS_DOSW_01.Command.Reto7;
 import java.text.Normalizer;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Scanner;
 import java.util.stream.Collectors;
 
 public class Reto7 {

@@ -1,4 +1,5 @@
-
+package edu.dosw.lab.Laboratorio_2_CVDS_DOSW_01.Command.Reto7;
+ 
 public class PausarMusica extends ComandoBase {
     private final Musica musica;
     public PausarMusica(Musica musica, String usuario){ super(usuario); this.musica = musica; }

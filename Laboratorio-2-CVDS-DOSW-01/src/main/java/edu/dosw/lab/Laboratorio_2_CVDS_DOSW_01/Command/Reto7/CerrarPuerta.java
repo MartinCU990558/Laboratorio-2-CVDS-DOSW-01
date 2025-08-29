@@ -1,4 +1,4 @@
-
+package edu.dosw.lab.Laboratorio_2_CVDS_DOSW_01.Command.Reto7;
 public class CerrarPuerta extends ComandoBase {
     private final Puerta puerta;
     public CerrarPuerta(Puerta puerta, String usuario) { super(usuario); this.puerta = puerta; }

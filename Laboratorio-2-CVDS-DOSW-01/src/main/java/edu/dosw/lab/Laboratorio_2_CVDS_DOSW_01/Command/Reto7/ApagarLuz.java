@@ -1,4 +1,4 @@
-
+package edu.dosw.lab.Laboratorio_2_CVDS_DOSW_01.Command.Reto7;
 public class ApagarLuz extends ComandoBase {
     private final Luz luz;
     public ApagarLuz(Luz luz, String usuario) { super(usuario); this.luz = luz; }

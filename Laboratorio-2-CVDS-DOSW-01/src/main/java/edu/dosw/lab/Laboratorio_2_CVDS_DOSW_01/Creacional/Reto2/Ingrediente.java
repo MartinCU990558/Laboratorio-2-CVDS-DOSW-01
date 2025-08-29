@@ -1,4 +1,4 @@
-package edu.dosw.lab.Laboratorio_2_CVDS_DOSW_01.creacionales.Reto2;
+package edu.dosw.lab.Laboratorio_2_CVDS_DOSW_01.Creacional.Reto2;
 
 public class Ingrediente {
     private String nombre;

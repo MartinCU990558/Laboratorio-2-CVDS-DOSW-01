@@ -1,3 +1,4 @@
+package edu.dosw.lab.Laboratorio_2_CVDS_DOSW_01.FactoryMethod.Reto3;
 
 public class VehiculoLujo extends CategoriaVehiculo {
     public VehiculoLujo(Vehiculo vehiculo) { super(vehiculo); }
