@@ -64,6 +64,37 @@ Gracias a este patrón, se pueden agregar nuevos vehículos o categorías sin ne
 Cada vehículo (ej. Car, Bike, Boat, Plane) implementa esa interfaz.
 Mediante la clase GeneralFactory, el sistema crea los objetos de manera dinámica dependiendo de la elección del usuario (tipo y categoría), y al final se generan los recibos usando streams para calcular el total.
 
+### RETO #5: El Café Personalizado
+Evidencia:
+
+<img width="573" height="127" alt="image" src="https://github.com/user-attachments/assets/be5394f8-7691-4be1-97fc-0dda6fa6c4d3" />
+<img width="736" height="385" alt="image" src="https://github.com/user-attachments/assets/6b8abdb4-8e62-4d08-a6e8-f4112ab9e3c5" />
+<img width="563" height="350" alt="image" src="https://github.com/user-attachments/assets/abc090a9-1831-4bcf-ac3a-44f47be27210" />
+<img width="596" height="348" alt="image" src="https://github.com/user-attachments/assets/6c210436-ed5e-4336-b83b-f57eab9ab4c9" />
+<img width="548" height="348" alt="image" src="https://github.com/user-attachments/assets/cfd6b681-e066-47df-ac56-3198e6ce8513" />
+<img width="554" height="280" alt="image" src="https://github.com/user-attachments/assets/f42b55ff-ee4b-4b59-8564-eae1d1283499" />
+<img width="665" height="436" alt="image" src="https://github.com/user-attachments/assets/de8e2ae0-0c25-4df6-b557-2edef9873e2c" />
+<img width="727" height="1129" alt="image" src="https://github.com/user-attachments/assets/62038a33-ddc9-42eb-ba9a-825a8f11f761" />
+
+📝 Entrada:
+
+<img width="528" height="625" alt="image" src="https://github.com/user-attachments/assets/9425da4f-47d2-41b3-8314-8d1be3dfe5f1" />
+
+📢 Salida:
+
+<img width="450" height="125" alt="image" src="https://github.com/user-attachments/assets/e3a4e57a-864b-4a9c-8c55-d257174eeceb" />
+
+Descripción:
+- ***Patrón de diseño:*** Estructural
+- ***Patrón utilizado:*** Decorator
+- ***Justificación:*** Implementamos un patrón de diseño decorador para construir cafés personalizados agregando dinámicamente toppings como leche, chocolate y caramelo.
+Esto permite extender las funcionalidades del objeto base (SimpleCoffee) sin modificar su código, agregando nuevas características de manera flexible y siguiendo el principio abierto/cerrado (OCP) de SOLID.
+
+- ***Cómo lo aplicamos:*** Definimos la interfaz Coffee y la clase base SimpleCoffee.
+Luego creamos un decorador abstracto (CoffeeDecorator) y decoradores concretos (Milk, Chocolate, Caramel) que añaden comportamiento extra al café (más descripción y más precio).
+El usuario puede ir seleccionando los toppings deseados en tiempo de ejecución y cada uno se va envolviendo sobre el café base.
+Finalmente, usamos streams para calcular el total de varios cafés en una misma orden y mostrarlo en el recibo.
+
 ### RETO #6: Habla con Soporte Técnico
 Evidencia:
 
