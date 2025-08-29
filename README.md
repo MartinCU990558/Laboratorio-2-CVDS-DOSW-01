@@ -31,14 +31,8 @@ Se implementó una clase abstracta Vehiculo y subclases como Auto, Moto, Bicicle
 
 El sistema cuenta con un menú interactivo en consola donde el usuario selecciona el tipo, categoría y modelo de vehículo, y finalmente se genera un resumen de compra en pesos colombianos, mostrando precios, características y el total a pagar.
 
----
-<<<<<<< HEAD
-### Reto 5: La Estafa de la Casa de cambio
-=======
 
-
-### Reto 4: La Estafa de la Casa de cambio
->>>>>>> 1d61da7cd4b9f03834270685b6354f16b76b6ab2
+### Reto 6: Habla con Soporte Técnico
 **Evidencia:**
 
 
@@ -54,17 +48,28 @@ El sistema cuenta con un menú interactivo en consola donde el usuario seleccion
 </h4>
 - Patrón de Diseño: Chain of Responsibility
 - Patrón Utilizado: Subclases con polimorfismo
-- Justificación: 
-  - Cada técnico decide si puede resolver un ticket según su nivel y prioridad. 
-  - Si no puede resolverlo, lo pasa al siguiente técnico de la cadena. 
+- Justificación:
+  - Cada técnico decide si puede resolver un ticket según su nivel y prioridad.
+  - Si no puede resolverlo, lo pasa al siguiente técnico de la cadena.
   - Esto evita condicionales extensos y centraliza la lógica de resolución en cada clase.
-- Cómo lo apliqué: 
+- Cómo lo apliqué:
   - La clase abstracta SoporteTecnico define el método resolver() y mantiene referencia al siguiente técnico.
   -   Las subclases (Basico, Intermedio, Avanzado) implementan la resolución según reglas específicas.
   -   GestorTickets arma la cadena y procesa todos los tickets.
   - Reporte recibe los resultados y calcula estadísticas, mostrando quién resolvió cada ticket.
 ---
 
+<h4>Descripción breve de lo que hicieron:  
+</h4>
+- Patrón de Diseño: Decorator (Patrón Decorador)
+- Patrón Utilizado: Decorator permite añadir funcionalidades adicionales a un objeto de manera dinámica sin modificar su clase base.
+- Justificación: Se utiliza para personalizar cafés con distintos toppings sin crear subclases para cada combinación posible. Esto hace que el sistema sea más flexible y escalable.
+- Como Lo aplico responde esto:
+  - La clase Base representa el café base.
+  - La clase abstracta Decoration implementa la interfaz Coffee y mantiene una referencia al café que decora.
+  - La clase Topping extiende Decoration y añade un topping específico, modificando la descripción y el costo del café.
+  - ToppingFactory gestiona la creación de toppings y permite agregar toppings personalizados dinámicamente.
+  - En Reto5, se aplican los toppings sobre cada café usando el patrón decorador, combinando múltiples toppings de manera dinámica.
 
 
 ### Reto 7: El control remoto
