@@ -64,7 +64,31 @@
 
 ---
 
-### Reto 4:
+### Reto 4 Culminado:
+
+**Evidencia**
+
+![alt text](image-17.png)
+
+### Explicacion:
+
+- Patrón de Diseño: Para la solución de este ejercicio se uso un patron de comportamiento.
+
+- Patrón Utilizado: Se empleo Strategy - Adapter.
+
+- Justificación: Strategy permite definir un tipo de logica diferente (algoritmos), colocar cada uno de ellos en una clase separada, como podria ser las diferentes opciones para realizar una tasa de cambio real.
+
+- Como lo aplico: Para la aplicación de este patrón mediante una clase "Contexto" se puede organizar la respectiva tarea hacer, en este caso seria calcular la tasa real hacia la moneda destino mediante la instancia de la interfaz (Agregación) este metodo va a ser implementado en cada tipo de tasa destino donde hacemos la respectiva operación.
+
+**Evidencia**
+
+![alt text](image-19.png)
+
+![alt text](image-20.png)
+
+**Ejemplo de aplicación en alguna tasa especifica**
+
+![alt text](image-21.png)
 
 ---
 
@@ -104,4 +128,46 @@
 
 ---
 
-### Reto 8
+### Reto 8: Culminado
+
+**Diagrama de Clases**
+
+![alt text](image-22.png)
+
+### Explicación:
+
+**Clases Principales**
+
+- Las clases que se crearon fueron ECIZoo, Animals, Visitors, ZOOKeepers
+
+La clase Animals cuenta con atributos como name, age, weight, height y preferredFood. Además, posee otros elementos que pueden representarse como clases o enumeraciones, tales como MedicalRecord, Habitat, Diet y HealthStatus.
+
+El atributo relacionado con el sonido característico de cada animal se maneja mediante una interfaz, ya que cada especie emite sonidos diferentes.
+
+![alt text](image-23.png)
+
+Por su parte, los Visitors están asociados a los Zookeepers y a los Animals, lo que les permite realizar acciones como dar propinas a los cuidadores, seleccionar animales favoritos y subir fotografías de ellos.
+
+![alt text](image-24.png)
+
+Los Zookeepers son responsables de las actividades diarias del zoológico, entre ellas bañar a los animales y limpiar los hábitats. Su especialidad puede determinarse a partir de la relación con los animales, ya que se enfocan en un tipo particular (mamíferos, aves o reptiles).
+
+Finalmente, la clase ECIZoo se encarga de registrar a los visitantes (almacenando su nombre y edad) y mantiene relaciones directas con las clases principales: Animals, Zookeepers y Visitors.
+
+![alt text](image-25.png)
+
+**Patrones Utilizados Y Principios SOLID:**
+
+Los patrones implementados para el diagramas de clases fueron Adapter y Singleton.
+
+Inicialmente se puede implementar el patrón Singleton en la clase ECIZOO, ya que solo queremos una instancia de este objeto, de igual manera en esta clase estamos aplicando el principio S ya que le estamos asignando su respectiva responsabilidad como podria ser registrar el nombre y edad de los visitantes.
+
+El patrón Adapter se implemento con las actividades que pueden llegar a compartir los cuidadores y los visitantes especificamente en la función de alimentar ya que cada una de estas clases lo hacen de manera independiente por lo que podemos crear una clase llamada AdapterBath que tiene el metodo y luego en visitors este la implementa.
+
+![alt text](image-26.png)
+
+Con respecto a las demas letras de SOLID, se ve la O en el apartado de Animals ya que si quisieramos añadir nuevos tipos de animales seria posible sin necesidad de modificar la superclase Animals de igual forma se observa el principio L para esto.
+
+El principio siguiente I lo podemos observar repetidamente en el diagrama ya que hay varias clases que implementan interfaces especificas.
+
+---
