@@ -1,17 +1,20 @@
 # Laboratorio - 2 - SOLID, Patrones de diseño y UML
 
-***Integrantes***
+**_Integrantes_**
+
 - Santiago Carmona Pineda
 - Diego Chavarro Castilo
 - Juan Carlos Leal
 
-***Nombre de la rama***
+**_Nombre de la rama_**
 feature/CarmonaSantiago_ChavarroDiego_LealJuan_2025-2
 
-___
+
+---
 ## Retos Completados
 
 ### Reto 1 - El problema de la tienda de Don Pepe
+
 
 ### Reto #2 - El chef de 5 estrellas
 
