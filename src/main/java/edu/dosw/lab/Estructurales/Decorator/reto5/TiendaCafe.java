@@ -8,7 +8,7 @@ public class TiendaCafe {
     private static HashMap<String, Integer> listaToppings = ToppingsCafe.obtenerToppings();
     private static ArrayList<Cafe> cafesitos = new ArrayList<>();
 
-    public static void main(String[] args) {
+    public static void ejecutar() {
         System.out.println("---Bienvenido a la tienda de Cafes---");
         Scanner sc = new Scanner(System.in);
         System.out.print("¿Cuántos cafes desea personalizar? ");
