@@ -22,6 +22,48 @@ Debemos ayudar a Don Pepe ya que no tiene un sistema organizado para manejar sus
 asi que se creo un sistema con los pricipios de solid, como s para que cada clase tuviera
 su única responsabilidad, tambien la d para los clientes.
 
+### RETO #3: El Reino de los Vehículos
+Evidencia:
+
+<img width="537" height="203" alt="image" src="https://github.com/user-attachments/assets/9fe3d10e-c730-468a-b86b-cebb451de28e" />
+<img width="697" height="471" alt="image" src="https://github.com/user-attachments/assets/1ac1e6b8-bfed-44e7-ba7d-9b749b3cd2ea" />
+<img width="879" height="471" alt="image" src="https://github.com/user-attachments/assets/3730f0d3-ded7-429a-976c-470d46e41ec7" />
+<img width="714" height="466" alt="image" src="https://github.com/user-attachments/assets/73b3af20-624f-440e-b484-b278cd334241" />
+<img width="772" height="466" alt="image" src="https://github.com/user-attachments/assets/0f2047d3-e1f0-46f1-a672-08506549b0d2" />
+<img width="754" height="459" alt="image" src="https://github.com/user-attachments/assets/8bc53ab6-cbdf-443b-b455-2de063595670" />
+<img width="844" height="480" alt="image" src="https://github.com/user-attachments/assets/32af3a39-1ae5-48fb-9a2a-547238797ace" />
+<img width="768" height="474" alt="image" src="https://github.com/user-attachments/assets/7b1a3acf-b3dc-4032-b67a-7bc17b41d501" />
+<img width="771" height="463" alt="image" src="https://github.com/user-attachments/assets/1a782758-e7ab-4847-8784-f5c8980ed0ba" />
+<img width="792" height="462" alt="image" src="https://github.com/user-attachments/assets/02b36a1f-6958-4dd8-bfe8-a7c5ac3be11c" />
+<img width="1017" height="592" alt="image" src="https://github.com/user-attachments/assets/085252a4-6c7b-4c58-bc87-4bd4d322a412" />
+<img width="768" height="577" alt="image" src="https://github.com/user-attachments/assets/b04bea5c-8873-44ca-84e4-7935f43f7360" />
+<img width="745" height="1100" alt="image" src="https://github.com/user-attachments/assets/ec2a49e1-398b-44f4-bb2d-592d0a75e0d9" />
+
+📝 Entrada:
+
+<img width="451" height="337" alt="image" src="https://github.com/user-attachments/assets/5516a56b-26fe-48c0-9e40-16861ce2e8af" />
+
+📢 Salida:
+
+<img width="459" height="314" alt="image" src="https://github.com/user-attachments/assets/d1ce9361-9710-409d-8129-17ee0e932058" />
+
+Descripción:
+Una concesionaria llamada el Reino de los vehículos vende todos los medios de transporte que se imaginen, desde vehículos de tierra , vehículos acuáticos y vehículos aéreos, cada uno con categorías como Económico, Lujo y Usado.
+Cada categoría afecta las características de los vehículos como su velocidad máxima, comodidad, precio y equipamiento.
+Los vehículos disponibles para los compradores son Autos, Bicicletas, Motos, Lanchas, Veleros, Jet Skis, Aviones, Avionetas y Helicópteros.
+
+**Patrón de diseño:**
+
+- ***Patrón de diseño:*** Creacional
+- ***Patrón utilizado:*** Abstract Factory
+- ***Justificación:*** Implementamos un patrón de fábrica abstracta para la creación de vehículos.
+Esto nos permite instanciar diferentes tipos de vehículos (autos, motos, bicicletas, lanchas, veleros, jet skis, aviones, avionetas y helicópteros) de forma desacoplada y extensible.
+Gracias a este patrón, se pueden agregar nuevos vehículos o categorías sin necesidad de modificar la lógica central del sistema, cumpliendo con el principio abierto/cerrado (OCP) de SOLID.
+
+- ***Cómo lo aplicamos:*** Definimos una interfaz común Vehicle con métodos para obtener tipo, categoría, velocidad máxima, precio y equipamiento.
+Cada vehículo (ej. Car, Bike, Boat, Plane) implementa esa interfaz.
+Mediante la clase GeneralFactory, el sistema crea los objetos de manera dinámica dependiendo de la elección del usuario (tipo y categoría), y al final se generan los recibos usando streams para calcular el total.
+
 ### RETO #6: Habla con Soporte Técnico
 Evidencia:
 
