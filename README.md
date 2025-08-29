@@ -113,7 +113,10 @@ Modelamos los visitantes que pueden marcar favoritos, alimentar animales, dar pr
 Para darle solución usamos principios de diseño SOLID y patrones cuando correspondia.
 
 **Diagrama de Clases:**
-![Captura](uml/reto8_zoo_eci.png)
+![Captura](docs/uml/reto8_zoo_eci.png)
+
+***Evidendia de realización en Lucidchart:***
+https://lucid.app/lucidchart/47a13a4b-f336-4fa6-9a75-147ec7fe6ca7/edit?viewport_loc=-2429%2C-1585%2C5646%2C2537%2C0_0&invitationId=inv_41ec6382-579a-4ae1-9f06-aa9cafa1f7ce
 
 ***Clases principales:***
 - Animal, Caregiver, Visitor, Phograph, Propinable y DynamicAttribute
