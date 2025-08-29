@@ -1,4 +1,4 @@
-package edu.dosw.lab.comportamiento;
+package edu.dosw.lab.comportamiento.Reto1;
 
 public class DescuentoNuevo implements  Descuento{
     @Override

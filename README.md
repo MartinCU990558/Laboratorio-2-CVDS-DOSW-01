@@ -30,13 +30,13 @@ En nuestro caso:
 ---
 
 ## Evidencia trabajo en equipo 
-![😄Evidencia trabajo](image.png)  
+![alt text](image-2.png)
 **Nuestra compañera Raquel nos ayudo en presencia asi que ella no tiene commmits, ella nos ayudo en clase**
 ---
 
 ## 📊 Resultados  
 A continuación, se muestran los resultados obtenidos:  
-![Resultados](image-1.png)  
+![alt text](image.png)
 
 ## 🔎 Reto 6
 
