@@ -136,44 +136,44 @@
 En este ejercicio, se creó una interfaz Command, la cual define las operaciones básicas que deben implementar los comandos como ejecutar, deshacer, obtener descripción y usuario.
 Cada clase concreta de un comando representa una acción específica sobre los dispositivos como encender luces, abrir puerta, reproducir música, ajustar volumen, ajustar las personas y demas. Estas clases almacenan tanto lo que se necesita hacer en cada una referenciando a los objetos receptores sobre los cuales se aplican las acciones.
 
-![alt text](image.png)
+![alt text](docs/imagenes/Reto7/image.png)
 ---
-![alt text](image-1.png)
+![alt text](docs/imagenes/Reto7/image-1.png)
 ---
-![alt text](image-2.png)
+![alt text](docs/imagenes/Reto7/image-2.png)
 ---
-![alt text](image-3.png)
+![alt text](docs/imagenes/Reto7/image-3.png)
 ---
-![alt text](image-4.png)
+![alt text](docs/imagenes/Reto7/image-4.png)
 ---
-![alt text](image-5.png)
+![alt text](docs/imagenes/Reto7/image-5.png)
 ---
-![alt text](image-6.png)
+![alt text](docs/imagenes/Reto7/image-6.png)
 ---
-![alt text](image-7.png)
+![alt text](docs/imagenes/Reto7/image-7.png)
 --- 
-![alt text](image-8.png)
+![alt text](docs/imagenes/Reto7/image-8.png)
 ---
-![alt text](image-9.png)
+![alt text](docs/imagenes/Reto7/image-9.png)
 ---
-![alt text](image-10.png)
+![alt text](docs/imagenes/Reto7/image-10.png)
 ---
-![alt text](image-11.png)
+![alt text](docs/imagenes/Reto7/image-11.png)
 ---
-![alt text](image-12.png)
+![alt text](docs/imagenes/Reto7/image-12.png)
 ---
-![alt text](image-14.png)
+![alt text](docs/imagenes/Reto7/image-14.png)
 ---
-![alt text](image-15.png)
+![alt text](docs/imagenes/Reto7/image-15.png)
 ---
-![alt text](image-16.png)
+![alt text](docs/imagenes/Reto7/image-16.png)
 ---
-![alt text](image-17.png)
+![alt text](docs/imagenes/Reto7/image-17.png)
 ### 💻Pruebas De Compilación y Ejecucion:
-![alt text](image-18.png)
+![alt text](docs/imagenes/Reto7/image-18.png)
 ---
-![alt text](image-19.png)
+![alt text](docs/imagenes/Reto7/image-19.png)
 ---
-![alt text](image-20.png)
+![alt text](docs/imagenes/Reto7/image-20.png)
 
 
