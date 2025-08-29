@@ -104,4 +104,39 @@ entonces se registraron en un historial,
   por cada petición para mantener el historial y poder investigar quién realizó cada cambio.
 
 
+### RETO #8: El Zoológico de los UML
+
+Nos acaban de contratar para hacer una app llamada ECI Zoo en la que vamos a gestionar los animales, cuidadores y visitantes,
+para elló, tomamos los animales y los gestionamos con atributos estáticos y dinámicos.
+Modelamos los cuidadores, sus especialidades y sus interacciones (alimentar, bañar, limpiar hábitat).
+Modelamos los visitantes que pueden marcar favoritos, alimentar animales, dar propinas y subir fotografías.
+Para darle solución usamos principios de diseño SOLID y patrones cuando correspondia.
+
+**Diagrama de Clases:**
+![Captura](uml/reto8_zoo_eci.png)
+
+***Clases principales:***
+- Animal, Caregiver, Visitor, Phograph, Propinable y DynamicAttribute
+
+***Asociaciones y multiplicidades:***
+- Un animal puede tener 1..* cuidadores o un cuidador puede tener 1..* animales que cuidar.
+- Un visitante puede tener varios favoritos, y un animal puede ser favorito de muchos visitantes.
+- Cada foto siempre tiene un visitante asociado, y un visitante puede subir múltiples fotos.
+- Cada animal puede tener múltiples atributos dinámicos como pelaje, rareza o historial médico
+- Modelamos que un visitante puede dar propinas o interactuar con varios cuidadores y viceversa. La interacción concreta de dar propina se modela mediante la interfaz Propinable
+
+
+***Aplicación de SOLID***
+
+- Single Responsibility Principle: Cada clase cumple una sola responsabilidad: Animal el comportamiento de animales; Cuidador acciones sobre animales; Visitor interatua con el zoo; DynamicAttribute solo maneja atributos dinámicos y Propinable se encarga de las propinas
+- Open/Closed Principle: La clase Animal esta abierta a extención ya que añade nuevas subclases y Propinable permite nuevos receptores de propinas sin modificar Visitor.
+- Liskov Substitution Principle: Las subclases de Animal deben comportarse como Animal, y cada una tiene un método único
+- Interface Segregation Principle: La interfaz Propinable es pequeña y específica ya que solo tiene un metodo estableciendo un contrato para que los visitantes que dan propina estén cómodos.
+- Dependency Inversion Principle: Visitor es como un modulo de alto nivel que depende de la abstracción Propinable que es la interfaz, en lugar de depender de modulos de bajo nivel como lo es la clase de Caregiver por lo que el Caregiver es una implementación concreta de esa abstracción.
+
+***Patrones de diseño usados***
+- Abstract Factory: para creación de Animal según su tipo.
+- Decorator: Nos sirvio para modelar DynamicAttribute si se desea añadir un nuevo comportamiento y encapsularlo.
+- Observer: Para notificar cambios de healthStatus a cuidadores o a subsistemas
+
 
