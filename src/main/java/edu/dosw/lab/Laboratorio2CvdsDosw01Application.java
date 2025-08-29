@@ -1,10 +1,11 @@
 package edu.dosw.lab;
 
-import edu.dosw.lab.Comportamiento.Reto4.Reto4;
 import edu.dosw.lab.Creacionales.Reto3.Reto3;
-import edu.dosw.lab.Solid.Reto1.Reto1;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import edu.dosw.lab.Comportamiento.Reto4.Reto4;
+import edu.dosw.lab.Solid.Reto1.Reto1;
 
 @SpringBootApplication
 public class Laboratorio2CvdsDosw01Application {
@@ -13,10 +14,9 @@ public class Laboratorio2CvdsDosw01Application {
 
 		SpringApplication.run(Laboratorio2CvdsDosw01Application.class, args);
 		System.out.println("\nProyecto Maven configurado y corriendo correctamente");
-		Reto1.ejecutar();
+
 		System.out.println("\n===== INICIO RETO 1 =====\n");
 		Reto1.ejecutar();
-
 
 		System.out.println("\n===== INICIO RETO 3 =====\n");
 		Reto3.ejecutar();
@@ -24,9 +24,8 @@ public class Laboratorio2CvdsDosw01Application {
 		System.out.println("\n===== INICIO RETO 4 =====\n");
 		Reto4.ejecutar();
 
-
-		
-
+		System.out.println("\n===== INICIO RETO 7 =====\n");
+		edu.dosw.lab.Comportamiento.Reto7.Reto7.ejecutar();
 
 	}
 

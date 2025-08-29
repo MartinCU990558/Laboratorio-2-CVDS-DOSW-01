@@ -32,6 +32,8 @@ Se implementó una clase abstracta Vehiculo y subclases como Auto, Moto, Bicicle
 El sistema cuenta con un menú interactivo en consola donde el usuario selecciona el tipo, categoría y modelo de vehículo, y finalmente se genera un resumen de compra en pesos colombianos, mostrando precios, características y el total a pagar.
 
 ---
+
+
 ### Reto 4: La Estafa de la Casa de cambio
 **Evidencia:**
 ![Captura](docs/imagenes/reto4R.png)
