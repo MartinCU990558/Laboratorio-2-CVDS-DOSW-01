@@ -154,7 +154,29 @@ Se aplica en la jerarquia de Cliente. El metodo calcularDescuento es invocado de
 
 **RETO 7 COMPLETADO**
 
+**Patrón de Diseño Utilizado**
 
+- Patrón de Diseño:Comportamiento
+- Patrón Utilizado:Command
+- Justificación:
+  El patrón Command se utiliza cuando se quiere encapsular una acción como un objeto, permitiendo ejecutar, deshacer o almacenar las operaciones de manera independiente del emisor que las invoca.
+  En este caso, cada acción (AccionEncenderLuz, AccionAbrirPuerta, AccionReproducirMusica, AccionAjustarVolumen) es un comando que encapsula el comportamiento específico y puede ser ejecutado o deshecho sin que el ControlRemoto conozca los detalles de su implementación.
+
+  - Cómo lo aplico:
+      - Se definió la clase abstracta Accion como la interfaz base del comando, con los métodos ejecutar() y deshacer().
+      - Cada acción concreta (como AccionEncenderLuz, AccionAbrirPuerta, etc.) implementa el comportamiento específico de esos métodos.
+      - La clase ControlRemoto actúa como invocador, ejecutando los comandos y almacenándolos en un historial.
+      - El cliente (ControlRemotoMagico) solicita al usuario qué comando quiere ejecutar y delega la acción al ControlRemoto.
+
+      ![img_1.png](docs/Imagenes/img_50.png)
+      ![img_2.png](docs/Imagenes/img_51.png)
+      ![img_3.png](docs/Imagenes/img_52.png)
+      ![img_4.png](docs/Imagenes/img_53.png)
+      ![img_5.png](docs/Imagenes/img_54.png)
+      ![img_6.png](docs/Imagenes/img_55.png)
+      ![img_7.png](docs/Imagenes/img_56.png)
+      ![img.png](docs/Imagenes/img_57.png)
+    
 
 **RETO 8 COMPLETADO**
     ![img.png](uml/Reto 8.png)
