@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: edu.dosw.lab.Laboratorio_2_CVDS_DOSW_01v.Laboratorio2CvdsDosw01vApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.492 s -- in edu.dosw.lab.Laboratorio_2_CVDS_DOSW_01v.Laboratorio2CvdsDosw01vApplicationTests
