@@ -5,7 +5,7 @@ import edu.dosw.lab.creacionales.ReinoDeLosVehiculos.ReinoDeLosVehiculos;
 import edu.dosw.lab.solid.Reto1TiendaDonPepe.*;
 import edu.dosw.lab.comportamiento.CasaDeCambioReto4.CasaDeCambio;
 import edu.dosw.lab.estructurales.CafePersonalizado.CafePersonalizadoClase;
-
+import edu.dosw.lab.comportamiento.ControlRemotoMagicoReto7.ControlRemotoMagico;
 
 public class Application {
     public static void main(String[] args) {
@@ -14,7 +14,7 @@ public class Application {
 
         // Ejecución del reto 1 Tienda Don Pepe
 
-        Producto camiseta = new Producto("Camiseta", 20000);
+        /**Producto camiseta = new Producto("Camiseta", 20000);
         Producto pantalon = new Producto("Pantalón", 50000);
         Producto galletas = new Producto("Galletas", 500);
         Producto jugo = new Producto("Jugo Natural", 3000);
@@ -45,7 +45,10 @@ public class Application {
 
         // Ejecución del reto 5 cafe personalizado
         CafePersonalizadoClase cafe = new CafePersonalizadoClase();
-        cafe.ejecutar();
+        cafe.ejecutar();**/
+
+         ControlRemotoMagico controlMagico = new ControlRemotoMagico();
+         controlMagico.ejecutar();
 
     }
 
