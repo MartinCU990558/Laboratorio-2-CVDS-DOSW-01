@@ -56,6 +56,8 @@ Se creó la clase FactoryProducer, encargada de seleccionar la fábrica correspo
 
 Cada vehículo implementa la interfaz común Vehicle, asegurando una estructura unificada.
 
+![reto3.png](reto3.png)
+
 ## Reto 4
 Patrón de Diseño:
 Comportamiento.
@@ -76,6 +78,8 @@ StandardConversion implementa la estrategia de conversión básica utilizando un
 ExchangeService recibe una estrategia de conversión como dependencia, lo que permite que el servicio funcione con cualquier implementación de ConversionStrategy.
 
 Gracias a esta separación, agregar nuevas estrategias no requiere modificar el servicio ni las clases de transacciones.
+
+![reto4.png](reto4.png)
 
 
 ## Reto 5
