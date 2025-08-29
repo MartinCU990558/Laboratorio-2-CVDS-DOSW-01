@@ -1,6 +1,6 @@
 package edu.dosw.lab.creacionales.FactoryMethod;
 
-public class Avioneta extends VehiculoFactory {
+public class Avioneta extends Vehiculo{
     public Avioneta(String categoria) {
         this.categoria = categoria;
         switch (categoria) {

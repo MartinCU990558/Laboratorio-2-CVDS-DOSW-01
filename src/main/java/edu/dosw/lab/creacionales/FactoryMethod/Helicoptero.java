@@ -1,3 +1,5 @@
+package edu.dosw.lab.creacionales.FactoryMethod;
+
 public class Helicoptero extends Vehiculo {
     public Helicoptero(String categoria) {
         this.categoria = categoria;

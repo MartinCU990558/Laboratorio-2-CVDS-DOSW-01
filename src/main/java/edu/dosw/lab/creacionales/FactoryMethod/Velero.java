@@ -1,3 +1,5 @@
+package edu.dosw.lab.creacionales.FactoryMethod;
+
 public class Velero extends Vehiculo {
     public Velero(String categoria) {
         this.categoria = categoria;

@@ -1,3 +1,5 @@
+package edu.dosw.lab.creacionales.FactoryMethod;
+
 public class Auto extends Vehiculo {
     public Auto(String categoria) {
         this.categoria = categoria;
