@@ -39,13 +39,14 @@ public class Application {
         CasaDeCambio cambio = new CasaDeCambio();
         cambio.ejecutar();
 
-        // Ejecución del reto 5 Soporte Técnico
-        SoporteTecnico soporteTecnico = new SoporteTecnico();
-        soporteTecnico.ejecutar();
 
         // Ejecución del reto 5 Soporte Técnico
         CafePersonalizadoClase cafe = new CafePersonalizadoClase();
         cafe.ejecutar();
+
+        // Ejecución del reto 6 Soporte Técnico
+        SoporteTecnico soporteTecnico = new SoporteTecnico();
+        soporteTecnico.ejecutar();
 
     }
 
