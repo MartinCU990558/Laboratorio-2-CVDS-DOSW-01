@@ -5,9 +5,9 @@ public abstract class AccionGeneral implements Accion {
     protected boolean deshecha = false;
     protected String descripcion;
 
-    public AccionGeneral(String usuario) {
+    public AccionGeneral(String usuario, String descripcion) {
         this.usuario = usuario;
-
+        this.descripcion = descripcion;
     }
 
     @Override

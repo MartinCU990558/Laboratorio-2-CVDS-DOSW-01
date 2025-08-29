@@ -1,9 +1,9 @@
 package edu.dosw.lab.Comportamiento.Reto7;
 
-public class AccionPersiana extends AccionGeneral{
+public class AccionVolumen extends AccionGeneral{
     private String porcentaje;
-    public AccionPersiana(String usuario, String porcentaje) {
-        super(usuario, "Ajustar persiana a " + porcentaje + "%");
+    public AccionVolumen(String usuario, String porcentaje) {
+        super(usuario, "Ajustar volumen a " + porcentaje + "%");
         this.porcentaje = porcentaje;
     }
 
@@ -15,7 +15,7 @@ public class AccionPersiana extends AccionGeneral{
     @Override
     public void deshecha() {
         deshecha = true;
-        System.out.println("Accion deshecha: Prsiana ajustada a 0%");
+        System.out.println("Accion deshecha: Volumen regresado a 0%");
     }
 
 }
