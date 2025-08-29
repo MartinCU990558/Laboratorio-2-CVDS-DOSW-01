@@ -43,7 +43,7 @@ public class Application {
         SoporteTecnico soporteTecnico = new SoporteTecnico();
         soporteTecnico.ejecutar();
 
-        // Ejecución del reto 5 Soporte Técnico
+        // Ejecución del reto 5 cafe personalizado
         CafePersonalizadoClase cafe = new CafePersonalizadoClase();
         cafe.ejecutar();
 
