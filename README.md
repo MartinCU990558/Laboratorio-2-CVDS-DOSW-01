@@ -22,6 +22,35 @@ Debemos ayudar a Don Pepe ya que no tiene un sistema organizado para manejar sus
 asi que se creo un sistema con los pricipios de solid, como s para que cada clase tuviera
 su única responsabilidad, tambien la d para los clientes.
 
+### RETO #2: El chef de 5 estrellas.
+Evidencia:
+![Captura](docs/imagenes/reto2_1.png)
+![Captura](docs/imagenes/reto2_2.png)
+![Captura](docs/imagenes/reto2_3.png)
+![Captura](docs/imagenes/reto2_4.png)
+![Captura](docs/imagenes/reto2_salida.png)
+
+Descripción:
+Un Chef quiere preparar hamburguesas personalizadas para sus clientes, cada hamburguesa puede tener pan, carne, queso, vegetales y salsas, pero no todos los ingredientes son obligatorios.
+
+**Patrón de Diseño**
+
+- **Categoría:** Creacional  
+- **Patrón Utilizado:** Builder  
+
+### 🔹 Justificación
+El patrón builder es ideal cuando necesitamos construir objetos 'complejos' paso a paso, permitiendo distintas representaciones del mismo producto.  
+En este caso, una hamburguesa puede estar compuesta de diferentes ingredientes (pan, carne, queso, vegetales, salsas, etc.), y el proceso de creación debe ser flexible para soportar múltiples variaciones sin alterar la lógica principal.
+
+### 🔹 Cómo lo aplicamos
+- La clase `BurgerBuilder` actúa como el Builder, cuenta con los métodos para agregar ingredientes específicos. 
+- La clase `Burger` representa el producto, que contiene la lista de ingredientes y el precio total.  
+- La clase `BurgerApplication` funciona como el cliente, donde el usuario selecciona los ingredientes y se construye la hamburguesa final.  
+- La clase `BurgerReceipt` se encarga de mostrar el resultado final (ingredientes seleccionados y precio total).  
+- Para el calculo del precio se usan streams que calculan dinamicamente el precio total.
+
+---
+
 ### RETO #3: El Reino de los Vehículos
 Evidencia:
 
