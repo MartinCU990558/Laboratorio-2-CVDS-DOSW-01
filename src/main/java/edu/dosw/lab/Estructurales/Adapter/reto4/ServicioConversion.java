@@ -1,4 +1,4 @@
-package edu.dosw.lab.Estructurales.Adapter.reto4;
+package edu.dosw.lab.estructurales.Adapter.reto4;
 
 public class ServicioConversion {
     public double convertirDinero(String monedaOrigen, String monedaDestino, double cantidad) {

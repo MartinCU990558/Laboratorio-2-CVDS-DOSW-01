@@ -5,7 +5,7 @@ import edu.dosw.lab.creacionales.Builder.reto2.Compra;
 import edu.dosw.lab.creacionales.FactoryMethod.ReinoVehiculos;
 import edu.dosw.lab.estructurales.Decorator.reto5.*;
 import edu.dosw.lab.comportamiento.ChainOfResponsibility.reto6.Reto6;
-import edu.dosw.lab.Estructurales.Adapter.reto4.CasaCambio;
+import edu.dosw.lab.estructurales.Adapter.reto4.CasaCambio;
 
 public class Application {
     public static void main(String[] args) {

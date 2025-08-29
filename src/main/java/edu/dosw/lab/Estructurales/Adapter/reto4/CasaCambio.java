@@ -1,4 +1,4 @@
-package edu.dosw.lab.Estructurales.Adapter.reto4;
+package edu.dosw.lab.estructurales.Adapter.reto4;
 
 import java.util.*;
 import java.util.stream.Collectors;
