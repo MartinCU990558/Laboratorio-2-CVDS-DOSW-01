@@ -9,12 +9,23 @@
 **_Nombre de la rama_**
 feature/CarmonaSantiago_ChavarroDiego_LealJuan_2025-2
 
-
 ---
+
 ## Retos Completados
 
 ### Reto 1 - El problema de la tienda de Don Pepe
 
+- **Patrón de Diseño:** Principios SOLID (especialmente Responsabilidad Única, Abierto/Cerrado y Polimorfismo por interfaz).
+- **Patrón utilizado:** S: Responsabilidad Única (SRP)
+  O: Abierto/Cerrado (OCP)
+  L: Sustitución de Liskov (LSP)
+  D: Inversión de Dependencias (DIP)
+- **Justificación:** Se busca que cada clase tenga una única responsabilidad, que el sistema sea fácil de extender sin modificar código existente, que las clases puedan ser intercambiables sin romper el sistema y que el código dependa de abstracciones y no de implementaciones concretas.
+- **Como Lo aplico:** Defino la interfaz Descuento como abstracción para el cálculo de descuentos. Cada tipo de cliente (ClienteNuevo, ClienteFrecuente) implementa la interfaz y define su propia lógica de descuento. En la clase principal (TiendaDonPepe), uso la interfaz para aplicar el descuento, permitiendo cambiar el tipo de cliente sin modificar el resto del sistema. Si quiero agregar otro tipo de cliente, solo creo una nueva clase que implemente Descuento, sin modificar el resto del sistema.
+
+**Evidencia:**
+
+![Captura](/docs/imagenes/reto1.jpg)
 
 ### Reto #2 - El chef de 5 estrellas
 
@@ -29,7 +40,17 @@ feature/CarmonaSantiago_ChavarroDiego_LealJuan_2025-2
 
 ### Reto 3 - El Reino de los Vehículos
 
+- **Patrón de Diseño:** Se utilizó el patrón de diseño creacional
+- **Patrón utilizado:** Factory Method.
+- **Justificación:** Se usa Factory Method para crear diferentes tipos de vehículos (Moto, Auto, Bicicleta, Avión, Lancha, etc.) sin que el código cliente dependa de las clases concretas. Esto permite que el sistema sea fácil de extender y mantener.
+- **Como Lo aplico:** Defino la interfaz VehiculoFactory y creo fábricas concretas (TierraFactory, AereoFactory, AcuaticoFactory) que implementan esa interfaz. Cada fábrica sabe cómo crear los vehículos de su tipo. El cliente solo usa la fábrica adecuada para obtener el vehículo que necesita, sin preocuparse por los detalles de implementación.
+
+**Evidencia:**
+
+![Captura](/docs/imagenes/reto3.jpg)
+
 ### Reto 4 - La Estafa de la Casa de Cambio
+
 Este reto usa un patrón de diseño estructural, el cual es: Adapter (Adaptador), aplicado en el sistema de conversión de divisas.
 
 **Justifiación**
@@ -45,16 +66,18 @@ En este caso:
 **¿Cómo lo aplico?**
 
 1. **Clase `ServicioConversion`**
-    - Contiene la lógica de conversión de monedas.
-    - Expone un método con su propia interfaz para calcular conversiones.
+
+   - Contiene la lógica de conversión de monedas.
+   - Expone un método con su propia interfaz para calcular conversiones.
 
 2. **Clase `AdaptadorConversion`**
-    - Implementa una interfaz compatible con lo que espera el cliente (`CasaCambio`).
-    - Traduce las solicitudes de conversión a la forma que entiende `ServicioConversion`.
+
+   - Implementa una interfaz compatible con lo que espera el cliente (`CasaCambio`).
+   - Traduce las solicitudes de conversión a la forma que entiende `ServicioConversion`.
 
 3. **Clase Cliente (`CasaCambio`)**
-    - Solicita operaciones de conversión de forma transparente, sin conocer los detalles internos del servicio.
-   
+   - Solicita operaciones de conversión de forma transparente, sin conocer los detalles internos del servicio.
+
 **Evidencia**
 
 ![Captura](/docs/imagenes/reto4.png)
@@ -76,20 +99,24 @@ En este caso:
 **¿Cómo lo aplicó?**
 
 1. **Interfaz `Cafe`**
-    - Define métodos comunes (`getDescripcion()` y `getCosto()`).
+
+   - Define métodos comunes (`getDescripcion()` y `getCosto()`).
 
 2. **Clase concreta `CafeBase`**
-    - Representa un café simple, sin complementos.
+
+   - Representa un café simple, sin complementos.
 
 3. **Clase abstracta `ToppingDecorator`**
-    - Extiende `Cafe` y mantiene una referencia a otro objeto `Cafe`.
-    - Permite envolver al café para agregar responsabilidades adicionales.
+
+   - Extiende `Cafe` y mantiene una referencia a otro objeto `Cafe`.
+   - Permite envolver al café para agregar responsabilidades adicionales.
 
 4. **Clases concretas de toppings (`Topping`)**
-    - Cada topping agrega su propio costo y descripción.
+
+   - Cada topping agrega su propio costo y descripción.
 
 5. **Clase Cliente (`TiendaCafe`)**
-    - Permite al usuario crear combinaciones dinámicas de café con múltiples toppings.  
+   - Permite al usuario crear combinaciones dinámicas de café con múltiples toppings.
 
 **Evidencia**
 
@@ -111,18 +138,21 @@ El patrón Chain of Responsibility es ideal para este sistema de soporte técnic
 **¿Cómo lo aplicó?**
 
 1. **Clase Handler abstracta (`Tecnico`)**:
-    - Define la interfaz común para todos los técnicos
-    - Mantiene la referencia al siguiente técnico en la cadena
-    - Implementa el método `resolver()` que maneja la lógica de la cadena
-    - Define el método abstracto `puedeResolver()` que cada técnico concreto debe implementar
+
+   - Define la interfaz común para todos los técnicos
+   - Mantiene la referencia al siguiente técnico en la cadena
+   - Implementa el método `resolver()` que maneja la lógica de la cadena
+   - Define el método abstracto `puedeResolver()` que cada técnico concreto debe implementar
 
 2. **Handlers concretos (`TecnicoBasico`, `TecnicoIntermedio`, `TecnicoAvanzado`)**:
-    - Cada uno implementa `puedeResolver()` con su lógica específica
-    - `TecnicoBasico`: Resuelve tickets básicos con prioridad baja/media
-    - `TecnicoIntermedio`: Resuelve tickets básicos e intermedios
-    - `TecnicoAvanzado`: Resuelve cualquier tipo de ticket
+
+   - Cada uno implementa `puedeResolver()` con su lógica específica
+   - `TecnicoBasico`: Resuelve tickets básicos con prioridad baja/media
+   - `TecnicoIntermedio`: Resuelve tickets básicos e intermedios
+   - `TecnicoAvanzado`: Resuelve cualquier tipo de ticket
 
 3. **Configuración de la cadena**:
+
    ```java
    Tecnico basico = new TecnicoBasico("Técnico Básico");
    Tecnico intermedio = new TecnicoIntermedio("Técnico Intermedio");
@@ -135,7 +165,7 @@ El patrón Chain of Responsibility es ideal para este sistema de soporte técnic
    ```java
    String resultado = basico.resolver(ticket);
    ```
-**Evidencia**
+   **Evidencia**
 
 ![Captura](/docs/imagenes/)
 
