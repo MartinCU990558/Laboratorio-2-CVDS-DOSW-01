@@ -1,0 +1,15 @@
+Index: src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoEconimica.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package edu.dosw.lab.creacionales.reto3.Vehiculos.Motos;\r\n\r\nimport edu.dosw.lab.creacionales.Vehiculo;\r\n\r\npublic class MotoEconimica implements Vehiculo {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoEconimica.java b/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoEconimica.java
+--- a/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoEconimica.java	(revision c5d5199038f8f09ff1efea88eaa2e6d78ebc2a22)
++++ b/src/main/java/edu/dosw/lab/creacionales/reto3/Vehiculos/Motos/MotoEconimica.java	(date 1756352991214)
+@@ -4,3 +4,4 @@
+ 
+ public class MotoEconimica implements Vehiculo {
+ }
++
