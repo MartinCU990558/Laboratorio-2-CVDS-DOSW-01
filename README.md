@@ -22,11 +22,29 @@
 
 
 
-\##
+\## Retos Completados
+
+## Reto 1
+**Patrón de Diseño:**  
+Comportamental
+
+**Patrón Utilizado:**  
+Strategy
+
+**Justificación:**  
+El patrón Strategy permite definir un conjunto de algoritmos y encapsularlos en clases independientes, haciendo posible intercambiarlos de manera dinámica sin modificar la lógica central.
+
+En el caso del Reto 1 (cálculo de descuentos para diferentes tipos de clientes), se adapta perfectamente porque cada tipo de cliente (nuevo, frecuente, VIP, etc.) puede tener una forma distinta de calcular el descuento. Usando Strategy, es posible añadir nuevos tipos de descuento sin modificar la clase principal, manteniendo el código flexible y abierto a extensiones según el **principio abierto/cerrado (OCP)** de SOLID.
+
+**Cómo se aplicó:**
+- Se definió la interfaz `DescuentoStrategy` con el método `calcularDescuento(double total)`.
+- Cada estrategia concreta (`NuevoClienteDescuento`, `ClienteFrecuenteDescuento`, `ClienteVIPDescuento`) implementa la lógica de cálculo de descuento de manera independiente.
+- La clase `Carrito` actúa como **contexto**, ya que mantiene una referencia a una estrategia de descuento y delega el cálculo a ella.
+- Gracias a esta separación, el sistema puede cambiar la estrategia de descuento en tiempo de ejecución sin modificar el código central del carrito.
+
+![img_4.png](img_4.png)
 
 
-
-Retos Completados
 ## Reto 2
 Patrón de Diseño:
 Creacional
@@ -146,3 +164,71 @@ por nivel, pendientes y promedio de prioridades.
 
 ![img_2.png](img_2.png)
 ![img_3.png](img_3.png)
+
+## Reto 7
+**Patrón de Diseño:**  
+Comportamental
+
+**Patrón Utilizado:**  
+Command
+
+**Justificación:**  
+El patrón Command permite encapsular una solicitud como un objeto, lo que posibilita parametrizar clientes con diferentes solicitudes, encolar operaciones, implementar un historial de acciones y ofrecer la opción de deshacer acciones previamente ejecutadas.
+
+En el caso del **Reto 7 (control remoto mágico)**, este patrón es ideal porque cada acción (encender luz, abrir puerta, reproducir música, ajustar volumen) puede ser representada como un **objeto comando independiente**. Esto permite:
+
+- **Deshacer acciones:** Cada comando implementa la operación `undo()`.
+- **Historial de acciones:** Los comandos ejecutados se almacenan para su posterior revisión.
+- **Parametrización:** Algunos comandos aceptan parámetros específicos (como el nivel de volumen).
+- **Rastreo de usuario:** Cada comando registra qué usuario ejecutó la acción.
+
+El patrón Command sigue:
+- El **principio de responsabilidad única (SRP)**, separando la invocación de la ejecución.
+- El **principio abierto/cerrado (OCP)**, permitiendo añadir nuevos comandos sin modificar el invocador.
+
+**Cómo se aplicó:**
+- Se definió la interfaz `Command` con los métodos `execute()` y `undo()`.
+- Cada comando concreto (`EncenderLuzCommand`, `AbrirPuertaCommand`, `ReproducirMusicaCommand`, etc.) implementa la lógica específica.
+- La clase `ControlRemoto` actúa como **invocador**, manteniendo el historial de comandos ejecutados.
+- Cada comando almacena información del usuario que lo ejecutó para el rastreo posterior.
+- El sistema puede deshacer cualquier acción individual gracias a la implementación del método `undo()`.
+
+![img_5.png](img_5.png)
+
+## Reto 8
+**Patrón de Diseño:**  
+Estructural y Creacional
+
+**Patrones Utilizados:**
+- Composite (para atributos dinámicos de los animales)
+- Factory Method (para la creación de diferentes tipos de animales: Mamífero, Ave, Reptil)
+
+**Justificación:**  
+El patrón Composite permite que cada `Animal` tenga una colección de `AtributoDinamico`, los cuales pueden variar (color de pelaje, rareza, historial médico, origen). Esto evita modificar la clase base cada vez que se necesite agregar un nuevo atributo.
+
+El patrón Factory Method facilita la creación de nuevos animales sin acoplar el código a clases concretas (`Mamifero`, `Ave`, `Reptil`). De esta forma, el sistema puede instanciar nuevas especies sin alterar el código ya existente.
+
+En el caso del Reto 8 (Zoológico UML), estos patrones son ideales porque:
+- Los animales pueden crecer en atributos y especies sin romper la aplicación.
+- Los cuidadores y visitantes trabajan siempre con la abstracción `Animal`.
+- Se asegura flexibilidad y extensibilidad en el modelo.
+
+Los patrones utilizados cumplen con:
+- El principio de responsabilidad única (SRP), separando responsabilidades en clases específicas.
+- El principio abierto/cerrado (OCP), permitiendo añadir nuevas especies o atributos dinámicos sin modificar el código existente.
+- El principio de sustitución de Liskov (LSP), ya que un `Mamifero`, `Reptil` o `Ave` puede sustituir a un `Animal` sin afectar la lógica.
+- El principio de segregación de interfaces (ISP), dado que se podrían crear interfaces específicas como `IAlimentable` o `ICuidable` sin forzar métodos innecesarios.
+- El principio de inversión de dependencias (DIP), ya que cuidadores y visitantes dependen de la abstracción `Animal` y no de implementaciones concretas.
+
+**Cómo se aplicó:**
+- Se definió la clase abstracta `Animal` con atributos comunes y métodos como `hacerSonido()` y `mostrarInformacion()`.
+- Se creó la jerarquía con `Mamifero`, `Ave` y `Reptil`, aplicando herencia y polimorfismo.
+- Se diseñó la clase `AtributoDinamico` para manejar propiedades flexibles de los animales aplicando el patrón Composite.
+- Se planteó el uso de un Factory Method para instanciar nuevas especies de animales.
+- Se establecieron asociaciones en el UML:
+    - `Cuidador` ↔ `Animal` (cuidado)
+    - `Visitante` ↔ `Animal` (observa, alimenta, fotografía)
+    - `Visitante` ↔ `Cuidador` (propinas)
+- Se aplicó encapsulamiento en todas las clases mediante atributos privados y métodos getters y setters.  
+
+![Reto8.png](docs/uml/Reto8.png)
