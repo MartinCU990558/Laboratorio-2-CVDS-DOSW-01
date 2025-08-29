@@ -1,6 +1,6 @@
 package edu.dosw.lab.estructurales.reto5;
 
-public abstract class ListToppings implements Topping {
+abstract class ListToppings implements Topping {
     protected Topping topping;
 
     public ListToppings(Topping topping) {

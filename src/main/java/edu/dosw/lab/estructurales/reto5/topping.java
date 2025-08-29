@@ -1,6 +1,6 @@
 package edu.dosw.lab.estructurales.reto5;
 
-public interface Topping {
+interface Topping {
     int getPrecio();
     String getDescrip();
 }
