@@ -1,4 +1,4 @@
-package edu.dosw.lab.Estructurales.Decorator.reto5;
+package edu.dosw.lab.estructurales.Decorator.reto5;
 
 public class CafeBase implements Cafe {
     private final int precioBase = 2000;

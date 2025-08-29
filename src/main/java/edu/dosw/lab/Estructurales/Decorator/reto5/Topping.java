@@ -1,4 +1,4 @@
-package edu.dosw.lab.Estructurales.Decorator.reto5;
+package edu.dosw.lab.estructurales.Decorator.reto5;
 
 public class Topping {
     private String name;

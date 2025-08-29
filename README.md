@@ -169,6 +169,16 @@ El patrón Chain of Responsibility es ideal para este sistema de soporte técnic
 
 ![Captura](/docs/imagenes/reto6.jpg)
 
-### Reto 7 - El control remoto Mágico
+### Reto #7 - El control remoto Mágico
+
+- **Patrón de Diseño:** Se utilizó el patrón de diseño _comportamental_
+- **Patrón utilizado:** Se utilizó el patrón _Command_
+- **Justificación:** Se usó el patrón _Command_ ya que el sistema necesita ejecutar múltiples acciones sobre diferentes dispositivos del hogar (luces, puertas, música, volumen) y además permitir deshacer cada acción individualmente. Este patrón encapsula cada solicitud como un objeto, lo que permite parametrizar a los clientes con diferentes solicitudes, mantener un historial de operaciones y soportar operaciones de deshacer. Es ideal para este escenario porque separa el objeto que invoca la operación del que la realiza, facilitando el registro de auditoría y la funcionalidad de undo.
+- **Como Lo aplico:** Se creó una interfaz _Comando_ que define los métodos `ejecutar()`, `deshacer()`, `getDescripcion()` y `getUsuario()`. Se implementaron comandos concretos como _ComandoEncenderLuz_, _ComandoAbrirPuerta_, _ComandoReproducirMusica_ y _ComandoAjustarVolumen_, cada uno encapsulando una acción específica y su operación inversa. La clase _ControlRemotoMagico_ actúa como el Invoker, manteniendo un historial de comandos ejecutados y permitiendo deshacer acciones individuales. Los dispositivos (_DispositivoLuz_, _DispositivoPuerta_, etc.) actúan como Receivers que realizan las operaciones reales.
+
+**Evidencia:**
+
+![Captura](/docs/imagenes/reto7.jpg)
+
 
 ### Reto 8 - El Zoológico de los UML
