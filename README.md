@@ -162,3 +162,6 @@ de las subclases HerbFood y CarnFood.
 
 - Facade: Funcionará como la fachada de gestión a múltiples funcionalidades que corresponden al manejo del Zoo; siendo el 
 registro de los visitantes y de los animales en conjunto a la asignación de los cuidadores.
+
+***Mini evidencia del Diagrama UML (para mejor visualización abrir el archivo).***
+![ASTAH](docs/imagenes/ASTAH.png)
