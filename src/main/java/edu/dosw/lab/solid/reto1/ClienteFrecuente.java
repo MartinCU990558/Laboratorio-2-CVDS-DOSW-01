@@ -9,6 +9,13 @@ public class ClienteFrecuente implements Descuento {
         this.clienteFrecuente = clienteFrecuente;
     }
 
+    @Override
+    public int aplicarDescuento(int precio) {
+        return (int) (precio * 0.1);
+    }
+
+
+
     public String getNombre() {
         return nombre;
     }
