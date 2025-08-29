@@ -167,7 +167,7 @@ El patrón Chain of Responsibility es ideal para este sistema de soporte técnic
    ```
    **Evidencia**
 
-![Captura](/docs/imagenes/)
+![Captura](/docs/imagenes/reto6.jpg)
 
 ### Reto 7 - El control remoto Mágico
 
