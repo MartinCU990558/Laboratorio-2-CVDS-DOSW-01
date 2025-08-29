@@ -3,7 +3,7 @@ package edu.dosw.lab.comportamiento.Comand.reto7;
 import java.util.Scanner;
 
 public class ControlRemotoMagicoMain {
-    public void ejecutar() {
+    public static void ejecutar() {
         Scanner scanner = new Scanner(System.in);
         ControlRemotoMagico control = new ControlRemotoMagico();
 
