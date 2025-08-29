@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 public class CasaCambio {
     private static ArrayList<Transaccion> transacciones;
-    public static void main(String[] args) {
+    public static void ejecutar() {
         transacciones = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
         System.out.println("----Bienvenido a la casa de cambio----");
