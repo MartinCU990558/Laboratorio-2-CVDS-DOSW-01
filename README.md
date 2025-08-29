@@ -27,6 +27,33 @@
 
 
 Retos Completados
+## Reto 2
+Patrón de Diseño:
+Creacional
+
+Patrón Utilizado:
+Builder
+
+Justificación:
+
+El patrón Builder permite construir objetos complejos paso a paso, separando la construcción del objeto de su representación final. Este patrón es ideal cuando un objeto puede tener múltiples combinaciones posibles, como en este caso: una hamburguesa personalizada con distintos ingredientes.
+
+Este patrón se adapta perfectamente al problema planteado, ya que permite al usuario elegir los ingredientes que desea para construir su hamburguesa de forma dinámica, sin necesidad de múltiples constructores o clases especializadas para cada combinación.
+
+Cómo se aplicó:
+
+Se creó la clase Hamburguesa, que representa el producto final. Esta clase incluye una lista de ingredientes y métodos como calcularPrecio() y toString() para mostrar el contenido de la hamburguesa y su costo total.
+
+Dentro de Hamburguesa, se definió una clase estática anidada llamada Builder. Esta clase actúa como el constructor especializado, permitiendo agregar ingredientes paso a paso mediante el método agregarIngrediente(Ingrediente ingrediente). Finalmente, el método build() construye y devuelve una instancia de Hamburguesa.
+
+La clase Ingrediente encapsula el nombre y el precio de cada componente de la hamburguesa. Permite representar los ingredientes de manera clara y reutilizable.
+
+La clase Constructor actúa como el director del proceso de construcción. Presenta un menú interactivo al usuario para que seleccione los ingredientes deseados (ya sea de una lista predeterminada o agregando nuevos). Luego, construye la hamburguesa utilizando el Builder.
+
+Finalmente, Reto2 contiene el método run() que inicia el proceso, funcionando como punto de entrada del sistema.
+
+![reto2.png](reto2.png)
+
 ## Reto 3
 Patrón de Diseño:
 Creacional
