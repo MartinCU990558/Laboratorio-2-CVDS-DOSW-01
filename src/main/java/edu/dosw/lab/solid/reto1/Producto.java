@@ -2,10 +2,10 @@ package edu.dosw.lab.solid.reto1;
 
 public class Producto {
     private String nombre;
-    private double precio;
+    private int precio;
     private String descripcion;
 
-    public Producto(String nombre, double precio) {
+    public Producto(String nombre, int precio) {
         this.nombre = nombre;
         this.precio = precio;
     }
@@ -14,7 +14,7 @@ public class Producto {
         return nombre;
     }
 
-    public double getPrecio() {
+    public int getPrecio() {
         return precio;
     }
 
