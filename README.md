@@ -48,5 +48,6 @@ Asi que nos dio como resultado:
 ## 🔎 Reto 7
 ### Patron utilizado: Command
 Para este ejercicio decidimos utilizar el patron Command ya que este patron nos permite encapsular las acciones que vamos a realizar ya sea encender las luces o subir el volumen como objetos independientes, esto facilita el registro del historial y los registros de quien ejecuto que. Tambien es util para ver quien deshace que accion.
+Resolviendo este ejercicio decidimos primero crear una interfaz que se llame comando, esta intefaz va a tener los primeros metodos que luego los vamos a implementar en los comando mas especificos.Luego se crean los respectivos objetos de luz,puerta,reproductor musica y ahi tendremos los respectivos metodos con lo que puede realizar cada clase. Finalmente creamos la clase main que es la denominada reto7.
 
 ![alt text](image-3.png)
