@@ -1,5 +1,4 @@
 package edu.dosw.lab.solid.reto1;
-
 import java.util.List;
 import java.util.Scanner;
 
@@ -37,7 +36,29 @@ public class TiendaDonPepe {
             }
         }
 
+        compra.entrySet().stream()
+                .forEach(e -> System.out.printf("%s %d unidades agregado al carrito.\n",
+                        e.getKey().getNombre(),
+                        e.getValue()));
 
+
+        System.out.println("\n--- Recibo de compra:---");
+        System.out.println("Cliente: " + tipoCliente);
+        System.out.println("Productos: ");
+        int total = compra.entrySet().stream()
+                .peek(e -> System.out.printf("%s: %d - $%,d\n",
+                        e.getKey().getNombre(),
+                        e.getValue(),
+                        e.getKey().getPrecio() * e.getValue()))
+                .mapToInt(e -> e.getKey().getPrecio() * e.getValue())
+                .sum();
+
+        System.out.printf("Subtotal: $%,d\n", total);
+        System.out.printf("Descuento aplicado: $%,d", cliente.aplicarDescuento(total) );
+        System.out.printf("\nTotal a pagar: $%,d", total - cliente.aplicarDescuento(total));
+        System.out.println("\n-----------------------");
+        System.out.println("!Gracias por su compra!");
+        scanner.close();
     }
 
     private static List<Producto> crearMenu() {
