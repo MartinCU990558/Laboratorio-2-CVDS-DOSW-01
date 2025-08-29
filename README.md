@@ -215,4 +215,8 @@ Cada clase concreta de un comando representa una acción específica sobre los d
 ---
 ![alt text](docs/imagenes/Reto7/image-20.png)
 
+## Reto 8 ✅
+![alt text](docs/imagenes/Reto8/image-1.png)
+## Descripción :
+- En el diseño UML se hizo uso de la herencia en los tipos de animales presentes en el zoológico, como lo son mamíferos, reptiles y aves, los cuales implementan una interfaz que define el comportamiento común: el sonido característico que realiza cada especie, ya que todos los animales generan sonidos diferentes. Además, se definió un enumeration para modelar el estado de salud de los animales, el cual puede ser de tres tipos: sano, enfermo o en cuarentena, lo que permite un mejor control y seguimiento de cada ejemplar. Para los atributos dinámicos se usaron listas de Strings dentro de la clase Animals, con el fin de que cada animal pueda almacenar información variable como su historial médico, origen o rareza.
 
