@@ -1,7 +1,5 @@
 package edu.dosw.lab.Comportamiento.Reto7;
 
-import java.lang.ref.SoftReference;
-
 public class AccionLuz extends AccionGeneral{
     public AccionLuz(String usuario) {
         super(usuario, "Luz encendida");
