@@ -10,15 +10,15 @@ class ControlRemoto {
     private List<String> reportes = new ArrayList<>();
 
     public void ejecutarAccion(Command comando, boolean deshacer) {
-        // Guardar reporte pero no imprimir todavía
+
         String reporte = "Acción " + (historial.size() + 1) + " ejecutada por "
                 + comando.getUsuario() + ": " + comando.getDescripcion();
         reportes.add(reporte);
 
-        comando.execute(); // aquí imprime el receptor (ej: "Luz encendida")
+        comando.execute();
 
         if (deshacer) {
-            comando.undo(); // aquí imprime el receptor (ej: "Volumen regresado a 0%")
+            comando.undo();
             comando.marcarDeshecha();
             String reporteUndo = "Acción " + (historial.size() + 1) + " deshecha: " + comando.getUndoDescripcion();
             reportes.add(reporteUndo);
@@ -28,12 +28,12 @@ class ControlRemoto {
     }
 
     public void mostrarHistorial() {
-        // Imprimir todas las acciones ejecutadas/deshechas en orden
+
         for (String r : reportes) {
             System.out.println(r);
         }
 
-        // Historial completo
+    
         System.out.println("\n---- Historial completo ----");
         int i = 1;
         for (Command c : historial) {
