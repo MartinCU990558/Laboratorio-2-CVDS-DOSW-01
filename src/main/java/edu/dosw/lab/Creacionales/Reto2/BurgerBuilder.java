@@ -1,5 +1,4 @@
-package src.main.java.edu.dosw.lab.Creacionales.Reto2;
-
+package edu.dosw.lab.Creacionales.Reto2;
 /**
  * Implementación del patrón builder
  * aplicado a la personalización de

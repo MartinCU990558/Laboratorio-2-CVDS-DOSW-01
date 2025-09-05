@@ -2,6 +2,7 @@ package edu.dosw.lab;
 
 import edu.dosw.lab.Comportamiento.Reto7.Reto7;
 import edu.dosw.lab.Comportamiento.reto6.Reto6;
+import edu.dosw.lab.Creacionales.Reto2.Main;
 import edu.dosw.lab.Creacionales.Reto3.Reto3;
 import edu.dosw.lab.Estructurales.Reto5.Reto5;
 import org.springframework.boot.SpringApplication;
@@ -19,6 +20,8 @@ public class Laboratorio2CvdsDosw01Application {
 		System.out.println("\nProyecto Maven configurado y corriendo correctamente");
 		System.out.println("\n===== INICIO RETO 1 =====\n");
 		Reto1.ejecutar();
+		System.out.println("\n===== INICIO RETO 2 =====\n");
+		Main.ejecutar();
 		System.out.println("\n===== INICIO RETO 3 =====\n");
 		Reto3.ejecutar();
 		System.out.println("\n===== INICIO RETO 4 =====\n");
@@ -29,7 +32,6 @@ public class Laboratorio2CvdsDosw01Application {
 		Reto6.ejecutar();
 		System.out.println("\n===== INICIO RETO 7 =====\n");
 		Reto7.ejecutar();
-
 	}
 
 }

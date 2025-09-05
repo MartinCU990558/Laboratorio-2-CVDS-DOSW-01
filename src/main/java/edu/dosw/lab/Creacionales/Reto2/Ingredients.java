@@ -1,4 +1,4 @@
-package src.main.java.edu.dosw.lab.Creacionales.Reto2;
+package edu.dosw.lab.Creacionales.Reto2;
 
 /**
  * Clase que abstrae los ingredientes de los cuales

@@ -1,8 +1,8 @@
-package src.main.java.edu.dosw.lab.Creacionales.Reto2;
+package edu.dosw.lab.Creacionales.Reto2;
 import java.util.*;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void ejecutar() {
         Map<Integer, Ingredients> menu = new TreeMap<>(Map.of(
                 1, new Ingredients("Pan", 3000.0),
                 2, new Ingredients("Carne", 10000.0),

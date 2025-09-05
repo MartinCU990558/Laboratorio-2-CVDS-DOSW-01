@@ -1,4 +1,4 @@
-package src.main.java.edu.dosw.lab.Creacionales.Reto2;
+package edu.dosw.lab.Creacionales.Reto2;
 import java.util.ArrayList;
 import java.util.List;
 
