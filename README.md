@@ -118,8 +118,10 @@ y Transacciones delega en ellas el algoritmo de conversión, permitiendo cambiar
 ---
 ### Reto 7: El control remoto
 **Evidencia:**
-![Captura](docs/imagenes/RETO7%20ENTRADA.png)
+
+![Captura](docs/imagenes/RETO7ENTRADA.png)
 ![Captura](docs/imagenes/RETO7SALIDA.png)
+
 <h4>Descripción breve de lo que hicieron:  
 </h4>
 En este reto implementamos un control remoto mágico que permite ejecutar y deshacer acciones sobre diferentes dispositivos del hogar como luces, puertas, música y volumen.
